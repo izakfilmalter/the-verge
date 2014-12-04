@@ -1,0 +1,11 @@
+{
+  "name": "The-Verge",
+  "version": "2.0.0",
+  "repository": "https://github.com/izakfilmalter/the-verge",
+  "devDependencies": {
+    "grunt": "^v0.4.5",
+    "grunt-contrib-sass": "^v0.8.1",
+    "grunt-contrib-watch": "^v0.6.1",
+    "grunt-contrib-connect": "^v0.9.0"
+  }
+}
