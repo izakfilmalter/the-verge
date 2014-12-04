@@ -36,8 +36,7 @@
 
   .m-auth-modal__body[data-chorus-auth-modal="captcha"] .m-auth-modal__recaptcha #recaptcha_image,
   .m-auth-modal__body[data-chorus-auth-modal="login"] .m-auth-modal__recaptcha #recaptcha_image {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin: initial -20px;
     border: 0;
   }
 }
@@ -48,9 +47,9 @@
 }
 @media (max-width: 400px) {
   .m-chorus-modal__window {
-    width: 100%;
-    margin-top: 0;
+    margin: 0 initial initial;
     max-height: 100%;
+    width: 100%;
   }
 
   body.chorus-modal-open #body-wrapper,
@@ -67,15 +66,27 @@
 @media (max-width: 600px) {
   .m-hub-admin-menu {
     position: absolute;
-    top: 0;
-    left: 0;
   }
 
   head[data-network='sbn'] + body .harmony-content-link .harmony-thumbnail {
     display: none;
   }
+
+  .m-hub-admin-menu {
+    top: 0;
+    left: 0;
+  }
+
+  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship,
+  head[data-network='sbn'] + body .harmony-content-link .harmony-title,
+  head[data-network='sbn'] + body .harmony-content-link .harmony-byline,
+  head[data-network='sbn'] + body .harmony-content-link .harmony-description {
+    float: left;
+    width: 100%;
+  }
+  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship .harmony-preamble,
   head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship .harmony-logo {
-    float: right;
+    float: left;
   }
 
   head[data-network='polygon'] + body .harmony-content-link {
@@ -90,7 +101,65 @@
   }
 
   head[data-network='polygon'] + body .placeableadunit {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 initial;
+  }
+
+  head[data-network='eater'] + body .m-entry-box .harmony-content-link .harmony-thumbnail {
+    height: 200px;
+  }
+  head[data-network='eater'] + body .m-entry-box__bleed .harmony-content-link {
+    margin: initial 0;
+  }
+  head[data-network='eater'] + body .m-entry-box__bleed .harmony-content-link .harmony-thumbnail {
+    height: 400px;
+  }
+  head[data-network='eater'] + body .m-entry-box__bleed-square .harmony-content-link .harmony-thumbnail {
+    height: 250px;
+  }
+  head[data-network='eater'] + body .m-entry-box__bleed-tall .harmony-content-link .harmony-thumbnail {
+    height: 600px;
+  }
+
+  head[data-network='vox'] + body .harmony-content-link .harmony-thumbnail,
+  head[data-network='vox'] + body .harmony-content-link .harmony-thumbnail .harmony-tint-overlay {
+    height: 600px;
+  }
+
+  html,
+  body {
+    font-size: 17px;
+  }
+
+  .p-big-search form input[type='submit'] {
+    font-size: 0.7rem;
+    line-height: 1.9rem;
+    top: 0.4rem;
+    right: 1rem;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  .p-big-search form input[type='search'],
+  .p-big-search form input[type='text'] {
+    font-size: 1.5rem;
+  }
+  .p-big-search .label {
+    font-size: 1.5rem;
+  }
+  .p-big-search .label::after {
+    display: block;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 0 25px 10px;
+    border-left-color: #f7f1ee;
+    height: 0;
+    width: 0;
+  }
+
+  .m-hub-admin-menu:hover,
+  .m-hub-admin-menu.is-open {
+    top: 0;
+    border-radius: initial 0 initial initial;
+    width: 100%;
   }
 }
