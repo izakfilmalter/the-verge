@@ -1,0 +1,30 @@
+.p-tabs
+    padding-left: 1rem
+
+    &.-no-padding
+        padding-left: 0
+
+    ul li.-secondary
+        background-color: $pomegranate
+
+        font-size: 1rem
+
+        @extend %position-absolute800
+        +position(initial, 0, 0, initial)
+
+        padding: .2rem .6rem
+
+    &.-has-starburst .p-starburst
+        @extend %display-block800
+
+    &.-has-starburst ul,
+    &.-has-starburst.-keep-starburst ul
+        padding-left: 80px !important
+
+    ul li.-secondary,
+    &.js-collapsible ul li
+        @extend %display-inline-block800
+
+    &.js-collapsible ul li.-is-active a::after,
+    &.js-collapsible ul li select
+        @extend %display-none800

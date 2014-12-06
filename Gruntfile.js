@@ -28,10 +28,12 @@ module.exports = function(grunt) {
           'sass/**/*.sass',
           'sass/**/**/*.sass',
           'sass/**/**/**/*.sass',
+          'sass/**/**/**/**/*.sass',
           'sass/*.scss',
           'sass/**/*.scss',
           'sass/**/**/*.scss',
           'sass/**/**/**/*.scss',
+          'sass/**/**/**/**/*.scss',
         ],
         tasks: ['sass']
       },

@@ -1,0 +1,38 @@
+.p-big-search
+    &.-has-label form input[type='search'],
+    &.-has-label form input[type='text']
+        padding: .6rem .5rem .2rem
+
+    form input[type='submit']
+        font-size: .9rem
+        line-height: 2.3rem
+
+        +position(.7rem, initial, initial, initial)
+
+        height: 2.5rem
+        width: 2.5rem
+
+        border-radius: 2.5rem
+
+    form input[type='search'],
+    form input[type='text']
+        font-size: 2rem
+
+        padding: .6rem
+
+    .label
+        font-size: 2.25rem
+
+        padding: .6rem 0 0 0
+
+        &::after
+            @extend %display-block800
+
+            +position(initial, -15px, initial, initial)
+
+            border: 0 solid transparent
+            border-left-color: $dawn-pink
+            border-width: 30px 0 30px 15px
+
+            width: 0
+            height: 0
