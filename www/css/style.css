@@ -1,3 +1,83 @@
+@media (min-width: 320px) {
+  head {
+    font-family: "bp-xx-small 320px";
+  }
+  head::after {
+    content: "bp-xx-small - min-width: 320px";
+  }
+}
+@media (min-width: 400px) {
+  head {
+    font-family: "bp-x-small 400px";
+  }
+  head::after {
+    content: "bp-x-small - min-width: 400px";
+  }
+}
+@media (min-width: 500px) {
+  head {
+    font-family: "bp-x-small-small 500px";
+  }
+  head::after {
+    content: "bp-x-small-small - min-width: 500px";
+  }
+}
+@media (min-width: 600px) {
+  head {
+    font-family: "bp-small 600px";
+  }
+  head::after {
+    content: "bp-small - min-width: 600px";
+  }
+}
+@media (min-width: 700px) {
+  head {
+    font-family: "bp-small-medium 700px";
+  }
+  head::after {
+    content: "bp-small-medium - min-width: 700px";
+  }
+}
+@media (min-width: 800px) {
+  head {
+    font-family: "bp-medium 800px";
+  }
+  head::after {
+    content: "bp-medium - min-width: 800px";
+  }
+}
+@media (min-width: 900px) {
+  head {
+    font-family: "bp-medium-large 900px";
+  }
+  head::after {
+    content: "bp-medium-large - min-width: 900px";
+  }
+}
+@media (min-width: 1025px) {
+  head {
+    font-family: "bp-large 1025px";
+  }
+  head::after {
+    content: "bp-large - min-width: 1025px";
+  }
+}
+@media (min-width: 1200px) {
+  head {
+    font-family: "bp-x-large 1200px";
+  }
+  head::after {
+    content: "bp-x-large - min-width: 1200px";
+  }
+}
+@media (min-width: 1441px) {
+  head {
+    font-family: "bp-xx-large 1441px";
+  }
+  head::after {
+    content: "bp-xx-large - min-width: 1441px";
+  }
+}
 @media (max-width: 375px) {
   .m-auth-modal,
   .m-auth-modal .m-auth-modal__body p,
