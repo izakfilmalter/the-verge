@@ -152,9 +152,20 @@
     display: none;
   }
 
+  .m-hub-admin-menu:hover li, .m-hub-admin-menu:hover .vox-emc__admin, .m-hub-admin-menu.is-open li, .m-hub-admin-menu.is-open .vox-emc__admin {
+    display: inline-block;
+  }
+
   .m-hub-admin-menu {
     top: 0;
     left: 0;
+  }
+  .m-hub-admin-menu:hover li, .m-hub-admin-menu:hover .vox-emc__admin, .m-hub-admin-menu.is-open li, .m-hub-admin-menu.is-open .vox-emc__admin {
+    width: 48%;
+    padding: initial 5px initial initial;
+  }
+  .m-hub-admin-menu:hover .m-hub-admin-menu__emc-item, .m-hub-admin-menu.is-open .m-hub-admin-menu__emc-item {
+    width: 100%;
   }
 
   head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship,
@@ -164,9 +175,11 @@
     float: left;
     width: 100%;
   }
-  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship .harmony-preamble,
-  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship .harmony-logo {
+  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship .harmony-preamble {
     float: left;
+  }
+  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship .harmony-logo {
+    float: right;
   }
 
   head[data-network='polygon'] + body .harmony-content-link {
@@ -308,10 +321,10 @@
   }
 
   .p-tabs {
-    padding-left: 1rem;
+    padding: initial initial initial 1rem;
   }
   .p-tabs.-no-padding {
-    padding-left: 0;
+    padding: initial initial initial 0;
   }
   .p-tabs ul li.-secondary {
     background-color: #fa4b2a;
@@ -321,7 +334,41 @@
     padding: 0.2rem 0.6rem;
   }
   .p-tabs.-has-starburst ul, .p-tabs.-has-starburst.-keep-starburst ul {
-    padding-left: 80px !important;
+    padding: initial initial initial 80px !important;
+  }
+}
+@media (max-width: 950px) {
+  head[data-network='eater'] + body .harmony-video {
+    display: block;
+    height: 50%;
+    width: 50%;
+    border-right: solid 10px #fff;
+  }
+
+  head[data-network='eater'] + body .m-entry-box .harmony-content-link .harmony-thumbnail {
+    height: 270px;
+  }
+  head[data-network='eater'] + body .m-entry-box__bleed-square .harmony-content-link .harmony-thumbnail {
+    height: 300px;
+  }
+  head[data-network='eater'] + body .m-entry-box__bleed-tall .harmony-content-link .harmony-thumbnail {
+    height: 550px;
+  }
+}
+@media (max-width: 1025px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+
+  .l-page {
+    border: 1px solid #ddd;
+    border-bottom: none;
+  }
+
+  .p-big-search.-has-label form input[type='search'],
+  .p-big-search.-has-label form input[type='text'] {
+    padding: 1.2rem 0 0 1rem;
   }
 }
 

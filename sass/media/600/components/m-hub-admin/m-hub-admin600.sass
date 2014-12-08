@@ -1,3 +1,17 @@
 .m-hub-admin-menu
     @extend %posision-absolute600
     +position(0, initial, initial, 0)
+
+    &:hover li,
+    &:hover .vox-emc__admin,
+    &.is-open li,
+    &.is-open .vox-emc__admin
+        @extend %display-inline-block600
+
+        width: 48%
+
+        padding: initial 5px initial initial
+
+    &:hover .m-hub-admin-menu__emc-item,
+    &.is-open .m-hub-admin-menu__emc-item
+        width: 100%
