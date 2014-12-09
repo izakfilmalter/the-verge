@@ -1,0 +1,143 @@
+.m-nav
+    background: $mine-shaft
+
+    overflow: visible
+    -ms-overflow-style: auto
+    -webkit-overflow-scrolling: auto
+    overflow-scrolling: auto
+
+    border: 0
+
+    &.-sections
+        display: none
+
+    &.-user
+        background: $alabaster
+
+        text-align: left
+
+        overflow: hidden
+        opacity: 0
+
+        @extend %position-absolute1025
+
+        border-right: 1px solid #fa4b2a
+        border-left: 1px solid #fa4b2a
+
+        height: 0
+        width: 160px
+
+        -webkit-transition: opacity 0.1s
+        -moz-transition: opacity 0.1s
+        -o-transition: opacity 0.1s
+        transition: opacity 0.1s
+
+    &.-site,
+    &.-user
+        @extend %position-relative1025
+
+        width: 100%
+
+.m-nav__menu
+    a
+        font-size: 1.25rem
+        line-height: 44px
+
+        height: 100%
+
+        padding: 0 .75rem
+
+    li
+        &:first-child
+            margin: initial initial initial 0
+
+        &,
+        a
+            border: none
+
+        &.-user a
+            font-size: .85rem
+
+            border-left: 1px solid $mine-shaft
+
+            max-width: 160px
+
+            padding: 0 .5rem 0 5px
+
+        &,
+        &.-user
+            background-color: $black
+
+            line-height: 1
+
+            @extend %display-inline-block1025
+            float: left
+
+            @extend %position-relative1025
+
+            margin: 0 1px
+
+        a:hover,
+        a:active,
+        &.is-selected a,
+        &.-user a
+            color: $pomegranate
+
+        &.is-selected a,
+        &.-user a
+            background: $alabaster
+
+        &.-back,
+        &.-sections,
+        &.home,
+        .icon
+            @extend %display-none1025
+
+        a.has-icon
+            padding: initial initial initial 0
+
+.-user > .m-nav__menu
+    background-color: $white
+
+.is-user-nav-open
+    .m-nav.-user
+        opacity: 1
+
+        border-bottom: 1px solid $pomegranate
+
+        max-height: 400px
+        height: auto
+        min-height: 20px
+
+    .m-nav__menu li.-user a
+        border-color: $pomegranate
+
+.m-nav,
+.realcsstransforms3d .is-nav-open .m-nav.-site,
+.no-realcsstransforms3d .is-nav-open .m-nav.-site,
+.realcsstransforms3d .is-user-nav-open .m-nav.-user,
+.no-realcsstransforms3d .is-user-nav-open .m-nav.-user
+    -webkit-transform: none
+    -moz-transform: none
+    -ms-transform: none
+    -o-transform: none
+    transform: none
+
+.m-nav.-site,
+.m-nav.-user,
+.realcsstransforms3d .is-nav-open .m-nav.-site,
+.no-realcsstransforms3d .is-nav-open .m-nav.-site,
+.realcsstransforms3d .is-user-nav-open .m-nav.-user,
+.no-realcsstransforms3d .is-user-nav-open .m-nav.-user
+    left: initial
+
+.m-nav.-site,
+.m-nav__menu li.-user
+    height: 40px
+
+.m-nav__ellis-hamburger-button,
+.is-nav-open .m-nav__content-blocker,
+.is-user-nav-open .m-nav__content-blocker,
+.is-new-articles-open .m-nav__content-blocker,
+.is-sections-nav-open .m-nav__content-blocker
+    @extend %display-none1025

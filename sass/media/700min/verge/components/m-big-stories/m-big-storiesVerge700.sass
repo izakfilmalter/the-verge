@@ -1,0 +1,188 @@
+.m-big-stories
+    background: $white
+
+    @extend %display-block700
+
+    @extend %position-relative700
+
+    border-top: 1px solid $alto
+
+    margin: 0 80px 0 280px
+
+    padding: initial 40px initial initial
+
+.m-big-stories__main
+    float: right
+
+    @extend %position-relative700
+
+    a
+        @extend %display-table-row700
+
+    h3
+        font-size: .77rem
+        line-height: 1.25
+
+    p
+        font-family: ff-din-web-condensed,sans-serif
+        font-weight: bold
+
+        font-size: .8rem
+        line-height: 1.5
+
+        text-transform: uppercase
+
+.m-big-stories__main-text
+    @extend %display-table-cell700
+
+.m-big-stories__dropdown
+    overflow: hidden
+
+    @extend %position-absolute700
+    +position(59px, 50px, initial, initial)
+
+    padding: 0
+
+.m-big-stories__toggle
+    @extend %display-block700
+
+    @extend %position-absolute700
+    +position(-1px, 0, initial, initial)
+
+    border-bottom: 1px solid $alto
+    border-left: 1px solid $alto
+
+    width: 40px
+
+    &::before
+        content: ''
+
+        @extend %display-block700
+
+        @extend %position-absolute700
+        +position(29px, initial, initial, 15px)
+
+        border: 0 solid transparent
+
+        width: 0
+
+    &:link::before,
+    &:visited::before
+        border-top-color: $black
+
+    &:hover::before,
+    &:active::before
+        border-top-color: $pomegranate
+
+    &:link::before,
+    &:visited::before,
+    &:hover::before,
+    &:active::before
+        border-width: 5px 5px 0 5px
+
+.m-big-stories__story
+    background: $white
+
+    list-style-type: none
+
+    float: right
+
+    border: 1px solid #cacaca
+    border-top: none
+
+    a
+        @extend %display-table-row700
+
+    h3
+        font-size: .7rem
+        line-height: 1.5
+
+.m-big-stories__story-text
+    @extend %display-table-cell700
+
+    width: 512px
+
+.is-open
+    .m-big-stories__dropdown
+        height: 224px
+
+    .m-big-stories__toggle
+        background: $pomegranate
+        border-top: 1px solid $pomegranate
+        border-bottom: 1px solid $pomegranate
+
+        &:link::before,
+        &:visited::before,
+        &:hover:before,
+        &:active:before
+            border-width: 0 5px 5px 5px
+
+        &:hover:before,
+        &:active:before
+            border-bottom-color: $white
+
+.m-big-stories,
+.m-big-stories__toggle
+    height: 60px
+
+.m-big-stories a:link,
+.m-big-stories a:visited
+    color: $white
+
+.m-big-stories a:hover,
+.m-big-stories a:active,
+.m-big-stories__main p
+    color: $pomegranate
+
+.m-big-stories__main,
+.m-big-stories__main-text
+    height: 59px
+
+.m-big-stories__main,
+.m-big-stories__main-text,
+.m-big-stories__dropdown,
+.m-big-stories__toggle
+    -webkit-transition: all ease 100ms
+    -moz-transition: all ease 100ms
+    -o-transition: all ease 100ms
+    transition: all ease 100ms
+
+.m-big-stories__main,
+.m-big-stories__main a,
+.m-big-stories__story,
+.m-big-stories__story a
+    width: 100%
+
+.m-big-stories__main a,
+.m-big-stories__story a
+    height: 100%
+
+.m-big-stories__main h3,
+.m-big-stories__story h3,
+    font-family: Adelle,serif
+    font-weight: normal
+
+.m-big-stories__main h3,
+.m-big-stories__main p,
+.m-big-stories__dropdown,
+.m-big-stories__story,
+.m-big-stories__story h3
+    margin: 0
+
+.m-big-stories__main-text,
+.m-big-stories__story-text
+    vertical-align: middle
+
+    padding: 0 10px
+
+.m-big-stories__dropdown,
+.m-big-stories__toggle::before
+    height: 0
+
+.m-big-stories__toggle,
+.m-big-stories__story:nth-child(odd)
+    background: $gallery
+
+.m-big-stories__story,
+.m-big-stories__story-text
+    height: 55px
