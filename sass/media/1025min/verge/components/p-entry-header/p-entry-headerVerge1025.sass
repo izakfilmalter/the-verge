@@ -1,0 +1,32 @@
+.p-entry-header
+    h1
+        font-size: 3.25rem
+
+        padding: 1rem 4rem 0 0
+
+    h2
+        font-size: 1.9rem
+
+.p-entry-header__comments
+    font-size: 2.5rem
+
+    +position(initial, -15px, initial, initial)
+
+    width: 90px
+
+    padding: 8px 10px 0
+
+    &::after
+        content: ''
+
+        @extend %display-block1025
+
+        @extend %position-absolute1025
+        +position(100%, 0, initial, initial)
+
+        border: 0 solid transparent
+        border-top-color: $pomegranate
+        border-width: 15px 15px 0 0
+
+        height: 0
+        width: 0

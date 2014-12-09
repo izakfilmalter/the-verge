@@ -1,0 +1,26 @@
+.p-basic-article-list.hide-mobile-blurbs
+    .p-basic-article-list__node
+        .image .p-dynamic-image
+            height: 150px
+
+        .body .blurb
+            @extend %display-block600
+
+.p-basic-article-list__node
+    margin-top: 2rem
+
+    .body
+        @extend %position-relative600
+
+        h3
+            font-size: 1.25rem
+
+            margin: 0
+
+            padding: 1.5rem initial initial
+
+        h5
+            +position(initial, initial, initial, 1rem)
+
+        .blurb
+            font-size: 14px
