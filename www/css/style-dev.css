@@ -1677,7 +1677,7 @@
     display: none;
   }
 
-  .m-hub-admin-menu:hover li, .m-hub-admin-menu:hover .vox-emc__admin, .m-hub-admin-menu.is-open li, .m-hub-admin-menu.is-open .vox-emc__admin {
+  .m-hub-admin-menu:hover li {
     display: inline-block;
   }
 
@@ -1685,7 +1685,7 @@
     top: 0;
     left: 0;
   }
-  .m-hub-admin-menu:hover li, .m-hub-admin-menu:hover .vox-emc__admin, .m-hub-admin-menu.is-open li, .m-hub-admin-menu.is-open .vox-emc__admin {
+  .m-hub-admin-menu:hover li {
     width: 48%;
     padding: initial 5px initial initial;
   }

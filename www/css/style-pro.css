@@ -19,15 +19,15 @@
   }
 }
 @media (min-width: 500px) {
-  .m-footer__elsewhere-col li {
+  .Fd li {
     display: block;
   }
 
-  .m-footer__elsewhere-col span {
+  .Fd span {
     display: inline;
   }
 
-  .m-footer__social::before {
+  .Ff::before {
     display: none;
   }
 
@@ -38,21 +38,21 @@
     content: "bp-x-small-small - min-width: 500px";
   }
 
-  .m-footer__elsewhere-col {
+  .Fd {
     text-align: left;
     padding: 0 initial;
   }
-  .m-footer__elsewhere-col li {
+  .Fd li {
     margin: 0.5rem 0 0 0;
   }
 
-  .m-footer__vox-corner {
+  .Fe {
     padding: 1.5rem initial initial;
   }
 
-  .m-footer__sections-col,
-  .m-footer__basics-col,
-  .m-footer__elsewhere-col {
+  .Fb,
+  .Fc,
+  .Fd {
     width: 33%;
   }
 }
@@ -1669,7 +1669,7 @@
   }
 }
 @media (max-width: 600px) {
-  .m-hub-admin-menu {
+  .HAM {
     position: absolute;
   }
 
@@ -1677,19 +1677,19 @@
     display: none;
   }
 
-  .m-hub-admin-menu:hover li, .m-hub-admin-menu:hover .vox-emc__admin, .m-hub-admin-menu.is-open li, .m-hub-admin-menu.is-open .vox-emc__admin {
+  .HAM:hover li {
     display: inline-block;
   }
 
-  .m-hub-admin-menu {
+  .HAM {
     top: 0;
     left: 0;
   }
-  .m-hub-admin-menu:hover li, .m-hub-admin-menu:hover .vox-emc__admin, .m-hub-admin-menu.is-open li, .m-hub-admin-menu.is-open .vox-emc__admin {
+  .HAM:hover li {
     width: 48%;
     padding: initial 5px initial initial;
   }
-  .m-hub-admin-menu:hover .m-hub-admin-menu__emc-item, .m-hub-admin-menu.is-open .m-hub-admin-menu__emc-item {
+  .HAM:hover .HAMa, .HAM.ig .HAMa {
     width: 100%;
   }
 
