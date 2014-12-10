@@ -1,0 +1,78 @@
+.m-footer
+    @extend %position-relative600
+
+.m-footer__search-col
+    width: 35%
+
+    padding: 1.7rem initial initial
+
+    .scalable-logo
+        @extend %display-block600
+        margin: initial initial 1rem
+
+    .search
+        padding: 0
+
+.m-footer__elsewhere-col
+    width: 25%
+
+.m-footer__vox-corner
+    text-align: right
+
+    float: none
+
+    +position(initial, 0, initial, initial)
+    left: initial
+
+    width: auto
+
+    padding: 0 1.5rem 1rem 0
+
+.m-footer__status-corner
+    @extend %display-block600
+    padding: 0 0 1rem 1.5rem
+
+    .m-footer__bottom__status
+        color: $silver
+
+        @extend %display-block600
+
+        a
+            @extend %display-block600
+
+.m-footer__back-to-top
+    @extend %display-none600min
+
+.m-footer__vox-corner,
+.m-footer__status-corner
+    @extend %position-absolute600min
+    +position(initial, initial, 0, 0)
+
+.m-footer__search-col,
+.m-footer__sections-col,
+.m-footer__basics-col,
+.m-footer__elsewhere-col
+    min-height: 450px
+
+    padding: 1.5rem 1rem 1rem 1rem
+
+    &:first-child
+        border-left: 0
+
+    .m-footer__section-header,
+        font-family: ff-din-web-condensed,sans-serif
+        font-weight: 700
+
+        font-size: 1rem
+        color: $white
+
+        text-transform: uppercase
+
+        @extend %display-block600
+
+        em
+            color: $pomegranate
+
+.m-footer__sections-col,
+.m-footer__basics-col
+    width: 20%
