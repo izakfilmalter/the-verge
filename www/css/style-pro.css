@@ -1757,20 +1757,20 @@
   }
 }
 @media (max-width: 950px) {
-  head[data-network='eater'] + body .harmony-video {
+  head[data-network='eater'] + body .HRMj {
     display: block;
     height: 50%;
     width: 50%;
     border-right: solid 10px #fff;
   }
 
-  head[data-network='eater'] + body .m-entry-box .harmony-content-link .harmony-thumbnail {
+  head[data-network='eater'] + body .EB .HRMa .HRMb {
     height: 270px;
   }
-  head[data-network='eater'] + body .m-entry-box__bleed-square .harmony-content-link .harmony-thumbnail {
+  head[data-network='eater'] + body .EBb .HRMa .HRMb {
     height: 300px;
   }
-  head[data-network='eater'] + body .m-entry-box__bleed-tall .harmony-content-link .harmony-thumbnail {
+  head[data-network='eater'] + body .EBc .HRMa .HRMb {
     height: 550px;
   }
 }
