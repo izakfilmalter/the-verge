@@ -1,4 +1,4 @@
-.m-header
+.#{$m-header}
     background: none
 
     box-shadow: none
@@ -7,23 +7,23 @@
 
     height: auto
 
-.m-header__logo
+.#{$m-header__logo}
     margin: 0 0 0 -15px
 
-.-has-logo .m-header__logo
+.#{$-has-logo} .#{$m-header__logo}
     width: 395px
 
-.m-header__verge-logo
+.#{$m-header__verge-logo}
     padding: 0 8px 0 15px
 
-.m-header__hub-logo
+.#{$m-header__hub-logo}
     @extend %display-block1025
 
     @extend %position-relative1025
 
     width: 80px
 
-.m-header__social
+.#{$m-header__social}
     font-family: "verge-font-icons"
 
     font-size: 1rem
@@ -72,25 +72,25 @@
     a
         width: 100%
 
-.m-header__logo,
-.m-header__verge-logo,
-.m-header__hub-logo
+.#{$m-header__logo},
+.#{$m-header__verge-logo},
+.#{$m-header__hub-logo}
     height: 80px
 
-.m-header__logo,
-.m-header__verge-logo
+.#{$m-header__logo},
+.#{$m-header__verge-logo}
     width: 315px
 
-.m-header__verge-logo,
-.m-header__hub-logo
+.#{$m-header__verge-logo},
+.#{$m-header__hub-logo}
     float: left
 
     @extend %transition-background-color1025
 
-.m-header__verge-logo:hover,
-.m-header__social a:hover
+.#{$m-header__verge-logo}:hover,
+.#{$m-header__social} a:hover
     background-color: $scarlet
 
-.-light-social-icons .m-header__social a,
-.-light-social-icons .m-header__social a:hover
+.#{$-light-social-icons} .#{$m-header__social} a,
+.#{$-light-social-icons} .#{$m-header__social} a:hover
     color: $white

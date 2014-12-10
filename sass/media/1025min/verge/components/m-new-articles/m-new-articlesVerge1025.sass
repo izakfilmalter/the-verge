@@ -1,4 +1,4 @@
-.m-new-articles
+.#{$m-new-articles}
     overflow: hidden
 
     @extend %position-relative1025
@@ -11,7 +11,7 @@
     height: 0
     width: 100%
 
-    &.is-animated
+    &.#{$is-animated}
         -webkit-transition: height 0.2s ease-in-out
         -moz-transition: height 0.2s ease-in-out
         -o-transition: height 0.2s ease-in-out
@@ -41,7 +41,7 @@
             height: 0
             width: 0
 
-.m-new-articles__toggle
+.#{$m-new-articles__toggle}
     margin: 20px initial initial
 
     height: 60px
@@ -57,14 +57,14 @@
     em
         font-size: .85rem
 
-.m-new-articles__date
+.#{$m-new-articles__date}
     @extend %position-absolute1025
     +position(0, initial, initial, 0)
 
-.m-new-articles__stories
+.#{$m-new-articles__stories}
     font-size: .85rem
 
-.m-new-articles__pane
+.#{$m-new-articles__pane}
     overflow: hidden
     -ms-overflow-style: auto
     -webkit-overflow-scrolling: auto
@@ -82,7 +82,7 @@
     -o-transform: none
     transform: none
 
-.m-new-articles__list
+.#{$m-new-articles__list}
     font-size: 0
 
     white-space: nowrap
@@ -109,13 +109,13 @@
     -o-perspective: 1000
     perspective: 1000
 
-.is-new-articles-open .m-new-articles__toggle strong::after
+.#{$is-new-articles-open} .#{$m-new-articles__toggle} strong::after
     border-width: 0 5px 5px 5px
     border-top-color: transparent
     border-bottom-color: $white
 
-.realcsstransforms3d .is-new-articles-open .m-new-articles,
-.no-realcsstransforms3d .is-new-articles-open .m-new-articles
+.#{$realcsstransforms3d} .#{$is-new-articles-open} .#{$m-new-articles},
+.#{$no-realcsstransforms3d} .#{$is-new-articles-open} .#{$m-new-articles}
     border-bottom: 1px solid #ddd
 
     height: 460px
