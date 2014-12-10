@@ -1749,7 +1749,7 @@
   }
 }
 @media (max-width: 728px) {
-  head[data-network='eater'] + body .harmony-video {
+  head[data-network='eater'] + body .HRMj {
     display: block;
     border-right: solid 10px #fff;
     height: 100%;
