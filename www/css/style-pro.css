@@ -1744,7 +1744,7 @@
   }
 }
 @media (max-width: 727px) {
-  head[data-network='eater'] + body .harmony-video {
+  head[data-network='eater'] + body .HRMj {
     display: none;
   }
 }
