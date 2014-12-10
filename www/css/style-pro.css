@@ -1651,16 +1651,16 @@
   }
 }
 @media (max-width: 400px) {
-  .m-chorus-modal__window {
+  .CMa {
     margin: 0 initial initial;
     max-height: 100%;
     width: 100%;
   }
 
-  body.chorus-modal-open #body-wrapper,
-  body.chorus-modal-open #super,
-  body.chorus-modal-loading #body-wrapper,
-  body.chorus-modal-loading #super {
+  body.CMb #idb,
+  body.CMb #idc,
+  body.CMc #idb,
+  body.CMc #idc {
     -webkit-filter: blur(0);
     -ms-filter: blur(0);
     -moz-filter: blur(0);
