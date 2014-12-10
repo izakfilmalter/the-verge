@@ -1673,7 +1673,7 @@
     position: absolute;
   }
 
-  head[data-network='sbn'] + body .harmony-content-link .harmony-thumbnail {
+  head[data-network='sbn'] + body .HRMa .HRMb {
     display: none;
   }
 
@@ -1693,53 +1693,53 @@
     width: 100%;
   }
 
-  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship,
-  head[data-network='sbn'] + body .harmony-content-link .harmony-title,
-  head[data-network='sbn'] + body .harmony-content-link .harmony-byline,
-  head[data-network='sbn'] + body .harmony-content-link .harmony-description {
+  head[data-network='sbn'] + body .HRMa .HRMd,
+  head[data-network='sbn'] + body .HRMa .HRMe,
+  head[data-network='sbn'] + body .HRMa .HRMf,
+  head[data-network='sbn'] + body .HRMa .HRMg {
     float: left;
     width: 100%;
   }
-  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship .harmony-preamble {
+  head[data-network='sbn'] + body .HRMa .HRMd .HRMh {
     float: left;
   }
-  head[data-network='sbn'] + body .harmony-content-link .harmony-sponsorship .harmony-logo {
+  head[data-network='sbn'] + body .HRMa .HRMd .HRMc {
     float: right;
   }
 
-  head[data-network='polygon'] + body .harmony-content-link {
+  head[data-network='polygon'] + body .HRMa {
     min-height: 260px;
   }
-  head[data-network='polygon'] + body .harmony-content-link .harmony-logo {
+  head[data-network='polygon'] + body .HRMa .HRMc {
     top: 15px;
     right: 15px;
   }
-  head[data-network='polygon'] + body .block_f .harmony-content-link {
+  head[data-network='polygon'] + body .u .HRMa {
     min-height: 600px;
   }
 
-  head[data-network='polygon'] + body .placeableadunit {
+  head[data-network='polygon'] + body .sh {
     margin: 0 initial;
   }
 
-  head[data-network='eater'] + body .m-entry-box .harmony-content-link .harmony-thumbnail {
+  head[data-network='eater'] + body .EB .HRMa .HRMb {
     height: 200px;
   }
-  head[data-network='eater'] + body .m-entry-box__bleed .harmony-content-link {
+  head[data-network='eater'] + body .EBa .HRMa {
     margin: initial 0;
   }
-  head[data-network='eater'] + body .m-entry-box__bleed .harmony-content-link .harmony-thumbnail {
+  head[data-network='eater'] + body .EBa .HRMa .HRMb {
     height: 400px;
   }
-  head[data-network='eater'] + body .m-entry-box__bleed-square .harmony-content-link .harmony-thumbnail {
+  head[data-network='eater'] + body .EBb .HRMa .HRMb {
     height: 250px;
   }
-  head[data-network='eater'] + body .m-entry-box__bleed-tall .harmony-content-link .harmony-thumbnail {
+  head[data-network='eater'] + body .EBc .HRMa .HRMb {
     height: 600px;
   }
 
-  head[data-network='vox'] + body .harmony-content-link .harmony-thumbnail,
-  head[data-network='vox'] + body .harmony-content-link .harmony-thumbnail .harmony-tint-overlay {
+  head[data-network='vox'] + body .HRMa .HRMb,
+  head[data-network='vox'] + body .HRMa .HRMb .HRMi {
     height: 600px;
   }
 }
