@@ -46,7 +46,7 @@
     margin: 0.5rem 0 0 0;
   }
 
-  .Fe {
+  .He {
     padding: 1.5rem initial initial;
   }
 
@@ -57,28 +57,28 @@
   }
 }
 @media (min-width: 600px) {
-  .p-big-search .label::after, .p-basic-article-list.hide-mobile-blurbs .p-basic-article-list__node .body .blurb, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
+  .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
   .Fd .Fj {
     display: block;
   }
 
-  .p-button-social .p-button__count, .p-button-social__label {
+  .BSO .BSOa, .BSOb {
     display: inline;
   }
 
-  .p-button-social.icon-only .p-button-social__label,
-  .p-button-social.icon-only .p-button__count, .Fi {
+  .BSO.dh .BSOb,
+  .BSO.dh .BSOa, .Fi {
     display: none;
   }
 
-  .Fe,
+  .He,
   .Fg {
     position: absolute;
   }
 
-  .p-basic-article-list__node .body, .F {
+  .BALa .sk, .F {
     position: relative;
   }
 
@@ -94,7 +94,7 @@
     font-size: 17px;
   }
 
-  .p-big-search form input[type='submit'] {
+  .BS form input[type='submit'] {
     font-size: 0.7rem;
     line-height: 1.9rem;
     top: 0.4rem;
@@ -103,14 +103,14 @@
     height: 2rem;
     width: 2rem;
   }
-  .p-big-search form input[type='search'],
-  .p-big-search form input[type='text'] {
+  .BS form input[type='search'],
+  .BS form input[type='text'] {
     font-size: 1.5rem;
   }
-  .p-big-search .label {
+  .BS .sf {
     font-size: 1.5rem;
   }
-  .p-big-search .label::after {
+  .BS .sf::after {
     border-style: solid;
     border-color: transparent;
     border-width: 25px 0 25px 10px;
@@ -128,53 +128,53 @@
     font-size: 1.25rem;
   }
 
-  .p-basic-article-list.hide-mobile-blurbs .p-basic-article-list__node .image .p-dynamic-image {
+  .BAL.dg .BALa .sj .DP {
     height: 150px;
   }
 
-  .p-basic-article-list__node {
+  .BALa {
     margin-top: 2rem;
   }
-  .p-basic-article-list__node .body h3 {
+  .BALa .sk h3 {
     font-size: 1.25rem;
     margin: 0;
     padding: 1.5rem initial initial;
   }
-  .p-basic-article-list__node .body h5 {
+  .BALa .sk h5 {
     left: 1rem;
   }
-  .p-basic-article-list__node .body .blurb {
+  .BALa .sk .sl {
     font-size: 14px;
   }
 
-  .p-entry-header h1 {
+  .EH h1 {
     font-size: 2rem;
   }
-  .p-entry-header h2 {
+  .EH h2 {
     font-size: 1.25rem;
   }
 
-  .p-button-social .p-button__count {
+  .BSO .BSOa {
     margin: 0 0 0 0.25rem;
   }
 
-  .p-button-social__label {
+  .BSOb {
     margin: initial initial initial 0.5rem;
   }
 
-  .p-button-social .p-button__count,
-  .p-button-social__label {
+  .BSO .BSOa,
+  .BSOb {
     color: #fff;
   }
 
-  .m-hub-admin-menu:hover,
-  .m-hub-admin-menu.is-open {
+  .HAM:hover,
+  .HAM.ig {
     top: 0;
     border-radius: initial 0 initial initial;
     width: 100%;
   }
 
-  .m-header__verge-logo {
+  .Hb {
     width: 180px;
   }
 
@@ -193,7 +193,7 @@
     width: 25%;
   }
 
-  .Fe {
+  .He {
     text-align: right;
     float: none;
     right: 0;
@@ -209,7 +209,7 @@
     color: #cacaca;
   }
 
-  .Fe,
+  .He,
   .Fg {
     bottom: 0;
     left: 0;
@@ -250,7 +250,7 @@
     width: 20%;
   }
 
-  .m-new-articles__toggle em {
+  .NAa em {
     font-size: 0.75rem;
   }
 }

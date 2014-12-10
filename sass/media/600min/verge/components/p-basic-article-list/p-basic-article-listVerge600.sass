@@ -1,15 +1,15 @@
-.p-basic-article-list.hide-mobile-blurbs
-    .p-basic-article-list__node
-        .image .p-dynamic-image
+.#{$p-basic-article-list}.#{$hide-mobile-blurbs}
+    .#{$p-basic-article-list__node}
+        .#{$image} .#{$p-dynamic-image}
             height: 150px
 
-        .body .blurb
+        .#{$body} .#{$blurb}
             @extend %display-block600
 
-.p-basic-article-list__node
+.#{$p-basic-article-list__node}
     margin-top: 2rem
 
-    .body
+    .#{$body}
         @extend %position-relative600
 
         h3
@@ -22,5 +22,5 @@
         h5
             +position(initial, initial, initial, 1rem)
 
-        .blurb
+        .#{$blurb}
             font-size: 14px
