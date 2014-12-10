@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 320px) {
   head {
     font-family: "bp-xx-small 320px";
@@ -649,11 +650,11 @@
   }
 }
 @media (min-width: 1025px) {
-  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DP, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni {
+  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DP, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg {
     display: block;
   }
 
-  .Hd::after, .Hd li, .B, .Nd, .Ne li, .Ng a, .Na li, .NA strong::after {
+  .Hd::after, .Hd li, .B, .Nd, .Ne li, .Ng a, .Na li, .NA strong::after, .NAf {
     display: inline-block;
   }
 
@@ -666,11 +667,11 @@
     display: none;
   }
 
-  .EHa::after, .Hd, .B .C, .N.ha, .Nb, .Nc, .Nf.sa::before, .Nf.sa::after, .Nf .da, .Ng, .Ng .sb, .Nh, .Na li.dc > a::after, .Na li.hc, .Na li.hd, .Na li.hd .dd, .Ni, .NAb {
+  .EHa::after, .Hd, .B .C, .N.ha, .Nb, .Nc, .Nf.sa::before, .Nf.sa::after, .Nf .da, .Ng, .Ng .sb, .Nh, .Na li.dc > a::after, .Na li.hc, .Na li.hd, .Na li.hd .dd, .Ni, .NAb, .NAg, .NAg::before {
     position: absolute;
   }
 
-  .Hc, .Hd a, .Hd li, .N.hb, .N.ha, .Nd, .Ne a, .Nf, .Nf.sa, .Ng a, .Na li.dc > a, .Na li, .NA, .NA strong::after, .NAd, .NAe {
+  .Hc, .Hd a, .Hd li, .N.hb, .N.ha, .Nd, .Ne a, .Nf, .Nf.sa, .Ng a, .Na li.dc > a, .Na li, .NA, .NA strong::after, .NAd, .NAe, .NAf {
     position: relative;
   }
 
@@ -692,7 +693,9 @@
 
   .Nf.hf::before,
   .Nf.hf::after,
-  .Ni {
+  .Ni,
+  .NAg,
+  .NAg::before {
     z-index: 2;
   }
 
@@ -1481,19 +1484,17 @@
   }
 
   .NA {
-    overflow: hidden;
     top: initial;
     right: intial;
     border-right: 1px solid #fa4b2a;
     border-left: 1px solid #fa4b2a;
-    height: 0;
     width: 100%;
   }
-  .NA.i {
-    -webkit-transition: height 0.2s ease-in-out;
-    -moz-transition: height 0.2s ease-in-out;
-    -o-transition: height 0.2s ease-in-out;
-    transition: height 0.2s ease-in-out;
+  .NA.i, .NA.i .NAe {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .NA strong {
     font-size: 2.5rem;
@@ -1509,7 +1510,6 @@
     border-style: solid;
     border-color: transparent;
     border-top-color: #fff;
-    height: 0;
     width: 0;
   }
 
@@ -1538,11 +1538,9 @@
   }
 
   .NAd {
-    overflow: hidden;
     -ms-overflow-style: auto;
     -webkit-overflow-scrolling: auto;
     overflow-scrolling: auto;
-    height: 460px;
     padding: 0 44px;
     -webkit-transform: none;
     -moz-transform: none;
@@ -1556,7 +1554,6 @@
     white-space: nowrap;
     float: left;
     margin: 0;
-    height: 460px;
     padding: 0;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1569,6 +1566,69 @@
     -o-perspective: 1000;
     perspective: 1000;
   }
+  .NAe * {
+    white-space: normal;
+  }
+
+  .NAf {
+    vertical-align: top;
+    width: 311px;
+    padding-top: 2rem;
+  }
+
+  .NAg {
+    background: #fcfcfc;
+    color: transparent;
+    top: 0;
+    width: 46px;
+  }
+  .NAg::before {
+    font-family: "verge-font-icons";
+    font-size: 1.5rem;
+    line-height: 44px;
+    color: #444;
+    text-align: center;
+    text-indent: 0;
+    opacity: 0.1;
+    top: 50%;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -22px;
+    height: 44px;
+    width: 44px;
+    -webkit-transition: opacity 100ms;
+    -moz-transition: opacity 100ms;
+    -o-transition: opacity 100ms;
+    transition: opacity 100ms;
+  }
+  .NAg.ho {
+    left: 0;
+    border-right: 1px solid #mercury;
+  }
+  .NAg.ho::before {
+    content: "";
+  }
+  .NAg.hp {
+    right: 0;
+  }
+  .NAg.hp::before {
+    content: "";
+  }
+  .NAg.ih:hover {
+    background: #e3e3e3;
+  }
+  .NAg.ih:hover::before {
+    opacity: 0.8;
+  }
+  .NAg.ih::before {
+    opacity: 0.4;
+  }
+
+  .NA,
+  .NAd,
+  .NAg {
+    overflow: hidden;
+  }
 
   .ie .NAa strong::after {
     border-width: 0 5px 5px 5px;
@@ -1579,12 +1639,30 @@
   .t .ie .NA,
   .ta .ie .NA {
     border-bottom: 1px solid #ddd;
-    height: 460px;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
     transform: none;
+  }
+
+  .NAf,
+  .NAg.hp {
+    border-left: 1px solid #mercury;
+  }
+
+  .NA,
+  .NA strong::after {
+    height: 0;
+  }
+
+  .NAd,
+  .NAe,
+  .NAf,
+  NAg,
+  .t .ie .NA,
+  .ta .ie .NA {
+    height: 460px;
   }
 }
 @media (min-width: 1200px) {

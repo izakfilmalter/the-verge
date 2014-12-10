@@ -1,6 +1,4 @@
 .#{$m-new-articles}
-    overflow: hidden
-
     @extend %position-relative1025
     top: initial
     right: intial
@@ -8,14 +6,14 @@
     border-right: 1px solid $pomegranate
     border-left: 1px solid $pomegranate
 
-    height: 0
     width: 100%
 
-    &.#{$is-animated}
-        -webkit-transition: height 0.2s ease-in-out
-        -moz-transition: height 0.2s ease-in-out
-        -o-transition: height 0.2s ease-in-out
-        transition: height 0.2s ease-in-out
+    &.#{$is-animated},
+    &.#{$is-animated} .#{$m-new-articles__list}
+        -webkit-transition: all 0.2s ease-in-out
+        -moz-transition: all 0.2s ease-in-out
+        -o-transition: all 0.2s ease-in-out
+        transition: all 0.2s ease-in-out
 
     strong
         font-size: 2.5rem
@@ -38,7 +36,6 @@
             border-color: transparent
             border-top-color: $white
 
-            height: 0
             width: 0
 
 .#{$m-new-articles__toggle}
@@ -65,14 +62,11 @@
     font-size: .85rem
 
 .#{$m-new-articles__pane}
-    overflow: hidden
     -ms-overflow-style: auto
     -webkit-overflow-scrolling: auto
     overflow-scrolling: auto
 
     @extend %position-relative1025
-
-    height: 460px
 
     padding: 0 44px
 
@@ -93,8 +87,6 @@
 
     margin: 0
 
-    height: 460px
-
     padding: 0
 
     -webkit-transform: translate3d(0,0,0)
@@ -109,6 +101,90 @@
     -o-perspective: 1000
     perspective: 1000
 
+    *
+        white-space: normal
+
+.#{$m-new-articles__day}
+    vertical-align: top
+
+    @extend %display-inline-block1025
+
+    @extend %position-relative1025
+
+    width: 311px
+
+    padding-top: 2rem
+
+.#{$m-new-articles__controls}
+    background: $alabaster
+
+    color: transparent
+
+    @extend %display-block1025
+
+    @extend %position-absolute1025
+    +position(0, initial, initial, initial)
+
+    width: 46px
+
+    &::before
+        font-family: "verge-font-icons"
+
+        font-size: 1.5rem
+        line-height: 44px
+        color: $tundora
+
+        text-align: center
+        text-indent: 0
+
+        opacity: .1
+
+        @extend %position-absolute1025
+        top: 50%
+        left: 50%
+
+        margin-top: -22px
+        margin-left: -22px
+
+        height: 44px
+        width: 44px
+
+        -webkit-transition: opacity 100ms
+        -moz-transition: opacity 100ms
+        -o-transition: opacity 100ms
+        transition: opacity 100ms
+
+    &.#{$-previous}
+        +position(initial, initial, initial, 0)
+
+        border-right: 1px solid #mercury
+
+        &::before
+            @extend icon-left-open::before !optional
+            content: '\e802'
+
+    &.#{$-next}
+        +position(initial, 0, initial, initial)
+
+        &::before
+            @extend icon-right-open::before !optional
+            content: '\e803'
+
+    &.#{$is-active}
+        &:hover
+            background: $mercury
+
+            &::before
+                opacity: .8
+
+        &::before
+            opacity: .4
+
+.#{$m-new-articles},
+.#{$m-new-articles__pane},
+.#{$m-new-articles__controls}
+    overflow: hidden
+
 .#{$is-new-articles-open} .#{$m-new-articles__toggle} strong::after
     border-width: 0 5px 5px 5px
     border-top-color: transparent
@@ -116,12 +192,26 @@
 
 .#{$realcsstransforms3d} .#{$is-new-articles-open} .#{$m-new-articles},
 .#{$no-realcsstransforms3d} .#{$is-new-articles-open} .#{$m-new-articles}
-    border-bottom: 1px solid #ddd
-
-    height: 460px
+    border-bottom: 1px solid $alto
 
     -webkit-transform: none
     -moz-transform: none
     -ms-transform: none
     -o-transform: none
     transform: none
+
+.#{$m-new-articles__day},
+.#{$m-new-articles__controls}.#{$-next}
+    border-left: 1px solid #mercury
+
+.#{$m-new-articles},
+.#{$m-new-articles} strong::after
+    height: 0
+
+.#{$m-new-articles__pane},
+.#{$m-new-articles__list},
+.#{$m-new-articles__day},
+#{$m-new-articles__controls},
+.#{$realcsstransforms3d} .#{$is-new-articles-open} .#{$m-new-articles},
+.#{$no-realcsstransforms3d} .#{$is-new-articles-open} .#{$m-new-articles}
+    height: 460px
