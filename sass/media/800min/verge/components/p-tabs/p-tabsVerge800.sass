@@ -1,10 +1,10 @@
-.p-tabs
+.#{$p-tabs}
     padding: initial initial initial 1rem
 
-    &.-no-padding
+    &.#{$-no-padding}
         padding: initial initial initial 0
 
-    ul li.-secondary
+    ul li.#{$-secondary}
         background-color: $pomegranate
 
         font-size: 1rem
@@ -14,17 +14,17 @@
 
         padding: .2rem .6rem
 
-    &.-has-starburst .p-starburst
+    &.#{$-has-starburst} .#{$p-starburst}
         @extend %display-block800
 
-    &.-has-starburst ul,
-    &.-has-starburst.-keep-starburst ul
+    &.#{$-has-starburst} ul,
+    &.#{$-has-starburst}.#{$-keep-starburst} ul
         padding: initial initial initial 80px !important
 
-    ul li.-secondary,
-    &.js-collapsible ul li
+    ul li.#{$-secondary},
+    &.#{$js-collapsible} ul li
         @extend %display-inline-block800
 
-    &.js-collapsible ul li.-is-active a::after,
-    &.js-collapsible ul li select
+    &.#{$js-collapsible} ul li.#{$-is-active} a::after,
+    &.#{$js-collapsible} ul li select
         @extend %display-none800
