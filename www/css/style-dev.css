@@ -1659,7 +1659,7 @@
   .m-new-articles__pane,
   .m-new-articles__list,
   .m-new-articles__day,
-  m-new-articles__controls,
+  .m-new-articles__controls,
   .realcsstransforms3d .is-new-articles-open .m-new-articles,
   .no-realcsstransforms3d .is-new-articles-open .m-new-articles {
     height: 460px;
