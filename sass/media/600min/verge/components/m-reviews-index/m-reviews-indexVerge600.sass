@@ -1,0 +1,60 @@
+.#{$m-reviews-index}
+    @extend %display-table600
+    table-layout: fixed
+
+    width: 100%
+
+    .#{$m-reviews-index__sidebar}
+        border-right-color: $alto
+
+        width: 170px
+
+        & > .#{$p-rock}
+            @extend %display-block600
+
+.#{$m-reviews-index__sidebar}
+    .#{$p-tabs}
+        @extend %position-relative600
+
+        margin: .9rem initial initial
+
+        li
+            font-size: 1.3rem
+
+            text-align: left
+
+            border-color-right: $white
+
+            width: auto
+
+.#{$m-reviews-index__hero}
+    .#{$image}
+        .#{$p-dynamic-image}
+            height: 300px
+
+    .#{$review-container}
+        .#{$review}
+            h1
+                font-size: 2.25rem
+
+            h3
+                font-size: 1.5rem
+
+    .#{$timn-icon}
+        +position(initial, initial, -1.25rem, 1.25rem)
+
+        margin: 0
+
+        height: 125px
+        width: 125px
+
+.#{$m-reviews-index} .#{$m-reviews-index__sidebar},
+.#{$m-reviews-index} .#{$m-reviews-index__content}
+    vertical-align: top
+
+    @extend %display-table-cell600
+
+.#{$m-reviews-index} .#{$m-reviews-index__sidebar},
+.#{$m-reviews-index__sidebar} .#{$p-tabs} li
+    border-width-right: 1px
+    border-style-right: solid

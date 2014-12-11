@@ -1,0 +1,46 @@
+.#{$m-reviews-index__sidebar}
+    .#{$p-starburst}
+        @extend %display-block1025
+
+        @extend %position-absolute1025
+        +position(-25px, initial, initial, -15px)
+
+    .#{$p-tabs}
+        margin: 2rem initial initial
+
+.#{$m-reviews-index__hero}
+    .#{$image}
+        .#{$p-dynamic-image}
+            height: 400px
+
+    .#{$review-container}
+        .#{$review}
+            h1
+                font-size: 3rem
+
+    .#{$timn-icon}
+        height: 175px
+        width: 175px
+
+.#{$m-reviews-index__node}
+    .#{$image}
+        .#{$p-compare-it-ribbon}
+            @extend %display-block1025
+
+    .#{$content}
+        .#{$review}
+            width: 70%
+
+            padding: initial initial 1rem
+
+            &.#{$-timn}
+                width: 100%
+
+        .#{$info}
+            width: 30%
+
+            padding: 1rem 0 0 0
+
+.#{$m-reviews-index__node} .#{$content} .#{$review},
+.#{$m-reviews-index__node} .#{$content} .#{$info}
+    float: left

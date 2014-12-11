@@ -1,0 +1,54 @@
+.#{$m-reviews-index__node}
+    border-bottom: 1px dotted #alto
+
+    .#{$image}
+        float: left
+        width: 40%
+
+    .#{$content}
+        float: left
+
+        width: 60%
+
+        padding: 0
+
+        .#{$review}
+            padding: 1rem 1rem 0 1.5rem
+
+        .#{$info}
+            padding: 0 1rem 1rem 1.5rem
+
+    .#{$timn-icon}
+        +position(initial, initial, .5rem, .5rem)
+        top: initial
+
+        margin: 0
+
+        height: 75px
+        width: 75px
+
+
+.#{$m-reviews-index__node},
+.#{$m-reviews-index__node} .#{$content}
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif")
+    *zoom: 1
+
+.#{$m-reviews-index__node}::before,
+.#{$m-reviews-index__node}::after,
+.#{$m-reviews-index__node} .#{$content}::before,
+.#{$m-reviews-index__node} .#{$content}::after
+    content: "."
+
+    overflow: hidden
+
+    @extend %display-block700
+
+    height: 0
+
+.#{$m-reviews-index__node} .#{$image},
+.#{$m-reviews-index__node} .#{$content}
+    float: left
+
+.#{$m-reviews-index__node}::after,
+.#{$m-reviews-index__node} .#{$content}::after
+    clear: both

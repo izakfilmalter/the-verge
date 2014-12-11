@@ -1,0 +1,30 @@
+.#{$m-reviews-index__hero}
+    .#{$image}
+        .#{$p-dynamic-image}
+            height: 350px
+
+    .#{$p-review-score}
+        @extend %display-block800
+
+        &.#{$small}
+            @extend %display-none800
+
+    .#{$review-container}
+        .#{$review}
+            min-height: 285px
+
+            margin: initial 340px initial initial
+
+            h3
+                margin: 0 0 1rem
+
+    .#{$review-container}
+        .#{$ad}
+            @extend %display-block800
+
+            @extend %position-absolute800
+            +position(0, .75rem, initial, initial)
+
+    .#{$timn-icon}
+        height: 150px
+        width: 150px

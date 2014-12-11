@@ -56,12 +56,16 @@
   .Fd {
     width: 33%;
   }
+
+  .RIc .sj .DP {
+    height: 250px;
+  }
 }
 @media (min-width: 600px) {
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj, .FId .sf::after {
+  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk {
     display: block;
   }
 
@@ -75,6 +79,10 @@
     display: none;
   }
 
+  .RI {
+    display: table;
+  }
+
   .FIa thead {
     display: table-header-group;
   }
@@ -82,7 +90,8 @@
   .FIc th:nth-child(2),
   .FIc td:nth-child(2),
   .FIc th:nth-child(3),
-  .FIc td:nth-child(3) {
+  .FIc td:nth-child(3), .RI .RIa,
+  .RI .RIb {
     display: table-cell;
   }
 
@@ -91,7 +100,7 @@
     position: absolute;
   }
 
-  .BALa .sk, .F {
+  .BALa .sk, .F, .RIa .PT {
     position: relative;
   }
 
@@ -100,6 +109,10 @@
   }
   head::after {
     content: "bp-small - min-width: 600px";
+  }
+
+  .RIa .PT {
+    z-index: 10;
   }
 
   html,
@@ -304,9 +317,59 @@
   .FId .sf {
     line-height: 50px;
   }
+
+  .RI {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .RI .RIa {
+    border-right-color: #ddd;
+    width: 170px;
+  }
+
+  .RIa .PT {
+    margin: 0.9rem initial initial;
+  }
+  .RIa .PT li {
+    font-size: 1.3rem;
+    text-align: left;
+    border-color-right: #fff;
+    width: auto;
+  }
+
+  .RIc .sj .DP {
+    height: 300px;
+  }
+  .RIc .dl .sp h1 {
+    font-size: 2.25rem;
+  }
+  .RIc .dl .sp h3 {
+    font-size: 1.5rem;
+  }
+  .RIc .da {
+    bottom: -1.25rem;
+    left: 1.25rem;
+    margin: 0;
+    height: 125px;
+    width: 125px;
+  }
+
+  .RI .RIa,
+  .RI .RIb {
+    vertical-align: top;
+  }
+
+  .RI .RIa,
+  .RIa .PT li {
+    border-width-right: 1px;
+    border-style-right: solid;
+  }
 }
 @media (min-width: 700px) {
-  .B, .Be, .Be::before {
+  .B, .Be, .Be::before, .RId::before,
+  .RId::after,
+  .RId .ss::before,
+  .RId .ss::after {
     display: block;
   }
 
@@ -541,9 +604,61 @@
   .NAa {
     border-left: none;
   }
+
+  .RId {
+    border-bottom: 1px dotted #alto;
+  }
+  .RId .sj {
+    float: left;
+    width: 40%;
+  }
+  .RId .ss {
+    float: left;
+    width: 60%;
+    padding: 0;
+  }
+  .RId .ss .sp {
+    padding: 1rem 1rem 0 1.5rem;
+  }
+  .RId .ss .st {
+    padding: 0 1rem 1rem 1.5rem;
+  }
+  .RId .da {
+    bottom: 0.5rem;
+    left: 0.5rem;
+    top: initial;
+    margin: 0;
+    height: 75px;
+    width: 75px;
+  }
+
+  .RId,
+  .RId .ss {
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif");
+    *zoom: 1;
+  }
+
+  .RId::before,
+  .RId::after,
+  .RId .ss::before,
+  .RId .ss::after {
+    content: ".";
+    overflow: hidden;
+    height: 0;
+  }
+
+  .RId .sj,
+  .RId .ss {
+    float: left;
+  }
+
+  .RId::after,
+  .RId .ss::after {
+    clear: both;
+  }
 }
 @media (min-width: 800px) {
-  .PT ul li.hk, .EHd {
+  .PT ul li.hk, .EHd, .RIc .dl .sr {
     position: absolute;
   }
 
@@ -561,11 +676,11 @@
   }
 
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae, .FIa .forum-meta {
+  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr {
     display: block;
   }
 
-  .PT.di ul li.hn a::after, .PT.di ul li select {
+  .PT.di ul li.hn a::after, .PT.di ul li select, .RIc .RS.sq {
     display: none;
   }
 
@@ -754,6 +869,25 @@
   .FIa li {
     padding: 0.5rem;
   }
+
+  .RIc .sj .DP {
+    height: 350px;
+  }
+  .RIc .dl .sp {
+    min-height: 285px;
+    margin: initial 340px initial initial;
+  }
+  .RIc .dl .sp h3 {
+    margin: 0 0 1rem;
+  }
+  .RIc .dl .sr {
+    top: 0;
+    right: 0.75rem;
+  }
+  .RIc .da {
+    height: 150px;
+    width: 150px;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -761,6 +895,13 @@
   }
   head::after {
     content: "bp-medium-large - min-width: 900px";
+  }
+
+  .RId .sj {
+    width: 30%;
+  }
+  .RId .ss {
+    width: 70%;
   }
 }
 @media (min-width: 1025px) {
@@ -817,7 +958,8 @@
     z-index: 2;
   }
 
-  .N.ha {
+  .N.ha,
+  .RIa .PTa {
     z-index: 1;
   }
 
