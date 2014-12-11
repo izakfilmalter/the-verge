@@ -801,6 +801,10 @@
     transition: background-color 100ms;
   }
 
+  .QA {
+    z-index: 1000001;
+  }
+
   .B {
     z-index: 4;
   }

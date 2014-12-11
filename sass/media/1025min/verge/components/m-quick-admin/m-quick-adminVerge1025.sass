@@ -1,0 +1,58 @@
+.#{$m-quick-admin}
+
+    @extend %position-fixed1025
+    +position(15%, 100%, initial, initial)
+
+    &:hover
+        +position(initial, initial, initial, 0)
+        right: initial
+
+        &::after
+            background-color: transparent
+
+            color: $pomegranate
+
+            +position(.4rem, .4rem, initial, initial)
+
+            border: none
+
+            padding: 0
+
+    &::after
+        content: "\e800"
+
+        font-family: "verge-font-icons"
+
+        @extend %display-block1025
+
+        @extend %position-absolute1025
+        +position(0, -1.7rem, initial, initial)
+
+        padding: .2rem .4rem
+
+    h4
+        @extend %display-block1025
+
+    label
+        @extend %display-none1025
+
+    ul
+        font-size: .8rem
+
+        @extend %display-block1025
+
+        @extend %position-relative1025
+        bottom: initial
+        left: initial
+
+        width: auto
+
+        li
+            padding: 0
+
+.#{$m-quick-admin},
+.#{$m-quick-admin}::after
+    background-color: rgba($black,0.9)
+
+    border: 1px solid $alto
+    border-left: 0
