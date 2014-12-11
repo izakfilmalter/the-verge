@@ -1,0 +1,53 @@
+.#{$m-forum-index__icons}
+    thead
+        @extend %display-table-header-group600
+
+    .#{$icon}
+        height: 3.5rem
+
+.#{$m-forum-header}
+    height: 50px
+
+    h1
+        font-size: 2rem
+
+    .#{$label}
+        font-size: 1.25rem
+
+        padding: .25rem initial initial initial
+
+        &::after
+            @extend %display-block600
+
+            border-width: 25px 0 25px 10px
+            border-style: solid
+            border-color: transparent
+            border-left-color: $black
+
+            height: 0
+            width: 0
+
+.#{$m-forum-header__button}
+    font-size: .7rem
+    line-height: 1.8rem
+
+    +position(.4rem, 1rem, initial, initial)
+
+    border-radius: 2rem
+
+    height: 2rem
+    width: 2rem
+
+.#{$m-forum-header} h1,
+.#{$m-forum-header} .#{$label}
+    line-height: 50px
+
+.#{$m-forum-index__table} th:nth-child(1) .#{$mobile-meta},
+.#{$m-forum-index__table} td:nth-child(1) .#{$mobile-meta}
+    @extend %display-none600min
+
+.#{$m-forum-index__table} th:nth-child(2),
+.#{$m-forum-index__table} td:nth-child(2),
+.#{$m-forum-index__table} th:nth-child(3),
+.#{$m-forum-index__table} td:nth-child(3)
+    @extend %display-table-cell600

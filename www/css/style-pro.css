@@ -61,7 +61,7 @@
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj {
+  .Fd .Fj, .FId .sf::after {
     display: block;
   }
 
@@ -70,8 +70,20 @@
   }
 
   .BSO.dh .BSOb,
-  .BSO.dh .BSOa, .Fi {
+  .BSO.dh .BSOa, .Fi, .FIc th:nth-child(1) .dj,
+  .FIc td:nth-child(1) .dj {
     display: none;
+  }
+
+  .FIa thead {
+    display: table-header-group;
+  }
+
+  .FIc th:nth-child(2),
+  .FIc td:nth-child(2),
+  .FIc th:nth-child(3),
+  .FIc td:nth-child(3) {
+    display: table-cell;
   }
 
   .He,
@@ -254,6 +266,44 @@
   .NAa em {
     font-size: 0.75rem;
   }
+
+  .FIa .sb {
+    height: 3.5rem;
+  }
+
+  .FId {
+    height: 50px;
+  }
+  .FId h1 {
+    font-size: 2rem;
+  }
+  .FId .sf {
+    font-size: 1.25rem;
+    padding: 0.25rem initial initial initial;
+  }
+  .FId .sf::after {
+    border-width: 25px 0 25px 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #000;
+    height: 0;
+    width: 0;
+  }
+
+  .FIf {
+    font-size: 0.7rem;
+    line-height: 1.8rem;
+    top: 0.4rem;
+    right: 1rem;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .FId h1,
+  .FId .sf {
+    line-height: 50px;
+  }
 }
 @media (min-width: 700px) {
   .B, .Be, .Be::before {
@@ -264,7 +314,7 @@
     display: table;
   }
 
-  .Ba a, .Bd a {
+  .Ba a, .Bd a, .BRa .FIc tbody tr {
     display: table-row;
   }
 
@@ -505,8 +555,13 @@
     display: inline-block;
   }
 
+  .FIc th:nth-child(4),
+  .FIc td:nth-child(4) {
+    display: table-cell;
+  }
+
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae {
+  .Ae, .FIa .forum-meta {
     display: block;
   }
 
@@ -639,6 +694,65 @@
   .Fb,
   .Fc {
     width: 18%;
+  }
+
+  .FIa {
+    width: 100%;
+  }
+  .FIa h3 {
+    font-size: 1.2rem;
+    color: #444;
+    text-transform: none;
+    text-align: left;
+    margin: 0.4rem 0 -0.2rem;
+    padding: 0;
+  }
+  .FIa li {
+    width: 25%;
+  }
+  .FIa .FIb {
+    padding: 1rem 0;
+  }
+  .FIa .sb {
+    margin: 0;
+    height: 4rem;
+  }
+  .FIa .forum-meta {
+    font-size: 0.7rem;
+  }
+
+  .FId {
+    height: 60px;
+  }
+  .FId h1 {
+    font-size: 3rem;
+    padding: 0.3rem initial initial;
+  }
+  .FId .sf {
+    font-size: 2rem;
+  }
+  .FId .sf::after {
+    right: -15px;
+    border-width: 30px 0 30px 15px;
+  }
+
+  .FIf {
+    font-size: 0.9rem;
+    line-height: 2.25rem;
+    top: 0.7rem;
+    border-radius: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .FId h1,
+  .FId .sf {
+    line-height: 60px;
+  }
+
+  .FIa,
+  .FIa li {
+    padding: 0.5rem;
   }
 }
 @media (min-width: 900px) {
@@ -1663,6 +1777,49 @@
   .t .ie .NA,
   .ta .ie .NA {
     height: 460px;
+  }
+
+  .FIa li {
+    width: 20%;
+  }
+
+  .FId {
+    height: 80px;
+  }
+  .FId h1 {
+    font-size: 4.5rem;
+    padding: initial initial initial 2rem;
+  }
+  .FId .sf {
+    font-size: 2.5rem;
+  }
+  .FId .sf::after {
+    right: -20px;
+    border-width: 40px 0 40px 20px;
+  }
+
+  .FIe li {
+    font-size: 1.2rem;
+  }
+
+  .FIf {
+    font-size: 1rem;
+    line-height: 3rem;
+    top: 1rem;
+    border-radius: 3.25rem;
+    border-width: 0.3rem;
+    height: 3.25rem;
+    width: 3.25rem;
+  }
+
+  .FId h1,
+  .FId .sf {
+    line-height: 80px;
+  }
+
+  .FIa,
+  .FIa li {
+    padding: 0.8rem;
   }
 }
 @media (min-width: 1200px) {

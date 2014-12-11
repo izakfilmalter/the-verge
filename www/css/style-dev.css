@@ -61,7 +61,7 @@
   .p-big-search .label::after, .p-basic-article-list.hide-mobile-blurbs .p-basic-article-list__node .body .blurb, .m-footer__search-col .scalable-logo, .m-footer__status-corner, .m-footer__status-corner .m-footer__bottom__status, .m-footer__status-corner .m-footer__bottom__status a, .m-footer__search-col .m-footer__section-header,
   .m-footer__sections-col .m-footer__section-header,
   .m-footer__basics-col .m-footer__section-header,
-  .m-footer__elsewhere-col .m-footer__section-header {
+  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after {
     display: block;
   }
 
@@ -70,8 +70,20 @@
   }
 
   .p-button-social.icon-only .p-button-social__label,
-  .p-button-social.icon-only .p-button__count, .m-footer__back-to-top {
+  .p-button-social.icon-only .p-button__count, .m-footer__back-to-top, .m-forum-index__table th:nth-child(1) .mobile-meta,
+  .m-forum-index__table td:nth-child(1) .mobile-meta {
     display: none;
+  }
+
+  .m-forum-index__icons thead {
+    display: table-header-group;
+  }
+
+  .m-forum-index__table th:nth-child(2),
+  .m-forum-index__table td:nth-child(2),
+  .m-forum-index__table th:nth-child(3),
+  .m-forum-index__table td:nth-child(3) {
+    display: table-cell;
   }
 
   .m-footer__vox-corner,
@@ -254,6 +266,44 @@
   .m-new-articles__toggle em {
     font-size: 0.75rem;
   }
+
+  .m-forum-index__icons .icon {
+    height: 3.5rem;
+  }
+
+  .m-forum-header {
+    height: 50px;
+  }
+  .m-forum-header h1 {
+    font-size: 2rem;
+  }
+  .m-forum-header .label {
+    font-size: 1.25rem;
+    padding: 0.25rem initial initial initial;
+  }
+  .m-forum-header .label::after {
+    border-width: 25px 0 25px 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #000;
+    height: 0;
+    width: 0;
+  }
+
+  .m-forum-header__button {
+    font-size: 0.7rem;
+    line-height: 1.8rem;
+    top: 0.4rem;
+    right: 1rem;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .m-forum-header h1,
+  .m-forum-header .label {
+    line-height: 50px;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before {
@@ -264,7 +314,7 @@
     display: table;
   }
 
-  .m-big-stories__main a, .m-big-stories__story a {
+  .m-big-stories__main a, .m-big-stories__story a, .m-breaker__forum .m-forum-index__table tbody tr {
     display: table-row;
   }
 
@@ -505,8 +555,13 @@
     display: inline-block;
   }
 
+  .m-forum-index__table th:nth-child(4),
+  .m-forum-index__table td:nth-child(4) {
+    display: table-cell;
+  }
+
   .p-tabs.-has-starburst .p-starburst, .p-big-search .label::after, .m-ad__zone-2,
-  .m-ad__zone-4 {
+  .m-ad__zone-4, .m-forum-index__icons .forum-meta {
     display: block;
   }
 
@@ -639,6 +694,65 @@
   .m-footer__sections-col,
   .m-footer__basics-col {
     width: 18%;
+  }
+
+  .m-forum-index__icons {
+    width: 100%;
+  }
+  .m-forum-index__icons h3 {
+    font-size: 1.2rem;
+    color: #444;
+    text-transform: none;
+    text-align: left;
+    margin: 0.4rem 0 -0.2rem;
+    padding: 0;
+  }
+  .m-forum-index__icons li {
+    width: 25%;
+  }
+  .m-forum-index__icons .forum-icon-container {
+    padding: 1rem 0;
+  }
+  .m-forum-index__icons .icon {
+    margin: 0;
+    height: 4rem;
+  }
+  .m-forum-index__icons .forum-meta {
+    font-size: 0.7rem;
+  }
+
+  .m-forum-header {
+    height: 60px;
+  }
+  .m-forum-header h1 {
+    font-size: 3rem;
+    padding: 0.3rem initial initial;
+  }
+  .m-forum-header .label {
+    font-size: 2rem;
+  }
+  .m-forum-header .label::after {
+    right: -15px;
+    border-width: 30px 0 30px 15px;
+  }
+
+  .m-forum-header__button {
+    font-size: 0.9rem;
+    line-height: 2.25rem;
+    top: 0.7rem;
+    border-radius: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .m-forum-header h1,
+  .m-forum-header .label {
+    line-height: 60px;
+  }
+
+  .m-forum-index__icons,
+  .m-forum-index__icons li {
+    padding: 0.5rem;
   }
 }
 @media (min-width: 900px) {
@@ -1663,6 +1777,49 @@
   .realcsstransforms3d .is-new-articles-open .m-new-articles,
   .no-realcsstransforms3d .is-new-articles-open .m-new-articles {
     height: 460px;
+  }
+
+  .m-forum-index__icons li {
+    width: 20%;
+  }
+
+  .m-forum-header {
+    height: 80px;
+  }
+  .m-forum-header h1 {
+    font-size: 4.5rem;
+    padding: initial initial initial 2rem;
+  }
+  .m-forum-header .label {
+    font-size: 2.5rem;
+  }
+  .m-forum-header .label::after {
+    right: -20px;
+    border-width: 40px 0 40px 20px;
+  }
+
+  .m-forum-header__related-hubs li {
+    font-size: 1.2rem;
+  }
+
+  .m-forum-header__button {
+    font-size: 1rem;
+    line-height: 3rem;
+    top: 1rem;
+    border-radius: 3.25rem;
+    border-width: 0.3rem;
+    height: 3.25rem;
+    width: 3.25rem;
+  }
+
+  .m-forum-header h1,
+  .m-forum-header .label {
+    line-height: 80px;
+  }
+
+  .m-forum-index__icons,
+  .m-forum-index__icons li {
+    padding: 0.8rem;
   }
 }
 @media (min-width: 1200px) {
