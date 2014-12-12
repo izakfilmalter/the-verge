@@ -60,12 +60,20 @@
   .RIc .sj .DP {
     height: 250px;
   }
+
+  .Rc .sv h3 {
+    font-size: 2.25rem;
+    width: 65%;
+  }
+  .Rc .RS {
+    width: 30%;
+  }
 }
 @media (min-width: 600px) {
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk {
+  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after {
     display: block;
   }
 
@@ -363,6 +371,52 @@
   .RIa .PT li {
     border-width-right: 1px;
     border-style-right: solid;
+  }
+
+  .Ra {
+    margin: initial 4rem;
+  }
+
+  .Rb {
+    padding: 1.5rem;
+  }
+
+  .Rc .sv h3 {
+    font-size: 2.5rem;
+    float: left;
+    margin: initial initial 1.5rem;
+    width: 100%;
+  }
+  .Rc .sv .RS {
+    width: 25%;
+  }
+  .Rc .sv .dm {
+    margin-top: 0;
+    width: 35%;
+    padding: initial initial initial 2.5rem;
+  }
+
+  .Rd {
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif");
+    *zoom: 1;
+    padding: 0.5rem 0;
+  }
+  .Rd::after {
+    clear: both;
+  }
+  .Rd::before, .Rd::after {
+    content: ".";
+    overflow: hidden;
+    height: 0;
+  }
+  .Rd q {
+    width: 40%;
+    padding: 1.25rem 1rem 0.5rem 0;
+  }
+
+  .Rc .sv h3,
+  .Rd q {
+    float: left;
   }
 }
 @media (min-width: 700px) {
@@ -676,7 +730,7 @@
   }
 
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr {
+  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside {
     display: block;
   }
 
@@ -887,6 +941,45 @@
   .RIc .da {
     height: 150px;
     width: 150px;
+  }
+
+  .Ra {
+    margin: initial 8rem;
+  }
+  .Ra > aside {
+    float: right;
+    margin: 2rem 0 2rem 2rem;
+    height: 250px;
+    width: 300px;
+  }
+  .Ra > aside .A {
+    margin: 0;
+  }
+
+  .Rb {
+    padding: 2rem;
+  }
+
+  .Rc .su {
+    float: left;
+    width: 35%;
+  }
+  .Rc .sv {
+    width: 65%;
+    padding: initial initial initial 2rem;
+  }
+
+  .Rd q {
+    font-size: 3rem;
+  }
+
+  .Rf li {
+    font-size: 1.1rem;
+  }
+
+  .Ra > aside,
+  .Rc .sv {
+    float: right;
   }
 }
 @media (min-width: 900px) {
@@ -1966,6 +2059,31 @@
   .FIa,
   .FIa li {
     padding: 0.8rem;
+  }
+
+  .Ra {
+    font-size: 1.1rem;
+    margin: initial 12rem;
+  }
+
+  .Rb {
+    padding: 3rem;
+  }
+
+  .Rd q {
+    width: 30%;
+  }
+  .Rd p {
+    float: right;
+    margin: 0.5rem 0;
+    width: 65%;
+  }
+
+  .Re .sl {
+    font-size: 0.8rem;
+  }
+  .Re li {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {

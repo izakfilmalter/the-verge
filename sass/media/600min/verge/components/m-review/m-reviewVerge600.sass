@@ -1,0 +1,54 @@
+.#{$m-review__intro}
+    margin: initial 4rem
+
+.#{$m-review__wrap-up}
+    padding: 1.5rem
+
+.#{$m-review__wrap-up__summary}
+    .#{$meta}
+        h3
+            font-size: 2.5rem
+
+            float: left
+
+            margin: initial initial 1.5rem
+
+            width: 100%
+
+        .#{$p-review-score}
+            width: 25%
+
+        .#{$wrap-list}
+            margin-top: 0
+
+            width: 35%
+
+            padding: initial initial initial 2.5rem
+
+.#{$m-review__wrap-up__blurb}
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif")
+    *zoom: 1
+
+    padding: 0.5rem 0
+
+    &::after
+        clear: both
+
+    &::before,
+    &::after
+        content: "."
+
+        overflow: hidden
+
+        @extend %display-block600
+
+        height: 0
+
+    q
+        width: 40%
+
+        padding: 1.25rem 1rem 0.5rem 0
+
+.#{$m-review__wrap-up__summary} .#{$meta} h3,
+.#{$m-review__wrap-up__blurb} q
+    float: left

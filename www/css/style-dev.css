@@ -60,12 +60,20 @@
   .m-reviews-index__hero .image .p-dynamic-image {
     height: 250px;
   }
+
+  .m-review__wrap-up__summary .meta h3 {
+    font-size: 2.25rem;
+    width: 65%;
+  }
+  .m-review__wrap-up__summary .p-review-score {
+    width: 30%;
+  }
 }
 @media (min-width: 600px) {
   .p-big-search .label::after, .p-basic-article-list.hide-mobile-blurbs .p-basic-article-list__node .body .blurb, .m-footer__search-col .scalable-logo, .m-footer__status-corner, .m-footer__status-corner .m-footer__bottom__status, .m-footer__status-corner .m-footer__bottom__status a, .m-footer__search-col .m-footer__section-header,
   .m-footer__sections-col .m-footer__section-header,
   .m-footer__basics-col .m-footer__section-header,
-  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock {
+  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after {
     display: block;
   }
 
@@ -363,6 +371,52 @@
   .m-reviews-index__sidebar .p-tabs li {
     border-width-right: 1px;
     border-style-right: solid;
+  }
+
+  .m-review__intro {
+    margin: initial 4rem;
+  }
+
+  .m-review__wrap-up {
+    padding: 1.5rem;
+  }
+
+  .m-review__wrap-up__summary .meta h3 {
+    font-size: 2.5rem;
+    float: left;
+    margin: initial initial 1.5rem;
+    width: 100%;
+  }
+  .m-review__wrap-up__summary .meta .p-review-score {
+    width: 25%;
+  }
+  .m-review__wrap-up__summary .meta .wrap-list {
+    margin-top: 0;
+    width: 35%;
+    padding: initial initial initial 2.5rem;
+  }
+
+  .m-review__wrap-up__blurb {
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif");
+    *zoom: 1;
+    padding: 0.5rem 0;
+  }
+  .m-review__wrap-up__blurb::after {
+    clear: both;
+  }
+  .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after {
+    content: ".";
+    overflow: hidden;
+    height: 0;
+  }
+  .m-review__wrap-up__blurb q {
+    width: 40%;
+    padding: 1.25rem 1rem 0.5rem 0;
+  }
+
+  .m-review__wrap-up__summary .meta h3,
+  .m-review__wrap-up__blurb q {
+    float: left;
   }
 }
 @media (min-width: 700px) {
@@ -676,7 +730,7 @@
   }
 
   .p-tabs.-has-starburst .p-starburst, .p-big-search .label::after, .m-ad__zone-2,
-  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad {
+  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside {
     display: block;
   }
 
@@ -887,6 +941,45 @@
   .m-reviews-index__hero .timn-icon {
     height: 150px;
     width: 150px;
+  }
+
+  .m-review__intro {
+    margin: initial 8rem;
+  }
+  .m-review__intro > aside {
+    float: right;
+    margin: 2rem 0 2rem 2rem;
+    height: 250px;
+    width: 300px;
+  }
+  .m-review__intro > aside .m-ad {
+    margin: 0;
+  }
+
+  .m-review__wrap-up {
+    padding: 2rem;
+  }
+
+  .m-review__wrap-up__summary .photo {
+    float: left;
+    width: 35%;
+  }
+  .m-review__wrap-up__summary .meta {
+    width: 65%;
+    padding: initial initial initial 2rem;
+  }
+
+  .m-review__wrap-up__blurb q {
+    font-size: 3rem;
+  }
+
+  .m-review__breakdown-meter li {
+    font-size: 1.1rem;
+  }
+
+  .m-review__intro > aside,
+  .m-review__wrap-up__summary .meta {
+    float: right;
   }
 }
 @media (min-width: 900px) {
@@ -1966,6 +2059,31 @@
   .m-forum-index__icons,
   .m-forum-index__icons li {
     padding: 0.8rem;
+  }
+
+  .m-review__intro {
+    font-size: 1.1rem;
+    margin: initial 12rem;
+  }
+
+  .m-review__wrap-up {
+    padding: 3rem;
+  }
+
+  .m-review__wrap-up__blurb q {
+    width: 30%;
+  }
+  .m-review__wrap-up__blurb p {
+    float: right;
+    margin: 0.5rem 0;
+    width: 65%;
+  }
+
+  .m-review__breakdown .blurb {
+    font-size: 0.8rem;
+  }
+  .m-review__breakdown li {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {
