@@ -418,6 +418,56 @@
   .m-review__wrap-up__blurb q {
     float: left;
   }
+
+  .m-timn__main-photo .m-timn__logo {
+    top: -1rem;
+    right: 1rem;
+    top: -1rem;
+    right: 1rem;
+    height: 150px;
+    width: 150px;
+  }
+
+  .m-timn__sticky-card {
+    margin: 0 1.5rem 2rem;
+  }
+  .m-timn__sticky-card a {
+    padding: 5px initial initial;
+  }
+  .m-timn__sticky-card .photo {
+    width: 80%;
+  }
+
+  .m-timn__wrap-up__card .photo {
+    padding: 0.5rem;
+  }
+  .m-timn__wrap-up__card .m-timn__prices {
+    background: #e3e3e3;
+    height: 140px;
+    width: 50%;
+  }
+
+  .m-timn .p-entry-header h1,
+  .m-timn .m-timn__content h2,
+  .m-timn .m-timn__wrap-up h2 {
+    font-size: 4rem;
+  }
+
+  .m-timn__sticky-card .photo,
+  .m-timn__sticky-card .buy-now {
+    width: 20%;
+  }
+
+  .m-timn__wrap-up__card .photo,
+  .m-timn__wrap-up__card .p-review-score {
+    width: 25%;
+  }
+
+  .m-timn__intro,
+  .m-timn__body,
+  .m-timn__wrap-up {
+    padding: 1.5rem;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before, .m-reviews-index__node::before,
@@ -442,6 +492,10 @@
   .p-entry-header__byline .email,
   .p-entry-header__byline .twitter {
     display: inline;
+  }
+
+  .m-timn__wrap-up__product {
+    display: inline-block;
   }
 
   .m-big-stories__dropdown, .m-big-stories__toggle, .m-big-stories__toggle::before {
@@ -709,6 +763,53 @@
   .m-reviews-index__node::after,
   .m-reviews-index__node .content::after {
     clear: both;
+  }
+
+  .m-timn__sticky-card {
+    float: right;
+    margin: 0 1.5rem 2rem 0;
+    width: 44%;
+  }
+  .m-timn__sticky-card.winner {
+    margin: 0 0 2rem 1.5rem;
+  }
+  .m-timn__sticky-card .photo {
+    width: 70%;
+  }
+
+  .m-timn__wrap-up__product {
+    vertical-align: top;
+    width: 49.5%;
+  }
+  .m-timn__wrap-up__product:nth-child(odd) {
+    padding: initial initial initial 0.75rem;
+  }
+  .m-timn__wrap-up__product:nth-child(even) {
+    padding: initial 0.75rem initial initial;
+  }
+
+  .m-timn__wrap-up__card .m-timn__prices {
+    height: auto;
+  }
+
+  .m-timn__sticky-card.winner,
+  .m-timn__body {
+    float: left;
+  }
+
+  .m-timn__sticky-card .p-review-score,
+  .m-timn__sticky-card .buy-now {
+    width: 30%;
+  }
+
+  .m-timn__wrap-up__card .photo,
+  .m-timn__wrap-up__card .p-review-score {
+    width: 50%;
+  }
+
+  .m-timn__body,
+  .m-timn__wrap-up__card .m-timn__prices {
+    width: 100%;
   }
 }
 @media (min-width: 800px) {
@@ -981,6 +1082,46 @@
   .m-review__wrap-up__summary .meta {
     float: right;
   }
+
+  .m-timn__main-photo .m-timn__logo {
+    bottom: -2rem;
+    left: 2rem;
+  }
+
+  .m-timn__prices li a {
+    padding: 3px 5px 0;
+  }
+
+  .m-timn__sticky-card {
+    margin: 0 2rem 2rem 0;
+    width: 45%;
+  }
+  .m-timn__sticky-card.winner {
+    margin: 0 0 2rem 2rem;
+  }
+
+  .m-timn__wrap-up__product:nth-child(odd) {
+    padding: initial initial initial 1rem;
+  }
+  .m-timn__wrap-up__product:nth-child(even) {
+    padding: initial 1rem initial initial;
+  }
+
+  .m-timn__wrap-up__card .p-review-score a {
+    padding: 1.3rem initial initial;
+  }
+
+  .m-timn .p-entry-header h1,
+  .m-timn .m-timn__content h2,
+  .m-timn .m-timn__wrap-up h2 {
+    font-size: 4rem;
+  }
+
+  .m-timn__intro,
+  .m-timn__body,
+  .m-timn__wrap-up {
+    padding: 2rem;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -998,7 +1139,7 @@
   }
 }
 @media (min-width: 1025px) {
-  .p-big-search .label::after, .p-entry-header__comments::after, .m-ad__zone-1a, .m-header__hub-logo, .m-header__social, .m-header__social a, .m-big-stories__main .p-dynamic-image, .m-nav-dropdown, .m-nav-dropdown__stories a, .m-nav-dropdown__stories.forums span, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__subsections li, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-back-to-top, .m-nav__search, .m-new-articles__controls {
+  .p-big-search .label::after, .p-entry-header__comments::after, .m-ad__zone-1a, .m-header__hub-logo, .m-header__social, .m-header__social a, .m-big-stories__main .p-dynamic-image, .m-nav-dropdown, .m-nav-dropdown__stories a, .m-nav-dropdown__stories.forums span, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__subsections li, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-back-to-top, .m-nav__search, .m-new-articles__controls, .m-timn__intro aside {
     display: block;
   }
 
@@ -1015,11 +1156,11 @@
     display: none;
   }
 
-  .p-entry-header__comments::after, .m-header__social, .m-big-stories .chorus-emc__admin, .m-nav.-user, .m-nav-dropdown, .m-nav-dropdown__pane, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__image .timn-icon, .m-nav-dropdown__subsections, .m-nav-dropdown__subsections .icon, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-search, .m-nav__menu li.-back-to-top, .m-nav__menu li.-back-to-top .triangle-icon, .m-nav__search, .m-new-articles__date, .m-new-articles__controls, .m-new-articles__controls::before {
+  .p-entry-header__comments::after, .m-header__social, .m-big-stories .chorus-emc__admin, .m-nav.-user, .m-nav-dropdown, .m-nav-dropdown__pane, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__image .timn-icon, .m-nav-dropdown__subsections, .m-nav-dropdown__subsections .icon, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-search, .m-nav__menu li.-back-to-top, .m-nav__menu li.-back-to-top .triangle-icon, .m-nav__search, .m-new-articles__date, .m-new-articles__controls, .m-new-articles__controls::before, .m-timn__sticky-card, .m-timn__intro aside, .m-timn__intro .m-timn__social-buttons {
     position: absolute;
   }
 
-  .m-header__hub-logo, .m-header__social a, .m-header__social li, .m-nav.-site, .m-nav.-user, .m-nav-dropdown__section, .m-nav-dropdown__stories a, .m-nav-dropdown__image, .m-nav-dropdown__image.video, .m-nav-dropdown__subsections a, .m-nav__menu li.has-dropdown > a, .m-nav__menu li, .m-new-articles, .m-new-articles strong::after, .m-new-articles__pane, .m-new-articles__list, .m-new-articles__day {
+  .m-header__hub-logo, .m-header__social a, .m-header__social li, .m-nav.-site, .m-nav.-user, .m-nav-dropdown__section, .m-nav-dropdown__stories a, .m-nav-dropdown__image, .m-nav-dropdown__image.video, .m-nav-dropdown__subsections a, .m-nav__menu li.has-dropdown > a, .m-nav__menu li, .m-new-articles, .m-new-articles strong::after, .m-new-articles__pane, .m-new-articles__list, .m-new-articles__day, .m-timn__intro {
     position: relative;
   }
 
@@ -1037,6 +1178,10 @@
 
   .m-quick-admin {
     z-index: 1000001;
+  }
+
+  .m-timn__sticky-card {
+    z-index: 10000;
   }
 
   .m-big-stories {
@@ -2084,6 +2229,75 @@
   }
   .m-review__breakdown li {
     font-size: 1.2rem;
+  }
+
+  .m-timn__sticky-card {
+    float: none;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 300px;
+  }
+  .m-timn__sticky-card.winner {
+    top: 0;
+    bottom: initial;
+    margin: 0;
+  }
+  .m-timn__sticky-card .p-review-score a {
+    padding: 10px initial initial;
+  }
+  .m-timn__sticky-card .buy-now {
+    padding: 25px initial initial;
+  }
+
+  .m-timn__intro aside {
+    top: 3.25rem;
+    right: 0;
+  }
+  .m-timn__intro .m-timn__social-buttons {
+    top: 3.25rem;
+    left: 7px;
+    width: 2rem;
+  }
+  .m-timn__intro .m-timn__social-buttons a {
+    margin: initial initial 0.3rem;
+    width: 100%;
+  }
+
+  .m-timn__wrap-up {
+    padding: 3rem;
+  }
+
+  .m-timn__wrap-up__card .p-review-score a {
+    padding: 1rem initial initial;
+  }
+  .m-timn__wrap-up__card .m-timn__prices {
+    width: 50%;
+  }
+
+  .m-timn__linkback {
+    text-align: right;
+  }
+
+  .m-timn__sticky-card,
+  .m-timn__sticky-card.winner {
+    float: none;
+  }
+
+  .m-timn__wrap-up__card .photo,
+  .m-timn__wrap-up__card .p-review-score a,
+  .m-timn__wrap-up__card .m-timn__prices {
+    height: 120px;
+  }
+
+  .m-timn__wrap-up__card .photo,
+  .m-timn__sticky-card .buy-now {
+    width: 25%;
+  }
+
+  .m-timn__intro,
+  .m-timn__body {
+    padding: 0 325px 2rem 3rem;
   }
 }
 @media (min-width: 1200px) {

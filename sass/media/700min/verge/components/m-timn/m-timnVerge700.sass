@@ -1,0 +1,44 @@
+.#{$m-timn__sticky-card}
+    float: right
+
+    margin: 0 1.5rem 2rem 0
+
+    width: 44%
+
+    &.#{$winner}
+        margin: 0 0 2rem 1.5rem
+
+    .#{$photo}
+        width: 70%
+
+.#{$m-timn__wrap-up__product}
+    vertical-align: top
+
+    @extend %display-inline-block700
+
+    width: 49.5%
+
+    &:nth-child(odd)
+        padding: initial initial initial 0.75rem
+
+    &:nth-child(even)
+        padding: initial 0.75rem initial initial
+
+.#{$m-timn__wrap-up__card} .#{$m-timn__prices}
+    height: auto
+
+.#{$m-timn__sticky-card}.#{$winner},
+.#{$m-timn__body}
+    float: left
+
+.#{$m-timn__sticky-card} .#{$p-review-score},
+.#{$m-timn__sticky-card} .#{$buy-now}
+    width: 30%
+
+.#{$m-timn__wrap-up__card} .#{$photo},
+.#{$m-timn__wrap-up__card} .#{$p-review-score}
+    width: 50%
+
+.#{$m-timn__body},
+.#{$m-timn__wrap-up__card} .#{$m-timn__prices}
+    width: 100%
