@@ -1,0 +1,72 @@
+.#{$m-snippet}
+    line-height: 1.5
+
+    margin: initial 3rem
+
+    h2,
+    h3,
+    q
+        font-size: 2.5rem
+
+    &.#{$double}
+        *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif")
+        *zoom: 1
+
+        &::after
+            clear: both
+
+        &::before,
+        &:after
+            content: "."
+
+            overflow: hidden
+
+            @extend %display-block800
+
+            height: 0
+
+        .#{$right}
+            float: right
+            margin: 15rem initial initial
+
+        .#{$left}
+            float: left
+
+        .#{$left},
+        .#{$right}
+            width: 48%
+
+            p
+                margin: 0
+
+    &.#{$thin}
+        .#{$float-left}
+            margin: initial initial initial -4rem
+
+        .#{$float-right}
+            margin: initial -4rem initial initial
+
+    &.#{$sidebar-left} .#{$left},
+    &.#{$sidebar-right} .#{$right}
+        width: 35%
+
+    &.#{$sidebar-left} .#{$right},
+    &.#{$sidebar-right} .#{$left}
+        width: 60%
+
+    .#{$float-left}
+        margin: initial initial initial -1.5rem
+
+    .#{$float-right}
+        margin: initial -1.5rem initial initial
+
+    .#{$thin}
+        margin: initial 8rem
+
+.#{$snippet-n}
+
+    .#{$g8-3}
+        margin: 0 6rem !important
+
+    .#{$g10-2}
+        margin: 0 3rem !important

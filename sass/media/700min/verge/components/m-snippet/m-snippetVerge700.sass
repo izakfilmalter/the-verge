@@ -1,0 +1,29 @@
+.#{$m-snippet}
+    &.#{$sidebar-left} .#{$left},
+    &.#{$sidebar-right} .#{$right}
+        width: 40%
+
+    &.#{$sidebar-left} .#{$right},
+    &.#{$sidebar-right} .#{$left}
+        width: 55%
+
+    &.#{$thin}
+        .#{$float-left}
+            margin: initial 1rem initial -2rem
+
+        .#{$float-right}
+            margin: initial -2rem initial 1rem
+
+    .#{$float-left}
+        float: left
+
+        margin: initial 1rem initial 0
+
+        width: 320px
+
+    .#{$float-right}
+        float: right
+
+        margin: initial 0 initial initial 1rem
+
+        width: 320px

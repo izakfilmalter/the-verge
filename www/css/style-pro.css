@@ -68,12 +68,17 @@
   .Rc .RS {
     width: 30%;
   }
+
+  .S.oq .sz,
+  .S.or .sA {
+    margin: 1.5rem 5rem;
+  }
 }
 @media (min-width: 600px) {
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after {
+  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.oq::before, .S.oq::after, .S.or::before, .S.or::after {
     display: block;
   }
 
@@ -472,6 +477,52 @@
   .FEa {
     margin: initial 4rem;
   }
+
+  .S {
+    margin: initial 2rem;
+  }
+  .S q {
+    font-size: 2.25rem;
+  }
+  .S.sx {
+    margin: initial 4rem;
+  }
+  .S.oq .sz, .S.or .sA {
+    margin: 0;
+    width: 45%;
+  }
+  .S.oq .sA, .S.or .sz {
+    width: 50%;
+  }
+  .S.oq, .S.or {
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif");
+    *zoom: 1;
+  }
+  .S.oq::before, .S.oq::after, .S.oq::before, .S.oq::after, .S.or::before, .S.or::after, .S.or::before, .S.or::after {
+    content: ".";
+    overflow: hidden;
+    height: 0;
+  }
+  .S.oq::after, .S.oq::after, .S.or::after, .S.or::after {
+    clear: both;
+  }
+  .S.oq .sz,
+  .S.oq .sz, .S.or .sz,
+  .S.or .sz {
+    float: left;
+  }
+  .S.oq .sA,
+  .S.oq .sA, .S.or .sA,
+  .S.or .sA {
+    float: right;
+  }
+
+  .Sa .g8-3 {
+    margin: 0 3rem !important;
+  }
+  .Sa .g10-2 {
+    margin: 0 2rem !important;
+  }
 }
 @media (min-width: 700px) {
   .B, .Be, .Be::before, .RId::before,
@@ -815,6 +866,29 @@
   .Tl .Te {
     width: 100%;
   }
+
+  .S.oq .sz, .S.or .sA {
+    width: 40%;
+  }
+  .S.oq .sA, .S.or .sz {
+    width: 55%;
+  }
+  .S.sx .dp {
+    margin: initial 1rem initial -2rem;
+  }
+  .S.sx .do {
+    margin: initial -2rem initial 1rem;
+  }
+  .S .dp {
+    float: left;
+    margin: initial 1rem initial 0;
+    width: 320px;
+  }
+  .S .do {
+    float: right;
+    margin: initial 0 initial initial 1rem;
+    width: 320px;
+  }
 }
 @media (min-width: 800px) {
   .PT ul li.hk, .EHd, .RIc .dl .sr {
@@ -835,7 +909,7 @@
   }
 
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside {
+  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after {
     display: block;
   }
 
@@ -1139,6 +1213,71 @@
   .FEa aside .A {
     margin: 0;
   }
+
+  .S {
+    line-height: 1.5;
+    margin: initial 3rem;
+  }
+  .S h2,
+  .S h3,
+  .S q {
+    font-size: 2.5rem;
+  }
+  .S.sy {
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif");
+    *zoom: 1;
+  }
+  .S.sy::after {
+    clear: both;
+  }
+  .S.sy::before, .S.sy:after {
+    content: ".";
+    overflow: hidden;
+    height: 0;
+  }
+  .S.sy .sA {
+    float: right;
+    margin: 15rem initial initial;
+  }
+  .S.sy .sz {
+    float: left;
+  }
+  .S.sy .sz,
+  .S.sy .sA {
+    width: 48%;
+  }
+  .S.sy .sz p,
+  .S.sy .sA p {
+    margin: 0;
+  }
+  .S.sx .dp {
+    margin: initial initial initial -4rem;
+  }
+  .S.sx .do {
+    margin: initial -4rem initial initial;
+  }
+  .S.oq .sz, .S.or .sA {
+    width: 35%;
+  }
+  .S.oq .sA, .S.or .sz {
+    width: 60%;
+  }
+  .S .dp {
+    margin: initial initial initial -1.5rem;
+  }
+  .S .do {
+    margin: initial -1.5rem initial initial;
+  }
+  .S .sx {
+    margin: initial 8rem;
+  }
+
+  .Sa .g8-3 {
+    margin: 0 6rem !important;
+  }
+  .Sa .g10-2 {
+    margin: 0 3rem !important;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -1153,6 +1292,14 @@
   }
   .RId .ss {
     width: 70%;
+  }
+
+  .S.oq .sz, .S.or .sA {
+    width: 30%;
+  }
+  .S .oq .sA,
+  .S .or .sz {
+    width: 65%;
   }
 }
 @media (min-width: 1025px) {
@@ -2325,6 +2472,39 @@
     font-size: 1.1rem;
     margin: initial 12rem;
   }
+
+  .S {
+    font-size: 1.1rem;
+    margin: initial 6rem;
+  }
+  .S h2 {
+    font-size: 2.75rem;
+  }
+  .S q {
+    font-size: 3rem;
+  }
+  .S.sx .dp {
+    margin: initial initial initial -6rem;
+  }
+  .S.sx .do {
+    margin: initial -6rem initial initial;
+  }
+  .S .sx {
+    margin: initial 12rem;
+  }
+  .S .dp {
+    margin: initial initial initial -3rem;
+  }
+  .S .do {
+    margin: initial -3rem initial initial;
+  }
+
+  .Sa .g8-3 {
+    margin: 0 12rem !important;
+  }
+  .Sa .g10-2 {
+    margin: 0 6rem !important;
+  }
 }
 @media (min-width: 1200px) {
   head {
@@ -2496,6 +2676,14 @@
     height: 600px;
   }
 }
+@media (max-width: 700px) {
+  .S.do,
+  .S.dp {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+}
 @media (max-width: 727px) {
   head[data-network='eater'] + body .HRMj {
     display: none;
@@ -2586,6 +2774,14 @@
   }
   head[data-network='eater'] + body .EBc .HRMa .HRMb {
     height: 550px;
+  }
+}
+@media (max-width: 1025px) {
+  .Sa .do {
+    margin: initial 0 initial initial !important;
+  }
+  .Sa .dp {
+    margin: initial initial initial 0 !important;
   }
 }
 
