@@ -1,0 +1,54 @@
+.#{$m-user-page}
+    @extend %display-table600
+    table-layout: fixed
+
+    .#{$m-user-page__sidebar}
+        width: 200px
+
+        border-right: 1px solid $alto
+
+        & > .#{$p-rock}
+            @extend %display-block600
+
+    .#{$m-user-page__sidebar},
+    .#{$m-user-page__content}
+        vertical-align: top
+
+        @extend %display-table-cell600
+
+.#{$m-user-page__sidebar-head} .#{$mobile-bio}
+    @extend %display-none600min
+
+.#{$m-user-page__avatar}
+    float: none
+
+    padding: 0.75rem
+
+.#{$m-user-page__bio}
+    p
+        font-size: 0.7rem
+
+    .#{$links}
+        a
+            font-size: 0.65rem
+
+.#{$m-user-page__forums}
+    .#{$forum-list}
+        li
+            padding: 0 0 0.5rem
+
+.#{$m-user-page__head}
+    @extend %display-block600
+
+.#{$m-user-page__log}
+    blockquote
+        margin: 1rem
+
+.#{$m-user-page__bio} h2,
+.#{$m-user-page__forums} h2
+    font-size: 1rem
+
+.#{$m-user-page},
+.#{$m-user-page__avatar},
+.#{$m-user-page__forums} .#{$forum-list} li
+    width: 100%

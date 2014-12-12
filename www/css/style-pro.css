@@ -69,16 +69,24 @@
     width: 30%;
   }
 
-  .S.oq .sz,
-  .S.or .sA {
+  .S.dq .sz,
+  .S.dr .sA {
     margin: 1.5rem 5rem;
+  }
+
+  .USc .ds {
+    padding: 0.75rem initial initial;
+  }
+
+  .USd {
+    padding: 0.75rem;
   }
 }
 @media (min-width: 600px) {
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.oq::before, .S.oq::after, .S.or::before, .S.or::after {
+  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh {
     display: block;
   }
 
@@ -88,11 +96,11 @@
 
   .BSO.dh .BSOb,
   .BSO.dh .BSOa, .Fi, .FIc th:nth-child(1) .dj,
-  .FIc td:nth-child(1) .dj {
+  .FIc td:nth-child(1) .dj, .USc .ds {
     display: none;
   }
 
-  .RI {
+  .RI, .US {
     display: table;
   }
 
@@ -104,7 +112,8 @@
   .FIc td:nth-child(2),
   .FIc th:nth-child(3),
   .FIc td:nth-child(3), .RI .RIa,
-  .RI .RIb {
+  .RI .RIb, .US .USa,
+  .US .USb {
     display: table-cell;
   }
 
@@ -487,33 +496,33 @@
   .S.sx {
     margin: initial 4rem;
   }
-  .S.oq .sz, .S.or .sA {
+  .S.dq .sz, .S.dr .sA {
     margin: 0;
     width: 45%;
   }
-  .S.oq .sA, .S.or .sz {
+  .S.dq .sA, .S.dr .sz {
     width: 50%;
   }
-  .S.oq, .S.or {
+  .S.dq, .S.dr {
     *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif");
     *zoom: 1;
   }
-  .S.oq::before, .S.oq::after, .S.oq::before, .S.oq::after, .S.or::before, .S.or::after, .S.or::before, .S.or::after {
+  .S.dq::before, .S.dq::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .S.dr::before, .S.dr::after {
     content: ".";
     overflow: hidden;
     height: 0;
   }
-  .S.oq::after, .S.oq::after, .S.or::after, .S.or::after {
+  .S.dq::after, .S.dq::after, .S.dr::after, .S.dr::after {
     clear: both;
   }
-  .S.oq .sz,
-  .S.oq .sz, .S.or .sz,
-  .S.or .sz {
+  .S.dq .sz,
+  .S.dq .sz, .S.dr .sz,
+  .S.dr .sz {
     float: left;
   }
-  .S.oq .sA,
-  .S.oq .sA, .S.or .sA,
-  .S.or .sA {
+  .S.dq .sA,
+  .S.dq .sA, .S.dr .sA,
+  .S.dr .sA {
     float: right;
   }
 
@@ -522,6 +531,49 @@
   }
   .Sa .g10-2 {
     margin: 0 2rem !important;
+  }
+
+  .US {
+    table-layout: fixed;
+  }
+  .US .USa {
+    width: 200px;
+    border-right: 1px solid #ddd;
+  }
+  .US .USa,
+  .US .USb {
+    vertical-align: top;
+  }
+
+  .USd {
+    float: none;
+    padding: 0.75rem;
+  }
+
+  .USf p {
+    font-size: 0.7rem;
+  }
+  .USf .sB a {
+    font-size: 0.65rem;
+  }
+
+  .USg .dt li {
+    padding: 0 0 0.5rem;
+  }
+
+  .USj blockquote {
+    margin: 1rem;
+  }
+
+  .USf h2,
+  .USg h2 {
+    font-size: 1rem;
+  }
+
+  .US,
+  .USd,
+  .USg .dt li {
+    width: 100%;
   }
 }
 @media (min-width: 700px) {
@@ -867,10 +919,10 @@
     width: 100%;
   }
 
-  .S.oq .sz, .S.or .sA {
+  .S.dq .sz, .S.dr .sA {
     width: 40%;
   }
-  .S.oq .sA, .S.or .sz {
+  .S.dq .sA, .S.dr .sz {
     width: 55%;
   }
   .S.sx .dp {
@@ -909,11 +961,11 @@
   }
 
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after {
+  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3 {
     display: block;
   }
 
-  .PT.di ul li.hn a::after, .PT.di ul li select, .RIc .RS.sq {
+  .PT.di ul li.hn a::after, .PT.di ul li select, .RIc .RS.sq, .USg .du h3, .USl {
     display: none;
   }
 
@@ -1256,10 +1308,10 @@
   .S.sx .do {
     margin: initial -4rem initial initial;
   }
-  .S.oq .sz, .S.or .sA {
+  .S.dq .sz, .S.dr .sA {
     width: 35%;
   }
-  .S.oq .sA, .S.or .sz {
+  .S.dq .sA, .S.dr .sz {
     width: 60%;
   }
   .S .dp {
@@ -1278,6 +1330,81 @@
   .Sa .g10-2 {
     margin: 0 3rem !important;
   }
+
+  .US .USa {
+    width: 260px;
+  }
+
+  .USd {
+    padding: 1.25rem;
+  }
+
+  .USe li strong {
+    font-size: 3.5rem;
+  }
+
+  .USf p {
+    font-size: 0.8rem;
+  }
+
+  .USg .dt {
+    width: 100%;
+  }
+  .USg .dt h3 {
+    font-size: 1.2rem;
+    color: #444;
+    text-transform: none;
+    text-align: left;
+    margin: 0.4rem 0 -0.2rem;
+    padding: 0;
+  }
+  .USg .dv {
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
+  }
+
+  .USi .sC h3 {
+    font-size: 2rem;
+  }
+
+  .USj .sD {
+    margin: initial initial 0.75rem;
+  }
+  .USj .dx {
+    text-align: right;
+    float: right;
+  }
+
+  .USk .sF {
+    text-align: right;
+    padding: 0 initial initial;
+  }
+
+  .USf h2,
+  .USg h2 {
+    font-size: 1.5rem;
+  }
+
+  .USg .du,
+  .USg .dv,
+  .USj .sD {
+    float: left;
+  }
+
+  .USg .du,
+  .USj .dx {
+    width: 40%;
+  }
+
+  .USk .sE,
+  .USk .sF {
+    width: 50%;
+  }
+
+  .USg .dv,
+  .USj .sD {
+    width: 60%;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -1294,11 +1421,11 @@
     width: 70%;
   }
 
-  .S.oq .sz, .S.or .sA {
+  .S.dq .sz, .S.dr .sA {
     width: 30%;
   }
-  .S .oq .sA,
-  .S .or .sz {
+  .S .dq .sA,
+  .S .dr .sz {
     width: 65%;
   }
 }
@@ -2504,6 +2631,13 @@
   }
   .Sa .g10-2 {
     margin: 0 6rem !important;
+  }
+
+  .USf p {
+    font-size: 0.85rem;
+  }
+  .USf .sB a {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 1200px) {

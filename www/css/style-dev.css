@@ -73,12 +73,20 @@
   .m-snippet.sidebar-right .right {
     margin: 1.5rem 5rem;
   }
+
+  .m-user-page__sidebar-head .mobile-bio {
+    padding: 0.75rem initial initial;
+  }
+
+  .m-user-page__avatar {
+    padding: 0.75rem;
+  }
 }
 @media (min-width: 600px) {
   .p-big-search .label::after, .p-basic-article-list.hide-mobile-blurbs .p-basic-article-list__node .body .blurb, .m-footer__search-col .scalable-logo, .m-footer__status-corner, .m-footer__status-corner .m-footer__bottom__status, .m-footer__status-corner .m-footer__bottom__status a, .m-footer__search-col .m-footer__section-header,
   .m-footer__sections-col .m-footer__section-header,
   .m-footer__basics-col .m-footer__section-header,
-  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after, .m-snippet.sidebar-left::before, .m-snippet.sidebar-left::after, .m-snippet.sidebar-right::before, .m-snippet.sidebar-right::after {
+  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after, .m-snippet.sidebar-left::before, .m-snippet.sidebar-left::after, .m-snippet.sidebar-right::before, .m-snippet.sidebar-right::after, .m-user-page .m-user-page__sidebar > .p-rock, .m-user-page__head {
     display: block;
   }
 
@@ -88,11 +96,11 @@
 
   .p-button-social.icon-only .p-button-social__label,
   .p-button-social.icon-only .p-button__count, .m-footer__back-to-top, .m-forum-index__table th:nth-child(1) .mobile-meta,
-  .m-forum-index__table td:nth-child(1) .mobile-meta {
+  .m-forum-index__table td:nth-child(1) .mobile-meta, .m-user-page__sidebar-head .mobile-bio {
     display: none;
   }
 
-  .m-reviews-index {
+  .m-reviews-index, .m-user-page {
     display: table;
   }
 
@@ -104,7 +112,8 @@
   .m-forum-index__table td:nth-child(2),
   .m-forum-index__table th:nth-child(3),
   .m-forum-index__table td:nth-child(3), .m-reviews-index .m-reviews-index__sidebar,
-  .m-reviews-index .m-reviews-index__content {
+  .m-reviews-index .m-reviews-index__content, .m-user-page .m-user-page__sidebar,
+  .m-user-page .m-user-page__content {
     display: table-cell;
   }
 
@@ -523,6 +532,49 @@
   .snippet-n .g10-2 {
     margin: 0 2rem !important;
   }
+
+  .m-user-page {
+    table-layout: fixed;
+  }
+  .m-user-page .m-user-page__sidebar {
+    width: 200px;
+    border-right: 1px solid #ddd;
+  }
+  .m-user-page .m-user-page__sidebar,
+  .m-user-page .m-user-page__content {
+    vertical-align: top;
+  }
+
+  .m-user-page__avatar {
+    float: none;
+    padding: 0.75rem;
+  }
+
+  .m-user-page__bio p {
+    font-size: 0.7rem;
+  }
+  .m-user-page__bio .links a {
+    font-size: 0.65rem;
+  }
+
+  .m-user-page__forums .forum-list li {
+    padding: 0 0 0.5rem;
+  }
+
+  .m-user-page__log blockquote {
+    margin: 1rem;
+  }
+
+  .m-user-page__bio h2,
+  .m-user-page__forums h2 {
+    font-size: 1rem;
+  }
+
+  .m-user-page,
+  .m-user-page__avatar,
+  .m-user-page__forums .forum-list li {
+    width: 100%;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before, .m-reviews-index__node::before,
@@ -909,11 +961,11 @@
   }
 
   .p-tabs.-has-starburst .p-starburst, .p-big-search .label::after, .m-ad__zone-2,
-  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside, .m-feature__intro aside, .m-snippet.double::before, .m-snippet.double:after {
+  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside, .m-feature__intro aside, .m-snippet.double::before, .m-snippet.double:after, .m-user-page__forums .forum-meta, .m-user-page__forums .forum-meta h3 {
     display: block;
   }
 
-  .p-tabs.js-collapsible ul li.-is-active a::after, .p-tabs.js-collapsible ul li select, .m-reviews-index__hero .p-review-score.small {
+  .p-tabs.js-collapsible ul li.-is-active a::after, .p-tabs.js-collapsible ul li select, .m-reviews-index__hero .p-review-score.small, .m-user-page__forums .forum-icon-link h3, .m-user-page__mobile-admin-links {
     display: none;
   }
 
@@ -1277,6 +1329,81 @@
   }
   .snippet-n .g10-2 {
     margin: 0 3rem !important;
+  }
+
+  .m-user-page .m-user-page__sidebar {
+    width: 260px;
+  }
+
+  .m-user-page__avatar {
+    padding: 1.25rem;
+  }
+
+  .m-user-page__stats li strong {
+    font-size: 3.5rem;
+  }
+
+  .m-user-page__bio p {
+    font-size: 0.8rem;
+  }
+
+  .m-user-page__forums .forum-list {
+    width: 100%;
+  }
+  .m-user-page__forums .forum-list h3 {
+    font-size: 1.2rem;
+    color: #444;
+    text-transform: none;
+    text-align: left;
+    margin: 0.4rem 0 -0.2rem;
+    padding: 0;
+  }
+  .m-user-page__forums .forum-meta {
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
+  }
+
+  .m-user-page__list .posts h3 {
+    font-size: 2rem;
+  }
+
+  .m-user-page__log .byline {
+    margin: initial initial 0.75rem;
+  }
+  .m-user-page__log .rec-comments {
+    text-align: right;
+    float: right;
+  }
+
+  .m-user-page__search__sort-bar .sort {
+    text-align: right;
+    padding: 0 initial initial;
+  }
+
+  .m-user-page__bio h2,
+  .m-user-page__forums h2 {
+    font-size: 1.5rem;
+  }
+
+  .m-user-page__forums .forum-icon-link,
+  .m-user-page__forums .forum-meta,
+  .m-user-page__log .byline {
+    float: left;
+  }
+
+  .m-user-page__forums .forum-icon-link,
+  .m-user-page__log .rec-comments {
+    width: 40%;
+  }
+
+  .m-user-page__search__sort-bar .type,
+  .m-user-page__search__sort-bar .sort {
+    width: 50%;
+  }
+
+  .m-user-page__forums .forum-meta,
+  .m-user-page__log .byline {
+    width: 60%;
   }
 }
 @media (min-width: 900px) {
@@ -2504,6 +2631,13 @@
   }
   .snippet-n .g10-2 {
     margin: 0 6rem !important;
+  }
+
+  .m-user-page__bio p {
+    font-size: 0.85rem;
+  }
+  .m-user-page__bio .links a {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 1200px) {

@@ -1,0 +1,87 @@
+.#{$m-user-page}
+    .#{$m-user-page__sidebar}
+        width: 260px
+
+.#{$m-user-page__avatar}
+    padding: 1.25rem
+
+.#{$m-user-page__stats}
+    li
+        strong
+            font-size: 3.5rem
+
+.#{$m-user-page__bio}
+    p
+        font-size: 0.8rem
+
+.#{$m-user-page__forums}
+    .#{$forum-list}
+        width: 100%
+
+        h3
+            font-size: 1.2rem
+            color: $tundora
+
+            text-transform: none
+            text-align: left
+
+            margin: .4rem 0 -.2rem
+
+            padding: 0
+
+    .#{$forum-icon-link}
+        h3
+            @extend %display-none800
+
+    .#{$forum-meta}
+        font-size: .7rem
+
+        @extend %display-block800
+
+        padding-left: 0.5rem
+
+        h3
+            @extend %display-block800
+
+.#{$m-user-page__list}
+    .#{$posts} h3
+        font-size: 2rem
+
+.#{$m-user-page__log}
+    .#{$byline}
+        margin: initial initial .75rem
+
+    .#{$rec-comments}
+        text-align: right
+
+        float: right
+
+.#{$m-user-page__search__sort-bar}
+    .#{$sort}
+        text-align: right
+
+        padding: 0 initial initial
+
+.#{$m-user-page__mobile-admin-links}
+    @extend %display-none800
+
+.#{$m-user-page__bio} h2,
+.#{$m-user-page__forums} h2
+    font-size: 1.5rem
+
+.#{$m-user-page__forums} .#{$forum-icon-link},
+.#{$m-user-page__forums} .#{$forum-meta},
+.#{$m-user-page__log} .#{$byline}
+    float: left
+
+.#{$m-user-page__forums} .#{$forum-icon-link},
+.#{$m-user-page__log} .#{$rec-comments}
+    width: 40%
+
+.#{$m-user-page__search__sort-bar} .#{$type},
+.#{$m-user-page__search__sort-bar} .#{$sort}
+    width: 50%
+
+.#{$m-user-page__forums} .#{$forum-meta},
+.#{$m-user-page__log} .#{$byline}
+    width: 60%
