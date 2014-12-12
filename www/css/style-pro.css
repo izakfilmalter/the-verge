@@ -1003,6 +1003,10 @@
     margin: initial 0 initial initial 1rem;
     width: 320px;
   }
+
+  .E .C.sI.sJ h2 {
+    margin: 1.5rem 1rem;
+  }
 }
 @media (min-width: 800px) {
   .PT ul li.hk, .EHd, .RIc .dl .sr {
@@ -1017,19 +1021,20 @@
     display: inline-block;
   }
 
-  .TP, .SP {
+  .TP, .SP, .Ea {
     display: table;
   }
 
   .FIc th:nth-child(4),
   .FIc td:nth-child(4), .TP .TPa,
   .TP .TPb, .SP .SPa,
-  .SP .SPb {
+  .SP .SPb, .Ea .Eb,
+  .Ea .Ec {
     display: table-cell;
   }
 
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3, .TP .TPa > .p-rock, .SP .SPa > .dk {
+  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3, .TP .TPa > .p-rock, .SP .SPa > .dk, .Ea .Eb > .p-rock {
     display: block;
   }
 
@@ -1508,6 +1513,19 @@
   .STa q {
     font-size: 2.25rem;
     margin: 2.25rem 2.25rem 2rem;
+  }
+
+  .Ea {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .Ea .Eb {
+    border-left: 1px solid #ddd;
+    width: 320px;
+  }
+  .Ea .Eb,
+  .Ea .Ec {
+    vertical-align: top;
   }
 }
 @media (min-width: 900px) {
@@ -2794,6 +2812,17 @@
   .STa ul,
   .STa ul {
     font-size: 1.1rem;
+  }
+
+  .E .C.sI.sJ .Ca {
+    width: 558px;
+  }
+  .E .C.sI.sJ .Cb {
+    width: 186px;
+  }
+
+  .EBd {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 1200px) {
