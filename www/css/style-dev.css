@@ -615,6 +615,28 @@
   .m-product-category-list.-brands {
     width: 100%;
   }
+
+  .m-article__entry q,
+  .m-stream__header q {
+    font-size: 2rem;
+    margin: 2rem 2rem 1.75rem;
+  }
+  .m-article__entry q.left,
+  .m-stream__header q.left {
+    float: left;
+    margin: initial initial initial 0;
+  }
+  .m-article__entry q.right,
+  .m-stream__header q.right {
+    text-align: left;
+    float: right;
+    margin: initial 0 initial initial;
+  }
+  .m-article__entry q.left, .m-article__entry q.right,
+  .m-stream__header q.left,
+  .m-stream__header q.right {
+    max-width: 40%;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before, .m-reviews-index__node::before,
@@ -1480,6 +1502,12 @@
 
   .m-search-page__header .m-search-page__advanced .fields li {
     width: 33.33333%;
+  }
+
+  .m-article__entry q,
+  .m-stream__header q {
+    font-size: 2.25rem;
+    margin: 2.25rem 2.25rem 2rem;
   }
 }
 @media (min-width: 900px) {
@@ -2746,6 +2774,26 @@
 
   .m-search-page__content .p-basic-article-list {
     padding: 0 2rem 2rem;
+  }
+
+  .m-article__entry q,
+  .m-stream__header q {
+    font-size: 2.5rem;
+    margin: 2.5rem 2.5rem 2.2rem;
+  }
+  .m-article__entry p,
+  .m-article__entry p,
+  .m-article__entry ol,
+  .m-article__entry ol,
+  .m-article__entry ul,
+  .m-article__entry ul,
+  .m-stream__header p,
+  .m-stream__header p,
+  .m-stream__header ol,
+  .m-stream__header ol,
+  .m-stream__header ul,
+  .m-stream__header ul {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 1200px) {

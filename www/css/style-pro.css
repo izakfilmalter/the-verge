@@ -615,6 +615,28 @@
   .PCL.hs {
     width: 100%;
   }
+
+  .ARa q,
+  .STa q {
+    font-size: 2rem;
+    margin: 2rem 2rem 1.75rem;
+  }
+  .ARa q.left,
+  .STa q.left {
+    float: left;
+    margin: initial initial initial 0;
+  }
+  .ARa q.right,
+  .STa q.right {
+    text-align: left;
+    float: right;
+    margin: initial 0 initial initial;
+  }
+  .ARa q.left, .ARa q.right,
+  .STa q.left,
+  .STa q.right {
+    max-width: 40%;
+  }
 }
 @media (min-width: 700px) {
   .B, .Be, .Be::before, .RId::before,
@@ -1480,6 +1502,12 @@
 
   .SPc .SPd .sG li {
     width: 33.33333%;
+  }
+
+  .ARa q,
+  .STa q {
+    font-size: 2.25rem;
+    margin: 2.25rem 2.25rem 2rem;
   }
 }
 @media (min-width: 900px) {
@@ -2746,6 +2774,26 @@
 
   .SPb .BAL {
     padding: 0 2rem 2rem;
+  }
+
+  .ARa q,
+  .STa q {
+    font-size: 2.5rem;
+    margin: 2.5rem 2.5rem 2.2rem;
+  }
+  .ARa p,
+  .ARa p,
+  .ARa ol,
+  .ARa ol,
+  .ARa ul,
+  .ARa ul,
+  .STa p,
+  .STa p,
+  .STa ol,
+  .STa ol,
+  .STa ul,
+  .STa ul {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 1200px) {
