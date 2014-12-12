@@ -684,6 +684,15 @@
     top: initial;
     right: initial;
   }
+
+  .G .ARh aside .dk {
+    float: left;
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .G .ARh aside .dk:first-child ul {
+    border-right: 1px solid #ddd;
+  }
 }
 @media (min-width: 700px) {
   .B, .Be, .Be::before, .RId::before,

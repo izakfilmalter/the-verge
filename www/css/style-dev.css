@@ -684,6 +684,15 @@
     top: initial;
     right: initial;
   }
+
+  .m-gallery-entry .m-article__comments__content aside .p-rock {
+    float: left;
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .m-gallery-entry .m-article__comments__content aside .p-rock:first-child ul {
+    border-right: 1px solid #ddd;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before, .m-reviews-index__node::before,
