@@ -955,13 +955,18 @@
     display: inline-block;
   }
 
+  .TP {
+    display: table;
+  }
+
   .FIc th:nth-child(4),
-  .FIc td:nth-child(4) {
+  .FIc td:nth-child(4), .TP .TPa,
+  .TP .TPb {
     display: table-cell;
   }
 
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3 {
+  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3, .TP .TPa > .p-rock {
     display: block;
   }
 
@@ -1404,6 +1409,19 @@
   .USg .dv,
   .USj .sD {
     width: 60%;
+  }
+
+  .TP {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .TP .TPa {
+    border-left: 1px solid #ddd;
+    width: 320px;
+  }
+  .TP .TPa,
+  .TP .TPb {
+    vertical-align: top;
   }
 }
 @media (min-width: 900px) {
@@ -2638,6 +2656,13 @@
   }
   .USf .sB a {
     font-size: 0.8rem;
+  }
+
+  .TPb {
+    padding: 2rem;
+  }
+  .TPb > h1 {
+    padding: initial initial inherit;
   }
 }
 @media (min-width: 1200px) {

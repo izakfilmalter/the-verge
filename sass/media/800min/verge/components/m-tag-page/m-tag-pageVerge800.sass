@@ -1,0 +1,19 @@
+.#{$m-tag-page}
+    @extend %display-table800
+    table-layout: fixed
+
+    width: 100%
+
+    .#{$m-tag-page__sidebar}
+        border-left: 1px solid $alto
+
+        width: 320px
+
+        & > .p-rock
+            @extend %display-block800
+
+    .#{$m-tag-page__sidebar},
+    .#{$m-tag-page__content}
+        vertical-align: top
+
+        @extend %display-table-cell800

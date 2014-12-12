@@ -955,13 +955,18 @@
     display: inline-block;
   }
 
+  .m-tag-page {
+    display: table;
+  }
+
   .m-forum-index__table th:nth-child(4),
-  .m-forum-index__table td:nth-child(4) {
+  .m-forum-index__table td:nth-child(4), .m-tag-page .m-tag-page__sidebar,
+  .m-tag-page .m-tag-page__content {
     display: table-cell;
   }
 
   .p-tabs.-has-starburst .p-starburst, .p-big-search .label::after, .m-ad__zone-2,
-  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside, .m-feature__intro aside, .m-snippet.double::before, .m-snippet.double:after, .m-user-page__forums .forum-meta, .m-user-page__forums .forum-meta h3 {
+  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside, .m-feature__intro aside, .m-snippet.double::before, .m-snippet.double:after, .m-user-page__forums .forum-meta, .m-user-page__forums .forum-meta h3, .m-tag-page .m-tag-page__sidebar > .p-rock {
     display: block;
   }
 
@@ -1404,6 +1409,19 @@
   .m-user-page__forums .forum-meta,
   .m-user-page__log .byline {
     width: 60%;
+  }
+
+  .m-tag-page {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .m-tag-page .m-tag-page__sidebar {
+    border-left: 1px solid #ddd;
+    width: 320px;
+  }
+  .m-tag-page .m-tag-page__sidebar,
+  .m-tag-page .m-tag-page__content {
+    vertical-align: top;
   }
 }
 @media (min-width: 900px) {
@@ -2638,6 +2656,13 @@
   }
   .m-user-page__bio .links a {
     font-size: 0.8rem;
+  }
+
+  .m-tag-page__content {
+    padding: 2rem;
+  }
+  .m-tag-page__content > h1 {
+    padding: initial initial inherit;
   }
 }
 @media (min-width: 1200px) {
