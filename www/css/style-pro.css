@@ -575,6 +575,18 @@
   .USg .dt li {
     width: 100%;
   }
+
+  .SPc .SPd .sG li {
+    width: 50%;
+  }
+  .SPc .SPe {
+    font-size: 1.25rem;
+  }
+
+  .SPc .SPd ul,
+  .SPc .SPd ul li {
+    padding: 0.5rem;
+  }
 }
 @media (min-width: 700px) {
   .B, .Be, .Be::before, .RId::before,
@@ -955,18 +967,19 @@
     display: inline-block;
   }
 
-  .TP {
+  .TP, .SP {
     display: table;
   }
 
   .FIc th:nth-child(4),
   .FIc td:nth-child(4), .TP .TPa,
-  .TP .TPb {
+  .TP .TPb, .SP .SPa,
+  .SP .SPb {
     display: table-cell;
   }
 
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3, .TP .TPa > .p-rock {
+  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3, .TP .TPa > .p-rock, .SP .SPa > .dk {
     display: block;
   }
 
@@ -1423,6 +1436,23 @@
   .TP .TPb {
     vertical-align: top;
   }
+
+  .SP {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .SP .SPa {
+    border-left: 1px solid #ddd;
+    width: 320px;
+  }
+  .SP .SPa,
+  .SP .SPb {
+    vertical-align: top;
+  }
+
+  .SPc .SPd .sG li {
+    width: 33.33333%;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -1448,7 +1478,7 @@
   }
 }
 @media (min-width: 1025px) {
-  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DP, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg, .Tg aside {
+  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DP, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg, .Tg aside, .SPc .sH li {
     display: block;
   }
 
@@ -2663,6 +2693,31 @@
   }
   .TPb > h1 {
     padding: initial initial inherit;
+  }
+
+  .SPc .SPd .sG {
+    width: 85%;
+  }
+  .SPc .sH {
+    float: left;
+    width: 15%;
+  }
+  .SPc .sH li {
+    width: 100%;
+  }
+  .SPc .sH li:last-child {
+    text-align: left;
+  }
+  .SPc .sH .BSOc {
+    top: 1rem;
+    padding: 2px initial initial;
+  }
+  .SPc .SPe {
+    padding: initial initial initial 1rem;
+  }
+
+  .SPb .BAL {
+    padding: 0 2rem 2rem;
   }
 }
 @media (min-width: 1200px) {

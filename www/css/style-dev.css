@@ -575,6 +575,18 @@
   .m-user-page__forums .forum-list li {
     width: 100%;
   }
+
+  .m-search-page__header .m-search-page__advanced .fields li {
+    width: 50%;
+  }
+  .m-search-page__header .m-search-page__switch {
+    font-size: 1.25rem;
+  }
+
+  .m-search-page__header .m-search-page__advanced ul,
+  .m-search-page__header .m-search-page__advanced ul li {
+    padding: 0.5rem;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before, .m-reviews-index__node::before,
@@ -955,18 +967,19 @@
     display: inline-block;
   }
 
-  .m-tag-page {
+  .m-tag-page, .m-search-page {
     display: table;
   }
 
   .m-forum-index__table th:nth-child(4),
   .m-forum-index__table td:nth-child(4), .m-tag-page .m-tag-page__sidebar,
-  .m-tag-page .m-tag-page__content {
+  .m-tag-page .m-tag-page__content, .m-search-page .m-search-page__sidebar,
+  .m-search-page .m-search-page__content {
     display: table-cell;
   }
 
   .p-tabs.-has-starburst .p-starburst, .p-big-search .label::after, .m-ad__zone-2,
-  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside, .m-feature__intro aside, .m-snippet.double::before, .m-snippet.double:after, .m-user-page__forums .forum-meta, .m-user-page__forums .forum-meta h3, .m-tag-page .m-tag-page__sidebar > .p-rock {
+  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside, .m-feature__intro aside, .m-snippet.double::before, .m-snippet.double:after, .m-user-page__forums .forum-meta, .m-user-page__forums .forum-meta h3, .m-tag-page .m-tag-page__sidebar > .p-rock, .m-search-page .m-search-page__sidebar > .p-rock {
     display: block;
   }
 
@@ -1423,6 +1436,23 @@
   .m-tag-page .m-tag-page__content {
     vertical-align: top;
   }
+
+  .m-search-page {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .m-search-page .m-search-page__sidebar {
+    border-left: 1px solid #ddd;
+    width: 320px;
+  }
+  .m-search-page .m-search-page__sidebar,
+  .m-search-page .m-search-page__content {
+    vertical-align: top;
+  }
+
+  .m-search-page__header .m-search-page__advanced .fields li {
+    width: 33.33333%;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -1448,7 +1478,7 @@
   }
 }
 @media (min-width: 1025px) {
-  .p-big-search .label::after, .p-entry-header__comments::after, .m-ad__zone-1a, .m-header__hub-logo, .m-header__social, .m-header__social a, .m-big-stories__main .p-dynamic-image, .m-nav-dropdown, .m-nav-dropdown__stories a, .m-nav-dropdown__stories.forums span, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__subsections li, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-back-to-top, .m-nav__search, .m-new-articles__controls, .m-timn__intro aside {
+  .p-big-search .label::after, .p-entry-header__comments::after, .m-ad__zone-1a, .m-header__hub-logo, .m-header__social, .m-header__social a, .m-big-stories__main .p-dynamic-image, .m-nav-dropdown, .m-nav-dropdown__stories a, .m-nav-dropdown__stories.forums span, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__subsections li, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-back-to-top, .m-nav__search, .m-new-articles__controls, .m-timn__intro aside, .m-search-page__header .controls li {
     display: block;
   }
 
@@ -2663,6 +2693,31 @@
   }
   .m-tag-page__content > h1 {
     padding: initial initial inherit;
+  }
+
+  .m-search-page__header .m-search-page__advanced .fields {
+    width: 85%;
+  }
+  .m-search-page__header .controls {
+    float: left;
+    width: 15%;
+  }
+  .m-search-page__header .controls li {
+    width: 100%;
+  }
+  .m-search-page__header .controls li:last-child {
+    text-align: left;
+  }
+  .m-search-page__header .controls .p-button__round {
+    top: 1rem;
+    padding: 2px initial initial;
+  }
+  .m-search-page__header .m-search-page__switch {
+    padding: initial initial initial 1rem;
+  }
+
+  .m-search-page__content .p-basic-article-list {
+    padding: 0 2rem 2rem;
   }
 }
 @media (min-width: 1200px) {

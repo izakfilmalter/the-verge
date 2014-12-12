@@ -1,0 +1,25 @@
+.#{$m-search-page}
+    @extend %display-table800
+    table-layout: fixed
+
+    width: 100%
+
+    .#{$m-search-page__sidebar}
+        border-left: 1px solid $alto
+
+        width: 320px
+
+        & > .#{$p-rock}
+            @extend %display-block800
+
+    .#{$m-search-page__sidebar},
+    .#{$m-search-page__content}
+        vertical-align: top
+
+        @extend %display-table-cell800
+
+.#{$m-search-page__header}
+    .#{$m-search-page__advanced}
+        .#{$fields}
+            li
+                width: (100% / 3)

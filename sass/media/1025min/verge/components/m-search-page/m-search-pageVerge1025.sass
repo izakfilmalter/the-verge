@@ -1,0 +1,28 @@
+.#{$m-search-page__header}
+    .#{$m-search-page__advanced}
+        .#{$fields}
+            width: 85%
+
+    .#{$controls}
+        float: left
+        width: 15%
+
+        li
+            @extend %display-block1025
+
+            width: 100%
+
+            &:last-child
+                text-align: left
+
+        .#{$p-button__round}
+            +position(1rem, initial, initial, initial)
+
+            padding: 2px initial initial
+
+    .#{$m-search-page__switch}
+        padding: initial initial initial 1rem
+
+.#{$m-search-page__content}
+    .#{$p-basic-article-list}
+        padding: 0 2rem 2rem
