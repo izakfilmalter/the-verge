@@ -2048,6 +2048,18 @@
     -o-filter: blur(0);
     filter: blur(0);
   }
+
+  .R > .DP .Va::before {
+    border-width: 3px;
+    border-radius: 80px;
+    margin: -40px initial initial -40px;
+    width: 80px;
+    height: 80px;
+  }
+  .R > .DP .Va::after {
+    border-width: 20px 0 20px 26.66667px;
+    margin: -20px initial initial -8px;
+  }
 }
 @media (max-width: 600px) {
   .HAM {
@@ -2135,6 +2147,62 @@
     border-right: solid 10px #fff;
     height: 100%;
     width: 25%;
+  }
+}
+@media (max-width: 800px) {
+  .R > .DP .Va, .R > .DP .Va::before, .R > .DP .Va::after {
+    display: block;
+  }
+
+  .R > .DP .Va, .R > .DP .Va::before, .R > .DP .Va::after {
+    position: absolute;
+  }
+
+  .R > .DP .Va {
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .R > .DP .Va:hover::before {
+    background: #fa4b2a;
+  }
+  .R > .DP .Va::before {
+    background: rgba(250, 75, 42, 0.75);
+    color: #fff;
+    opacity: 0.75;
+    border-width: 5px;
+    border-radius: 100px;
+    margin: -50px initial initial -50px;
+    height: 100px;
+    width: 100px;
+  }
+  .R > .DP .Va::after {
+    opacity: 0.8;
+    border-width: 25px 0 25px 33.33333px;
+    border-color: transparent;
+    border-left-color: white;
+    margin: -25px initial initial -10px;
+    width: 0;
+    height: 0;
+    -moz-transform: scale(0.9999);
+  }
+  .R > .DP .Va::before, .R > .DP .Va::after {
+    content: "";
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
+    transition: ease all 0.5s;
+  }
+
+  a:hover .R > .DP .Va::before,
+  a:hover .R > .DP .Va::after,
+  .R > .DP .Va:hover::before,
+  .R > .DP .Va:hover::after {
+    opacity: 1;
   }
 }
 @media (max-width: 950px) {

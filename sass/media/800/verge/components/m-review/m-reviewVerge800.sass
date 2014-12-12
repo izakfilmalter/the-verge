@@ -1,0 +1,63 @@
+.#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}
+    @extend %display-block800max
+
+    @extend %position-absolute800max
+    +position(0, initial, initial, initial)
+
+    height: 100%
+    width: 100%
+
+    &:hover::before
+        background: $pomegranate
+
+    &::before
+        background: rgba($pomegranate, 0.75)
+
+        color: $white
+
+        opacity: 0.75
+
+        border-width: 5px
+        border-radius: 100px
+
+        margin: -50px initial initial -50px
+
+        height: 100px
+        width: 100px
+
+    &::after
+        opacity: .8
+
+        border-width: 25px 0 25px 33.33333px
+        border-color: transparent
+        border-left-color: white
+
+        margin: -25px initial initial -10px
+
+        width: 0
+        height: 0
+
+        -moz-transform: scale(0.9999)
+
+    &::before,
+    &::after
+        content: ''
+
+        @extend %display-block800max
+        z-index: 2
+
+        @extend %position-absolute800max
+        +position(50%, initial, initial, 50%)
+
+        border-style: solid
+
+        -webkit-transition: ease all .5s
+        -moz-transition: ease all .5s
+        -o-transition: ease all .5s
+        transition: ease all .5s
+
+a:hover .#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}::before,
+a:hover .#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}::after,
+.#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}:hover::before,
+.#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}:hover::after
+    opacity: 1

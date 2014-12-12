@@ -2048,6 +2048,18 @@
     -o-filter: blur(0);
     filter: blur(0);
   }
+
+  .m-review > .p-dynamic-image .m-video__link::before {
+    border-width: 3px;
+    border-radius: 80px;
+    margin: -40px initial initial -40px;
+    width: 80px;
+    height: 80px;
+  }
+  .m-review > .p-dynamic-image .m-video__link::after {
+    border-width: 20px 0 20px 26.66667px;
+    margin: -20px initial initial -8px;
+  }
 }
 @media (max-width: 600px) {
   .m-hub-admin-menu {
@@ -2135,6 +2147,62 @@
     border-right: solid 10px #fff;
     height: 100%;
     width: 25%;
+  }
+}
+@media (max-width: 800px) {
+  .m-review > .p-dynamic-image .m-video__link, .m-review > .p-dynamic-image .m-video__link::before, .m-review > .p-dynamic-image .m-video__link::after {
+    display: block;
+  }
+
+  .m-review > .p-dynamic-image .m-video__link, .m-review > .p-dynamic-image .m-video__link::before, .m-review > .p-dynamic-image .m-video__link::after {
+    position: absolute;
+  }
+
+  .m-review > .p-dynamic-image .m-video__link {
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .m-review > .p-dynamic-image .m-video__link:hover::before {
+    background: #fa4b2a;
+  }
+  .m-review > .p-dynamic-image .m-video__link::before {
+    background: rgba(250, 75, 42, 0.75);
+    color: #fff;
+    opacity: 0.75;
+    border-width: 5px;
+    border-radius: 100px;
+    margin: -50px initial initial -50px;
+    height: 100px;
+    width: 100px;
+  }
+  .m-review > .p-dynamic-image .m-video__link::after {
+    opacity: 0.8;
+    border-width: 25px 0 25px 33.33333px;
+    border-color: transparent;
+    border-left-color: white;
+    margin: -25px initial initial -10px;
+    width: 0;
+    height: 0;
+    -moz-transform: scale(0.9999);
+  }
+  .m-review > .p-dynamic-image .m-video__link::before, .m-review > .p-dynamic-image .m-video__link::after {
+    content: "";
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
+    transition: ease all 0.5s;
+  }
+
+  a:hover .m-review > .p-dynamic-image .m-video__link::before,
+  a:hover .m-review > .p-dynamic-image .m-video__link::after,
+  .m-review > .p-dynamic-image .m-video__link:hover::before,
+  .m-review > .p-dynamic-image .m-video__link:hover::after {
+    opacity: 1;
   }
 }
 @media (max-width: 950px) {

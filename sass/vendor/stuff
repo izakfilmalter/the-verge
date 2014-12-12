@@ -1,0 +1,137 @@
+.m-footer__social.facebook:before {
+    content: "";
+}
+
+.m-footer__social.twitter:before {
+    content: "";
+}
+
+.m-footer__social.googleplus:before {
+    content: "";
+}
+
+.m-footer__social.tumblr:before {
+    content: "";
+}
+
+.m-footer__social.youtube:before {
+    content: "";
+}
+
+.m-footer__social.instagram:before {
+    content: "";
+}
+
+.m-footer__social.rss:before {
+    content: "";
+}
+
+.m-article__follow-bar .close:before {
+    font-family: "verge-font-icons";
+    font-size: 18px;
+    content: "";
+}
+
+.m-forum-entry__flag.flag a:before {
+    content: "";
+}
+
+.m-forum-entry__flag.rec a:before {
+    content: "";
+}
+
+.m-comments .comments-header .tips_link:after {
+    content: "↓";
+}
+
+.m-comments .comments-header.ui-state-tips-active .tips_link:after {
+    content: "↑";
+}
+
+.m-comments .citem.collapsed .collapse_toggle:before {
+    content: "";
+}
+
+.m-comments .citem .posted_on .up_link:before {
+    content: "";
+}
+
+.m-comments .citem .posted_on .reply_link:before {
+    content: "";
+}
+
+.m-comments .citem .posted_on .actions_toggle:before {
+    content: "⚙";
+}
+
+.m-comments .citem .posted_on .block_user_link:before {
+    content: "⚠";
+}
+
+.m-comments .citem .posted_on .inspect_user_link:before {
+    content: "↩";
+}
+
+.m-comments .citem .posted_on .delete_link:before {
+    content: "";
+}
+
+.m-comments .citem .posted_on .hide_link:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton1:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton2:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton3:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton4:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton5:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton6:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton7:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton8:before {
+    content: "";
+}
+
+.m-comments .cform .markItUpHeader .markItUpButton9:before {
+    content: "";
+}
+
+#comment_touch_tools a.refresh:before {
+    font-family: "verge-font-icons";
+    content: "";
+}
+
+#comment_touch_tools a.close:before {
+    font-family: "verge-font-icons";
+    content: "";
+}
+
+#autoupdate_info .close:before {
+    font-family: "verge-font-icons";
+    font-size: 1.2rem;
+    content: "";
+}
+
+
+
+
