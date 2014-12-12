@@ -1,4 +1,5 @@
-.#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}
+.#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link},
+.#{$m-feature} > .#{$p-dynamic-image} .#{$m-video__link}
     @extend %display-block800max
 
     @extend %position-absolute800max
@@ -26,11 +27,11 @@
         width: 100px
 
     &::after
-        opacity: .8
+        opacity: 0.8
 
         border-width: 25px 0 25px 33.33333px
         border-color: transparent
-        border-left-color: white
+        border-left-color: $white
 
         margin: -25px initial initial -10px
 
@@ -59,5 +60,8 @@
 a:hover .#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}::before,
 a:hover .#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}::after,
 .#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}:hover::before,
-.#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}:hover::after
-    opacity: 1
+.#{$m-review}>.#{$p-dynamic-image} .#{$m-video__link}:hover::after,
+a:hover .#{$m-feature} > .#{$p-dynamic-image} .#{$m-video__link}::before,
+a:hover .#{$m-feature} > .#{$p-dynamic-image} .#{$m-video__link}::after
+.#{$m-feature} > .#{$p-dynamic-image} .#{$m-video__link}:hover::after,
+.#{$m-feature} > .#{$p-dynamic-image} .#{$m-video__link}
