@@ -113,7 +113,7 @@
   .FIc th:nth-child(3),
   .FIc td:nth-child(3), .RI .RIa,
   .RI .RIb, .US .USa,
-  .US .USb {
+  .US .USb, .ARe {
     display: table-cell;
   }
 
@@ -616,6 +616,14 @@
     width: 100%;
   }
 
+  .ARe {
+    width: 60px;
+  }
+
+  .ARa {
+    padding-top: 1.25rem;
+  }
+
   .ARa q,
   .STa q {
     font-size: 2rem;
@@ -1007,6 +1015,14 @@
   .E .C.sI.sJ h2 {
     margin: 1.5rem 1rem;
   }
+
+  .ARc {
+    padding: 1.5rem;
+  }
+
+  .ARd {
+    margin: 1.5rem initial initial;
+  }
 }
 @media (min-width: 800px) {
   .PT ul li.hk, .EHd, .RIc .dl .sr {
@@ -1021,20 +1037,21 @@
     display: inline-block;
   }
 
-  .TP, .SP, .Ea {
+  .TP, .SP, .ARf, .Ea {
     display: table;
   }
 
   .FIc th:nth-child(4),
   .FIc td:nth-child(4), .TP .TPa,
   .TP .TPb, .SP .SPa,
-  .SP .SPb, .Ea .Eb,
+  .SP .SPb, .ARf .ARg,
+  .ARf .ARh, .Ea .Eb,
   .Ea .Ec {
     display: table-cell;
   }
 
   .PT.hl .PTa, .BS .sf::after, .Ad,
-  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3, .TP .TPa > .p-rock, .SP .SPa > .dk, .Ea .Eb > .p-rock {
+  .Ae, .FIa .forum-meta, .RIc .RS, .RIc .dl .sr, .Ra > aside, .FEa aside, .S.sy::before, .S.sy:after, .USg .dv, .USg .dv h3, .TP .TPa > .p-rock, .SP .SPa > .dk, .ARf .ARg > .dk, .Ea .Eb > .p-rock {
     display: block;
   }
 
@@ -1509,6 +1526,19 @@
     width: 33.33333%;
   }
 
+  .ARf {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .ARf .ARg {
+    border-left: 1px solid #ddd;
+    width: 320px;
+  }
+  .ARf .ARg,
+  .ARf .ARh {
+    vertical-align: top;
+  }
+
   .ARa q,
   .STa q {
     font-size: 2.25rem;
@@ -1552,7 +1582,7 @@
   }
 }
 @media (min-width: 1025px) {
-  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DP, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg, .Tg aside, .SPc .sH li {
+  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DP, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg, .Tg aside, .SPc .sH li, .ARb {
     display: block;
   }
 
@@ -3024,6 +3054,18 @@
     display: block;
   }
 
+  .ARf {
+    display: table;
+  }
+
+  .ARf .ARg {
+    display: table-header-group;
+  }
+
+  .ARf .ARh {
+    display: table-row-group;
+  }
+
   .R > .DP .Va,
   .FE > .DP .Va, .R > .DP .Va::before, .R > .DP .Va::after,
   .FE > .DP .Va::before,
@@ -3075,6 +3117,11 @@
     -moz-transition: ease all 0.5s;
     -o-transition: ease all 0.5s;
     transition: ease all 0.5s;
+  }
+
+  .ARf {
+    table-layout: fixed;
+    width: 100%;
   }
 }
 @media (max-width: 950px) {

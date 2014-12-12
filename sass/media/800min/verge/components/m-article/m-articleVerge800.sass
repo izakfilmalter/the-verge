@@ -1,3 +1,22 @@
+.#{$m-article__comments-section}
+    @extend %display-table800
+    table-layout: fixed
+
+    width: 100%
+
+    .#{$m-article__comments__sidebar}
+        border-left: 1px solid $alto
+
+        width: 320px
+
+        & > .#{$p-rock}
+            @extend %display-block800
+
+    .#{$m-article__comments__sidebar},
+    .#{$m-article__comments__content}
+        @extend %display-table-cell800
+        vertical-align: top
+
 .#{$m-article__entry},
 .#{$m-stream__header}
     q
