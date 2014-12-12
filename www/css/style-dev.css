@@ -693,6 +693,10 @@
   .m-gallery-entry .m-article__comments__content aside .p-rock:first-child ul {
     border-right: 1px solid #ddd;
   }
+
+  .m-forum-entry .m-article__entry {
+    padding: 0 0 0 1.25rem;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before, .m-reviews-index__node::before,

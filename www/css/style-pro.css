@@ -693,6 +693,10 @@
   .G .ARh aside .dk:first-child ul {
     border-right: 1px solid #ddd;
   }
+
+  .FE .ARa {
+    padding: 0 0 0 1.25rem;
+  }
 }
 @media (min-width: 700px) {
   .B, .Be, .Be::before, .RId::before,
