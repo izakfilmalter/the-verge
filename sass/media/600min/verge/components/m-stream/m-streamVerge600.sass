@@ -1,0 +1,54 @@
+.#{$m-stream__updates}
+    li
+        padding: 2rem 0
+
+        article
+            @extend %display-table-row600
+
+            width: 100%
+
+    .#{$m-stream__update-meta}
+        text-align: center
+
+        @extend %display-table-cell600
+
+        @extend %position-relative600
+        +position(-5px, initial, initial, initial)
+
+        margin: initial initial 0
+
+        width: 150px
+
+        padding: 0 initial initial
+
+        h6
+            font-size: 18px
+
+            @extend %display-block600
+
+            &.#{$original}
+                width: 75px
+
+                margin: 0 auto
+
+        strong
+            font-size: 70px
+
+            @extend %display-block600
+
+            & + .#{$date}
+                margin: -5px 0 10px
+
+        .#{$date}
+            font-size: 11px
+
+            margin: 5px 0 10px
+
+        .#{$p-comment-count}
+            @extend %position-relative600
+
+            top: initial
+            right: initial
+
+    .#{$m-stream__update-body}
+        @extend %display-table-cell600

@@ -86,7 +86,7 @@
   .p-big-search .label::after, .p-basic-article-list.hide-mobile-blurbs .p-basic-article-list__node .body .blurb, .m-footer__search-col .scalable-logo, .m-footer__status-corner, .m-footer__status-corner .m-footer__bottom__status, .m-footer__status-corner .m-footer__bottom__status a, .m-footer__search-col .m-footer__section-header,
   .m-footer__sections-col .m-footer__section-header,
   .m-footer__basics-col .m-footer__section-header,
-  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after, .m-snippet.sidebar-left::before, .m-snippet.sidebar-left::after, .m-snippet.sidebar-right::before, .m-snippet.sidebar-right::after, .m-user-page .m-user-page__sidebar > .p-rock, .m-user-page__head, .m-product-category-list > li, .m-product-category-list li.-is-active > ul, .m-product-category-list li.-has-dropdown > a::after {
+  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after, .m-snippet.sidebar-left::before, .m-snippet.sidebar-left::after, .m-snippet.sidebar-right::before, .m-snippet.sidebar-right::after, .m-user-page .m-user-page__sidebar > .p-rock, .m-user-page__head, .m-product-category-list > li, .m-product-category-list li.-is-active > ul, .m-product-category-list li.-has-dropdown > a::after, .m-stream__updates .m-stream__update-meta h6, .m-stream__updates .m-stream__update-meta strong {
     display: block;
   }
 
@@ -113,8 +113,12 @@
   .m-forum-index__table th:nth-child(3),
   .m-forum-index__table td:nth-child(3), .m-reviews-index .m-reviews-index__sidebar,
   .m-reviews-index .m-reviews-index__content, .m-user-page .m-user-page__sidebar,
-  .m-user-page .m-user-page__content, .m-article__flags {
+  .m-user-page .m-user-page__content, .m-article__flags, .m-stream__updates .m-stream__update-meta, .m-stream__updates .m-stream__update-body {
     display: table-cell;
+  }
+
+  .m-stream__updates li article {
+    display: table-row;
   }
 
   .m-footer__vox-corner,
@@ -122,7 +126,7 @@
     position: absolute;
   }
 
-  .p-basic-article-list__node .body, .m-footer, .m-reviews-index__sidebar .p-tabs {
+  .p-basic-article-list__node .body, .m-footer, .m-reviews-index__sidebar .p-tabs, .m-stream__updates .m-stream__update-meta, .m-stream__updates .m-stream__update-meta .p-comment-count {
     position: relative;
   }
 
@@ -645,6 +649,41 @@
   .m-stream__header q.right {
     max-width: 40%;
   }
+
+  .m-stream__updates li {
+    padding: 2rem 0;
+  }
+  .m-stream__updates li article {
+    width: 100%;
+  }
+  .m-stream__updates .m-stream__update-meta {
+    text-align: center;
+    top: -5px;
+    margin: initial initial 0;
+    width: 150px;
+    padding: 0 initial initial;
+  }
+  .m-stream__updates .m-stream__update-meta h6 {
+    font-size: 18px;
+  }
+  .m-stream__updates .m-stream__update-meta h6.original {
+    width: 75px;
+    margin: 0 auto;
+  }
+  .m-stream__updates .m-stream__update-meta strong {
+    font-size: 70px;
+  }
+  .m-stream__updates .m-stream__update-meta strong + .date {
+    margin: -5px 0 10px;
+  }
+  .m-stream__updates .m-stream__update-meta .date {
+    font-size: 11px;
+    margin: 5px 0 10px;
+  }
+  .m-stream__updates .m-stream__update-meta .p-comment-count {
+    top: initial;
+    right: initial;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before, .m-reviews-index__node::before,
@@ -1023,6 +1062,10 @@
   .m-article__entry-container {
     margin: 1.5rem initial initial;
   }
+
+  .m-stream__header {
+    padding: 1.5rem;
+  }
 }
 @media (min-width: 800px) {
   .p-tabs ul li.-secondary, .p-entry-header__admin, .m-reviews-index__hero .review-container .ad {
@@ -1046,7 +1089,7 @@
   .m-tag-page .m-tag-page__content, .m-search-page .m-search-page__sidebar,
   .m-search-page .m-search-page__content, .m-article__comments-section .m-article__comments__sidebar,
   .m-article__comments-section .m-article__comments__content, .m-entry__body .m-entry__sidebar,
-  .m-entry__body .m-entry__content {
+  .m-entry__body .m-entry__content, .m-stream__updates .m-stream__update-quote {
     display: table-cell;
   }
 
@@ -1556,6 +1599,19 @@
   .m-entry__body .m-entry__sidebar,
   .m-entry__body .m-entry__content {
     vertical-align: top;
+  }
+
+  .m-stream__updates .m-stream__update-quote {
+    font-family: ff-din-web-condensed, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1;
+    color: #fa4b2a;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 25%;
+    padding: 0 2rem;
   }
 }
 @media (min-width: 900px) {

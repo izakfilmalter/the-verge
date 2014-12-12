@@ -57,7 +57,7 @@
     width: 33%;
   }
 
-  .RIc .sj .DP {
+  .RIc .sj .DI {
     height: 250px;
   }
 
@@ -86,7 +86,7 @@
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh, .PCL > li, .PCL li.hn > ul, .PCL li.hr > a::after {
+  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh, .PCL > li, .PCL li.hn > ul, .PCL li.hr > a::after, .STb .STc h6, .STb .STc strong {
     display: block;
   }
 
@@ -113,8 +113,12 @@
   .FIc th:nth-child(3),
   .FIc td:nth-child(3), .RI .RIa,
   .RI .RIb, .US .USa,
-  .US .USb, .ARe {
+  .US .USb, .ARe, .STb .STc, .STb .STd {
     display: table-cell;
+  }
+
+  .STb li article {
+    display: table-row;
   }
 
   .He,
@@ -122,7 +126,7 @@
     position: absolute;
   }
 
-  .BALa .sk, .F, .RIa .PT {
+  .BALa .sk, .F, .RIa .PT, .STb .STc, .STb .STc .CC {
     position: relative;
   }
 
@@ -176,7 +180,7 @@
     font-size: 1.25rem;
   }
 
-  .BAL.dg .BALa .sj .DP {
+  .BAL.dg .BALa .sj .DI {
     height: 150px;
   }
 
@@ -359,7 +363,7 @@
     width: auto;
   }
 
-  .RIc .sj .DP {
+  .RIc .sj .DI {
     height: 300px;
   }
   .RIc .dl .sp h1 {
@@ -644,6 +648,41 @@
   .STa q.left,
   .STa q.right {
     max-width: 40%;
+  }
+
+  .STb li {
+    padding: 2rem 0;
+  }
+  .STb li article {
+    width: 100%;
+  }
+  .STb .STc {
+    text-align: center;
+    top: -5px;
+    margin: initial initial 0;
+    width: 150px;
+    padding: 0 initial initial;
+  }
+  .STb .STc h6 {
+    font-size: 18px;
+  }
+  .STb .STc h6.sK {
+    width: 75px;
+    margin: 0 auto;
+  }
+  .STb .STc strong {
+    font-size: 70px;
+  }
+  .STb .STc strong + .sL {
+    margin: -5px 0 10px;
+  }
+  .STb .STc .sL {
+    font-size: 11px;
+    margin: 5px 0 10px;
+  }
+  .STb .STc .CC {
+    top: initial;
+    right: initial;
   }
 }
 @media (min-width: 700px) {
@@ -1023,6 +1062,10 @@
   .ARd {
     margin: 1.5rem initial initial;
   }
+
+  .STa {
+    padding: 1.5rem;
+  }
 }
 @media (min-width: 800px) {
   .PT ul li.hk, .EHd, .RIc .dl .sr {
@@ -1046,7 +1089,7 @@
   .TP .TPb, .SP .SPa,
   .SP .SPb, .ARf .ARg,
   .ARf .ARh, .Ea .Eb,
-  .Ea .Ec {
+  .Ea .Ec, .STb .STe {
     display: table-cell;
   }
 
@@ -1117,7 +1160,7 @@
     height: 0;
   }
 
-  .BALa .sj .DP {
+  .BALa .sj .DI {
     height: 150px;
   }
 
@@ -1245,7 +1288,7 @@
     padding: 0.5rem;
   }
 
-  .RIc .sj .DP {
+  .RIc .sj .DI {
     height: 350px;
   }
   .RIc .dl .sp {
@@ -1557,6 +1600,19 @@
   .Ea .Ec {
     vertical-align: top;
   }
+
+  .STb .STe {
+    font-family: ff-din-web-condensed, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1;
+    color: #fa4b2a;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 25%;
+    padding: 0 2rem;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -1582,7 +1638,7 @@
   }
 }
 @media (min-width: 1025px) {
-  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DP, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg, .Tg aside, .SPc .sH li, .ARb {
+  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DI, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg, .Tg aside, .SPc .sH li, .ARb {
     display: block;
   }
 
@@ -1838,7 +1894,7 @@
   .Ba p {
     font-size: 1rem;
   }
-  .Ba .DP {
+  .Ba .DI {
     height: 59px;
     width: 89px;
   }
@@ -2936,16 +2992,16 @@
     filter: blur(0);
   }
 
-  .R > .DP .Va::before,
-  .FE > .DP .Va::before {
+  .R > .DI .Va::before,
+  .FE > .DI .Va::before {
     border-width: 3px;
     border-radius: 80px;
     margin: -40px initial initial -40px;
     width: 80px;
     height: 80px;
   }
-  .R > .DP .Va::after,
-  .FE > .DP .Va::after {
+  .R > .DI .Va::after,
+  .FE > .DI .Va::after {
     border-width: 20px 0 20px 26.66667px;
     margin: -20px initial initial -8px;
   }
@@ -3047,10 +3103,10 @@
   }
 }
 @media (max-width: 800px) {
-  .R > .DP .Va,
-  .FE > .DP .Va, .R > .DP .Va::before, .R > .DP .Va::after,
-  .FE > .DP .Va::before,
-  .FE > .DP .Va::after {
+  .R > .DI .Va,
+  .FE > .DI .Va, .R > .DI .Va::before, .R > .DI .Va::after,
+  .FE > .DI .Va::before,
+  .FE > .DI .Va::after {
     display: block;
   }
 
@@ -3066,25 +3122,25 @@
     display: table-row-group;
   }
 
-  .R > .DP .Va,
-  .FE > .DP .Va, .R > .DP .Va::before, .R > .DP .Va::after,
-  .FE > .DP .Va::before,
-  .FE > .DP .Va::after {
+  .R > .DI .Va,
+  .FE > .DI .Va, .R > .DI .Va::before, .R > .DI .Va::after,
+  .FE > .DI .Va::before,
+  .FE > .DI .Va::after {
     position: absolute;
   }
 
-  .R > .DP .Va,
-  .FE > .DP .Va {
+  .R > .DI .Va,
+  .FE > .DI .Va {
     top: 0;
     height: 100%;
     width: 100%;
   }
-  .R > .DP .Va:hover::before,
-  .FE > .DP .Va:hover::before {
+  .R > .DI .Va:hover::before,
+  .FE > .DI .Va:hover::before {
     background: #fa4b2a;
   }
-  .R > .DP .Va::before,
-  .FE > .DP .Va::before {
+  .R > .DI .Va::before,
+  .FE > .DI .Va::before {
     background: rgba(250, 75, 42, 0.75);
     color: #fff;
     opacity: 0.75;
@@ -3094,8 +3150,8 @@
     height: 100px;
     width: 100px;
   }
-  .R > .DP .Va::after,
-  .FE > .DP .Va::after {
+  .R > .DI .Va::after,
+  .FE > .DI .Va::after {
     opacity: 0.8;
     border-width: 25px 0 25px 33.33333px;
     border-color: transparent;
@@ -3105,9 +3161,9 @@
     height: 0;
     -moz-transform: scale(0.9999);
   }
-  .R > .DP .Va::before, .R > .DP .Va::after,
-  .FE > .DP .Va::before,
-  .FE > .DP .Va::after {
+  .R > .DI .Va::before, .R > .DI .Va::after,
+  .FE > .DI .Va::before,
+  .FE > .DI .Va::after {
     content: "";
     z-index: 2;
     top: 50%;
