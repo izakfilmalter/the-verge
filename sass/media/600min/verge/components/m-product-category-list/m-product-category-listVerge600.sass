@@ -1,0 +1,40 @@
+.#{$m-product-category-list}
+    padding: 1rem 0 0 1rem
+
+    & > li
+        background: transparent
+
+        font-size: .9rem
+        color: #444
+
+        @extend %display-block600
+
+        margin: 0
+
+        padding: 0
+
+    li
+        &.#{$-is-active} > ul
+            @extend %display-block600
+
+        &.#{$-has-dropdown} > a::after
+            @extend %display-block600
+
+            border-width: 4px 4px 0 4px
+            border-style: solid
+            border-color: transparent
+            border-top-color: $tundora
+
+            height: 0
+            width: 0
+
+        &.#{$-has-dropdown}.#{$-is-active} > a::after
+            border-width: 0 4px 4px 4px
+            border-bottom-color: $pomegranate
+
+    select
+        @extend %display-none600min
+
+.#{$m-product-category-list},
+.#{$m-product-category-list}.#{$-brands}
+    width: 100%

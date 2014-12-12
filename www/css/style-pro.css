@@ -86,7 +86,7 @@
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh {
+  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh, .PCL > li, .PCL li.hn > ul, .PCL li.hr > a::after {
     display: block;
   }
 
@@ -96,7 +96,7 @@
 
   .BSO.dh .BSOb,
   .BSO.dh .BSOa, .Fi, .FIc th:nth-child(1) .dj,
-  .FIc td:nth-child(1) .dj, .USc .ds {
+  .FIc td:nth-child(1) .dj, .USc .ds, .PCL select {
     display: none;
   }
 
@@ -586,6 +586,34 @@
   .SPc .SPd ul,
   .SPc .SPd ul li {
     padding: 0.5rem;
+  }
+
+  .PCL {
+    padding: 1rem 0 0 1rem;
+  }
+  .PCL > li {
+    background: transparent;
+    font-size: 0.9rem;
+    color: #444;
+    margin: 0;
+    padding: 0;
+  }
+  .PCL li.hr > a::after {
+    border-width: 4px 4px 0 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #444;
+    height: 0;
+    width: 0;
+  }
+  .PCL li.hr.hn > a::after {
+    border-width: 0 4px 4px 4px;
+    border-bottom-color: #fa4b2a;
+  }
+
+  .PCL,
+  .PCL.hs {
+    width: 100%;
   }
 }
 @media (min-width: 700px) {
