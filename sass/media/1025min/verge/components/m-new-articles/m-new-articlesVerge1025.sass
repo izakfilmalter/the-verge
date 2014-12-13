@@ -1,7 +1,7 @@
 .#{$m-new-articles}
     @extend %position-relative1025
     top: initial
-    right: intial
+    right: initial
 
     border-right: 1px solid $pomegranate
     border-left: 1px solid $pomegranate
@@ -14,6 +14,19 @@
         -moz-transition: all 0.2s ease-in-out
         -o-transition: all 0.2s ease-in-out
         transition: all 0.2s ease-in-out
+
+.#{$m-new-articles__toggle}
+    margin-top: 20px
+
+    height: 60px
+
+    -webkit-transition: all 0.1s
+    -moz-transition: all 0.1s
+    -o-transition: all 0.1s
+    transition: all 0.1s
+
+    &:hover
+        background: $scarlet
 
     strong
         font-size: 2.5rem
@@ -37,19 +50,6 @@
             border-top-color: $white
 
             width: 0
-
-.#{$m-new-articles__toggle}
-    margin-top: 20px
-
-    height: 60px
-
-    -webkit-transition: all 0.1s
-    -moz-transition: all 0.1s
-    -o-transition: all 0.1s
-    transition: all 0.1s
-
-    &:hover
-        background: $scarlet
 
     em
         font-size: .85rem

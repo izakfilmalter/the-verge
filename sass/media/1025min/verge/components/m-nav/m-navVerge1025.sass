@@ -266,12 +266,14 @@
         font-size: 1.25rem
         line-height: 44px
 
-
         padding: 0 .75rem
 
     li
         &:first-child
             margin-left: 0
+
+        a.#{$has-icon}
+            padding-left: 0
 
         &.#{$has-dropdown} > a
             @extend %position-relative1025
@@ -377,9 +379,6 @@
         .#{$icon}
             @extend %display-none1025
 
-        a.#{$has-icon}
-            padding-left: 0
-
 .#{$m-nav__search}
     @extend %display-block1025
 
@@ -474,7 +473,6 @@
 .#{$m-nav}.#{$-user},
 .#{$m-nav-dropdown},
 .#{$m-nav__menu} li.#{$is-selected} a,
-.#{$m-nav__menu} li.#{$-user} a,
 .#{$m-nav__search}
     background: $alabaster
 
@@ -575,7 +573,8 @@ a:hover .#{$m-nav-dropdown__image}.#{$-video}::after,
 
 .#{$m-nav}.#{$-user} .#{$m-nav__menu} li,
 .#{$m-nav}.#{$-user} .#{$m-nav__menu} li a,
-.#{$m-nav__logout} input
+.#{$m-nav__logout} input,
+.#{$m-nav__menu} li a
     border: none
 
 .#{$is-nav-open} .#{$m-nav-dropdown},
