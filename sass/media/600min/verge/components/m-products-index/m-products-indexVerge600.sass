@@ -1,0 +1,44 @@
+.#{$m-products-index}
+    @extend %display-table600
+    table-layout: fixed
+
+    width: 100%
+
+    .#{$m-products-index__sidebar}
+        width: 170px
+
+        border-right: 1px solid $alto
+
+        & > .#{$p-rock}
+            @extend %display-block600
+
+        .#{$p-tabs}
+            @extend %position-relative600
+
+            margin: 0.9rem initial initial
+
+            z-index: 10
+
+    .#{$m-products-index__sidebar},
+    .#{$m-products-index__content}
+        vertical-align: top
+
+        @extend %display-table-cell600
+
+.#{$m-products-index__sidebar}
+    .#{$p-tabs}
+        @extend %position-relative600
+
+        margin: 0.9rem initial initial
+
+        li
+            font-size: 1.3rem
+            text-align: left
+
+            border-right: 1px solid $white
+
+            width: auto
+
+.#{$m-products-index__grid}
+    li
+        width: 50%

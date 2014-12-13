@@ -99,12 +99,16 @@
   .m-comments .comments-load-error-msg {
     font-size: 1.8rem;
   }
+
+  .m-products-index__grid li {
+    width: 33%;
+  }
 }
 @media (min-width: 600px) {
   .p-big-search .label::after, .p-basic-article-list.hide-mobile-blurbs .p-basic-article-list__node .body .blurb, .m-footer__search-col .scalable-logo, .m-footer__status-corner, .m-footer__status-corner .m-footer__bottom__status, .m-footer__status-corner .m-footer__bottom__status a, .m-footer__search-col .m-footer__section-header,
   .m-footer__sections-col .m-footer__section-header,
   .m-footer__basics-col .m-footer__section-header,
-  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after, .m-snippet.sidebar-left::before, .m-snippet.sidebar-left::after, .m-snippet.sidebar-right::before, .m-snippet.sidebar-right::after, .m-user-page .m-user-page__sidebar > .p-rock, .m-user-page__head, .m-product-category-list > li, .m-product-category-list li.-is-active > ul, .m-product-category-list li.-has-dropdown > a::after, .m-stream__updates .m-stream__update-meta h6, .m-stream__updates .m-stream__update-meta strong, .m-comments .comments-header .tips .sr-group::before, .m-comments .comments-header .tips .sr-group::after {
+  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after, .m-snippet.sidebar-left::before, .m-snippet.sidebar-left::after, .m-snippet.sidebar-right::before, .m-snippet.sidebar-right::after, .m-user-page .m-user-page__sidebar > .p-rock, .m-user-page__head, .m-product-category-list > li, .m-product-category-list li.-is-active > ul, .m-product-category-list li.-has-dropdown > a::after, .m-stream__updates .m-stream__update-meta h6, .m-stream__updates .m-stream__update-meta strong, .m-comments .comments-header .tips .sr-group::before, .m-comments .comments-header .tips .sr-group::after, .m-products-index .m-products-index__sidebar > .p-rock {
     display: block;
   }
 
@@ -118,7 +122,7 @@
     display: none;
   }
 
-  .m-reviews-index, .m-user-page {
+  .m-reviews-index, .m-user-page, .m-products-index {
     display: table;
   }
 
@@ -131,7 +135,8 @@
   .m-forum-index__table th:nth-child(3),
   .m-forum-index__table td:nth-child(3), .m-reviews-index .m-reviews-index__sidebar,
   .m-reviews-index .m-reviews-index__content, .m-user-page .m-user-page__sidebar,
-  .m-user-page .m-user-page__content, .m-article__flags, .m-stream__updates .m-stream__update-meta, .m-stream__updates .m-stream__update-body {
+  .m-user-page .m-user-page__content, .m-article__flags, .m-stream__updates .m-stream__update-meta, .m-stream__updates .m-stream__update-body, .m-products-index .m-products-index__sidebar,
+  .m-products-index .m-products-index__content {
     display: table-cell;
   }
 
@@ -145,7 +150,7 @@
     position: absolute;
   }
 
-  .p-basic-article-list__node .body, .m-footer, .m-reviews-index__sidebar .p-tabs, .m-stream__updates .m-stream__update-meta, .m-stream__updates .m-stream__update-meta .p-comment-count, .m-comments .comments-header {
+  .p-basic-article-list__node .body, .m-footer, .m-reviews-index__sidebar .p-tabs, .m-stream__updates .m-stream__update-meta, .m-stream__updates .m-stream__update-meta .p-comment-count, .m-comments .comments-header, .m-products-index .m-products-index__sidebar .p-tabs, .m-products-index__sidebar .p-tabs {
     position: relative;
   }
 
@@ -156,7 +161,8 @@
     content: "bp-small - min-width: 600px";
   }
 
-  .m-reviews-index__sidebar .p-tabs {
+  .m-reviews-index__sidebar .p-tabs,
+  .m-products-index__sidebar .p-tabs {
     z-index: 10;
   }
 
@@ -768,6 +774,37 @@
   .chorustouch .m-comments .comments-header .touch_tools_toggle {
     top: 2rem;
   }
+
+  .m-products-index {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .m-products-index .m-products-index__sidebar {
+    width: 170px;
+    border-right: 1px solid #ddd;
+  }
+  .m-products-index .m-products-index__sidebar .p-tabs {
+    margin: 0.9rem initial initial;
+    z-index: 10;
+  }
+  .m-products-index .m-products-index__sidebar,
+  .m-products-index .m-products-index__content {
+    vertical-align: top;
+  }
+
+  .m-products-index__sidebar .p-tabs {
+    margin: 0.9rem initial initial;
+  }
+  .m-products-index__sidebar .p-tabs li {
+    font-size: 1.3rem;
+    text-align: left;
+    border-right: 1px solid #fff;
+    width: auto;
+  }
+
+  .m-products-index__grid li {
+    width: 50%;
+  }
 }
 @media (min-width: 700px) {
   .m-big-stories, .m-big-stories__toggle, .m-big-stories__toggle::before, .m-reviews-index__node::before,
@@ -1174,6 +1211,10 @@
   .m-comments .citem .posted_on .time {
     float: left;
   }
+
+  .m-products-index__grid li {
+    width: 33%;
+  }
 }
 @media (min-width: 800px) {
   .p-tabs ul li.-secondary, .p-entry-header__admin, .m-reviews-index__hero .review-container .ad {
@@ -1202,7 +1243,7 @@
   }
 
   .p-tabs.-has-starburst .p-starburst, .p-big-search .label::after, .m-ad__zone-2,
-  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside, .m-feature__intro aside, .m-snippet.double::before, .m-snippet.double:after, .m-user-page__forums .forum-meta, .m-user-page__forums .forum-meta h3, .m-tag-page .m-tag-page__sidebar > .p-rock, .m-search-page .m-search-page__sidebar > .p-rock, .m-article__comments-section .m-article__comments__sidebar > .p-rock, .m-entry__body .m-entry__sidebar > .p-rock {
+  .m-ad__zone-4, .m-forum-index__icons .forum-meta, .m-reviews-index__hero .p-review-score, .m-reviews-index__hero .review-container .ad, .m-review__intro > aside, .m-feature__intro aside, .m-snippet.double::before, .m-snippet.double:after, .m-user-page__forums .forum-meta, .m-user-page__forums .forum-meta h3, .m-tag-page .m-tag-page__sidebar > .p-rock, .m-search-page .m-search-page__sidebar > .p-rock, .m-article__comments-section .m-article__comments__sidebar > .p-rock, .m-entry__body .m-entry__sidebar > .p-rock, .m-products-index__ad {
     display: block;
   }
 
@@ -1731,6 +1772,42 @@
   .m-comments .citem .by .short-bio {
     font-size: 0.7rem;
   }
+
+  .m-products-index__ad {
+    float: right;
+  }
+
+  .m-products-index__content > h3 {
+    margin: 0 0 1rem;
+  }
+  .m-products-index__content .m-rock-latest-media {
+    padding: initial 1rem initial initial;
+  }
+  .m-products-index__content .m-rock-latest-discussions {
+    border-left: 1px dotted #ddd;
+    padding: initial initial initial 1rem;
+  }
+  .m-products-index__content .m-rock-latest-media,
+  .m-products-index__content .m-rock-latest-discussions {
+    float: left;
+  }
+
+  .m-products-index__grid li {
+    width: 25%;
+  }
+  .m-products-index__grid li:nth-of-type(5) {
+    clear: both;
+  }
+
+  .m-products-index__latest-news ul li .p-dynamic-image {
+    width: 20%;
+  }
+
+  .m-products-index__ad,
+  .m-products-index__content .m-rock-latest-media,
+  .m-products-index__content .m-rock-latest-discussions {
+    width: 50%;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -1754,9 +1831,21 @@
   .m-snippet .sidebar-right .left {
     width: 65%;
   }
+
+  .m-products-index__ad {
+    width: 60%;
+  }
+
+  .m-products-index__grid li {
+    width: 20%;
+  }
+
+  .m-products-index__latest-news ul li .p-dynamic-image {
+    width: 15%;
+  }
 }
 @media (min-width: 1025px) {
-  .p-big-search .label::after, .p-entry-header__comments::after, .m-ad__zone-1a, .m-header__hub-logo, .m-header__social, .m-header__social a, .m-big-stories__main .p-dynamic-image, .m-nav-dropdown, .m-nav-dropdown__stories a, .m-nav-dropdown__stories.forums span, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__subsections li, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-back-to-top, .m-nav__search, .m-new-articles__controls, .m-timn__intro aside, .m-search-page__header .controls li, .m-article__follow-bar, .m-hub-admin-menu {
+  .p-big-search .label::after, .p-entry-header__comments::after, .m-ad__zone-1a, .m-header__hub-logo, .m-header__social, .m-header__social a, .m-big-stories__main .p-dynamic-image, .m-nav-dropdown, .m-nav-dropdown__stories a, .m-nav-dropdown__stories.forums span, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__subsections li, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-back-to-top, .m-nav__search, .m-new-articles__controls, .m-timn__intro aside, .m-search-page__header .controls li, .m-article__follow-bar, .m-hub-admin-menu, .m-products-index__sidebar .p-starburst {
     display: block;
   }
 
@@ -1773,7 +1862,7 @@
     display: none;
   }
 
-  .p-entry-header__comments::after, .m-header__social, .m-big-stories .chorus-emc__admin, .m-nav.-user, .m-nav-dropdown, .m-nav-dropdown__pane, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__image .timn-icon, .m-nav-dropdown__subsections, .m-nav-dropdown__subsections .icon, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-search, .m-nav__menu li.-back-to-top, .m-nav__menu li.-back-to-top .triangle-icon, .m-nav__search, .m-new-articles__date, .m-new-articles__controls, .m-new-articles__controls::before, .m-timn__sticky-card, .m-timn__intro aside, .m-timn__intro .m-timn__social-buttons {
+  .p-entry-header__comments::after, .m-header__social, .m-big-stories .chorus-emc__admin, .m-nav.-user, .m-nav-dropdown, .m-nav-dropdown__pane, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__image .timn-icon, .m-nav-dropdown__subsections, .m-nav-dropdown__subsections .icon, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-search, .m-nav__menu li.-back-to-top, .m-nav__menu li.-back-to-top .triangle-icon, .m-nav__search, .m-new-articles__date, .m-new-articles__controls, .m-new-articles__controls::before, .m-timn__sticky-card, .m-timn__intro aside, .m-timn__intro .m-timn__social-buttons, .m-products-index__sidebar .p-starburst {
     position: absolute;
   }
 
@@ -1818,7 +1907,8 @@
   }
 
   .m-nav.-user,
-  .m-reviews-index__sidebar .p-starburst {
+  .m-reviews-index__sidebar .p-starburst,
+  .m-products-index__sidebar .p-starburst {
     z-index: 1;
   }
 
@@ -3093,6 +3183,31 @@
     font-weight: normal;
     font-size: 1rem;
     top: 0;
+  }
+
+  .m-products-index__sidebar .p-starburst {
+    top: -25px;
+    left: -15px;
+  }
+  .m-products-index__sidebar .p-tabs {
+    margin: 2rem initial initial;
+  }
+
+  .m-products-index__ad {
+    margin: -1rem -1rem 0 0;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    min-height: 250px;
+    min-width: 300px;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .m-products-index__grid li:nth-of-type(5) {
+    clear: none;
+  }
+  .m-products-index__grid li:nth-of-type(7) {
+    clear: both;
   }
 }
 @media (min-width: 1200px) {

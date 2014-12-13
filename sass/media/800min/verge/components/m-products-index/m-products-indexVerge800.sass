@@ -1,0 +1,37 @@
+.#{$m-products-index__ad}
+    @extend %display-block800
+    float: right
+
+.#{$m-products-index__content}
+    & > h3
+        margin: 0 0 1rem
+
+    .#{$m-rock-latest-media}
+        padding: initial 1rem initial initial
+
+    .#{$m-rock-latest-discussions}
+        border-left: 1px dotted $alto
+
+        padding: initial initial initial 1rem
+
+    .#{$m-rock-latest-media},
+    .#{$m-rock-latest-discussions}
+        float: left
+
+.#{$m-products-index__grid}
+    li
+        width: 25%
+
+        &:nth-of-type(5)
+            clear: both
+
+.#{$m-products-index__latest-news}
+    ul
+        li
+            .#{$p-dynamic-image}
+                width: 20%
+
+.#{$m-products-index__ad},
+.#{$m-products-index__content} .#{$m-rock-latest-media},
+.#{$m-products-index__content} .#{$m-rock-latest-discussions}
+    width: 50%

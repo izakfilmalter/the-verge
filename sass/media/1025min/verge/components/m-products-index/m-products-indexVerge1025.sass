@@ -1,0 +1,29 @@
+.#{$m-products-index__sidebar}
+    .#{$p-starburst}
+        @extend %display-block1025
+
+        @extend %position-absolute1025
+        +position(-25px, initial, initial, -15px)
+
+    .#{$p-tabs}
+        margin: 2rem initial initial
+
+.#{$m-products-index__ad}
+    margin: -1rem -1rem 0 0
+
+    border-bottom: 1px solid $alto
+    border-left: 1px solid $alto
+
+    min-height: 250px
+    min-width: 300px
+    width: auto
+
+    padding: 1rem
+
+.#{$m-products-index__grid}
+    li
+        &:nth-of-type(5)
+            clear: none
+
+        &:nth-of-type(7)
+            clear: both
