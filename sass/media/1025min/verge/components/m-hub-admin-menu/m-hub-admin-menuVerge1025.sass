@@ -1,0 +1,19 @@
+.#{$m-hub-admin-menu}
+    @extend %display-block1025
+    z-index: 5000000
+
+    &:hover,
+    &.#{$is-open}
+        min-width: 175px
+
+    a
+        color: $mine-shaft
+
+    h4::before
+        content: '\e800'
+
+        font-family: "verge-font-icons"
+        font-weight: normal
+        font-size: 1rem
+
+        +position(0, initial, initial, initial)

@@ -1756,7 +1756,7 @@
   }
 }
 @media (min-width: 1025px) {
-  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DI, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg, .Tg aside, .SPc .sH li, .ARb {
+  .BS .sf::after, .EHa::after, .Aa, .Hc, .Hd, .Hd a, .Ba .DI, .Nb, .Ne a, .Ne.s span, .Nf.sa::before, .Nf.sa::after, .Ng li, .Nh, .Na li.dc > a::after, .Na li.hd, .Ni, .NAg, .Tg aside, .SPc .sH li, .ARb, .HAM {
     display: block;
   }
 
@@ -1791,6 +1791,10 @@
     -moz-transition: background-color 100ms;
     -o-transition: background-color 100ms;
     transition: background-color 100ms;
+  }
+
+  .HAM {
+    z-index: 5000000;
   }
 
   .QA {
@@ -3072,6 +3076,23 @@
   }
   .CO .COd .sS {
     margin: 1rem initial initial;
+  }
+
+  .HAM {
+    z-index: 5000000;
+  }
+  .HAM:hover {
+    min-width: 175px;
+  }
+  .HAM a {
+    color: #2c2c2c;
+  }
+  .HAM h4::before {
+    content: "";
+    font-family: "verge-font-icons";
+    font-weight: normal;
+    font-size: 1rem;
+    top: 0;
   }
 }
 @media (min-width: 1200px) {
