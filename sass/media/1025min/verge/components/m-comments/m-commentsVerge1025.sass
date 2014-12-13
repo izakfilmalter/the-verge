@@ -1,0 +1,24 @@
+.#{$m-comments}
+    .#{$comments-header}
+        .#{$tips} .#{$sr-set}
+            margin: 0
+
+            width: 33%
+
+            &:last-child
+                float: left
+
+        .#{$tips_link},
+        .#{$touch_tools_toggle}
+            font-size: 0.85rem
+
+    .#{$citem}
+        margin: initial initial initial 22rem
+
+        @for $i from 14 through 22
+            &.#{$cdepth-}#{$i}
+                margin: initial initial initial #{$i}rem
+
+    .#{$cform}
+        .#{$submit}
+            margin: 1rem initial initial

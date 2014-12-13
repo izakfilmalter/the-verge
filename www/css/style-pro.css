@@ -81,12 +81,30 @@
   .USd {
     padding: 0.75rem;
   }
+
+  .CO .sN {
+    margin: initial initial initial 10rem;
+  }
+  .CO .sN.COb8 {
+    margin: initial initial initial 8rem;
+  }
+  .CO .sN.COb9 {
+    margin: initial initial initial 9rem;
+  }
+  .CO .sN.COb10 {
+    margin: initial initial initial 10rem;
+  }
+  .CO .dD,
+  .CO .COg,
+  .CO .COh {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 600px) {
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh, .PCL > li, .PCL li.hn > ul, .PCL li.hr > a::after, .STb .STc h6, .STb .STc strong {
+  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh, .PCL > li, .PCL li.hn > ul, .PCL li.hr > a::after, .STb .STc h6, .STb .STc strong, .CO .COa .sM .dA::before, .CO .COa .sM .dA::after {
     display: block;
   }
 
@@ -122,11 +140,12 @@
   }
 
   .He,
-  .Fg {
+  .Fg, .CO .COa .dy,
+  .CO .COa .dz {
     position: absolute;
   }
 
-  .BALa .sk, .F, .RIa .PT, .STb .STc, .STb .STc .CC {
+  .BALa .sk, .F, .RIa .PT, .STb .STc, .STb .STc .CC, .CO .COa {
     position: relative;
   }
 
@@ -697,12 +716,64 @@
   .FE .ARa {
     padding: 0 0 0 1.25rem;
   }
+
+  .CO .COa .dy,
+  .CO .COa .dz {
+    top: 1.75rem;
+    right: 1rem;
+  }
+  .CO .COa .sM .dA {
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif");
+    *zoom: 1;
+  }
+  .CO .COa .sM .dA:after {
+    clear: both;
+  }
+  .CO .COa .sM .dA::before, .CO .COa .sM .dA::after {
+    content: ".";
+    overflow: hidden;
+    height: 0;
+  }
+  .CO .COa .sM .dB {
+    float: left;
+    width: 50%;
+    margin: initial initial 1rem;
+  }
+  .CO .COa .sM .dB:last-child {
+    float: none;
+    margin: 0;
+  }
+  .CO .sN {
+    margin: initial initial initial 13rem;
+  }
+  .CO .sN.COb11 {
+    margin: initial initial initial 11rem;
+  }
+  .CO .sN.COb12 {
+    margin: initial initial initial 12rem;
+  }
+  .CO .sN.COb13 {
+    margin: initial initial initial 13rem;
+  }
+  .CO .sN .COc blockquote {
+    margin: 1rem;
+  }
+  .CO .COd .COe .COf::before {
+    font-size: 15px;
+  }
+
+  .Ca .CO .COa .dy {
+    top: 1rem;
+  }
+  .Ca .CO .COa .dz {
+    top: 2rem;
+  }
 }
 @media (min-width: 700px) {
   .B, .Be, .Be::before, .RId::before,
   .RId::after,
   .RId .ss::before,
-  .RId .ss::after {
+  .RId .ss::after, .CO .sN .ub::before, .CO .sN .ub::after {
     display: block;
   }
 
@@ -1078,6 +1149,30 @@
 
   .STa {
     padding: 1.5rem;
+  }
+
+  .CO .COa h2 {
+    font-size: 1.5rem;
+  }
+  .CO .sN .ub {
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif");
+    *zoom: 1;
+  }
+  .CO .sN .ub::after {
+    clear: both;
+  }
+  .CO .sN .ub::before, .CO .sN .ub::after {
+    content: ".";
+    overflow: hidden;
+    height: 0;
+  }
+  .CO .sN .ub .sR {
+    float: right;
+    margin: 0 initial initial;
+  }
+  .CO .sN .ub .uc,
+  .CO .sN .ub .sQ {
+    float: left;
   }
 }
 @media (min-width: 800px) {
@@ -1625,6 +1720,16 @@
     vertical-align: middle;
     width: 25%;
     padding: 0 2rem;
+  }
+
+  .CO .sN {
+    font-size: 0.9rem;
+  }
+  .CO .sN .sO .ua .sP::after {
+    font-size: 1rem;
+  }
+  .CO .sN .sO .dC {
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 900px) {
@@ -2923,6 +3028,51 @@
   .EBd {
     font-size: 0.8rem;
   }
+
+  .CO .COa .sM .dB {
+    margin: 0;
+    width: 33%;
+  }
+  .CO .COa .sM .dB:last-child {
+    float: left;
+  }
+  .CO .COa .dy,
+  .CO .COa .dz {
+    font-size: 0.85rem;
+  }
+  .CO .sN {
+    margin: initial initial initial 22rem;
+  }
+  .CO .sN.COb14 {
+    margin: initial initial initial 14rem;
+  }
+  .CO .sN.COb15 {
+    margin: initial initial initial 15rem;
+  }
+  .CO .sN.COb16 {
+    margin: initial initial initial 16rem;
+  }
+  .CO .sN.COb17 {
+    margin: initial initial initial 17rem;
+  }
+  .CO .sN.COb18 {
+    margin: initial initial initial 18rem;
+  }
+  .CO .sN.COb19 {
+    margin: initial initial initial 19rem;
+  }
+  .CO .sN.COb20 {
+    margin: initial initial initial 20rem;
+  }
+  .CO .sN.COb21 {
+    margin: initial initial initial 21rem;
+  }
+  .CO .sN.COb22 {
+    margin: initial initial initial 22rem;
+  }
+  .CO .COd .sS {
+    margin: 1rem initial initial;
+  }
 }
 @media (min-width: 1200px) {
   head {
@@ -3191,6 +3341,15 @@
   .ARf {
     table-layout: fixed;
     width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .CO .sN .ub .ud span.ui,
+  .CO .sN .ub .ue span.ui,
+  .CO .sN .ub .uf span.ui,
+  .CO .sN .ub .ug span.ui,
+  .CO .sN .ub .uh span.ui {
+    display: none;
   }
 }
 @media (max-width: 950px) {

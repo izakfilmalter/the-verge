@@ -1,0 +1,63 @@
+.#{$m-comments}
+    .#{$comments-header}
+        @extend %position-relative600
+
+        .#{$tips_link},
+        .#{$touch_tools_toggle}
+            @extend %position-absolute600min
+            +position(1.75rem, 1rem, initial, initial)
+
+        .#{$tips}
+            .#{$sr-group}
+                *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif")
+                *zoom: 1
+
+                &:after
+                    clear: both
+
+                &::before,
+                &::after
+                    content: "."
+
+                    overflow: hidden
+
+                    @extend %display-block600
+
+                    height: 0
+
+            .#{$sr-set}
+                float: left
+
+                width: 50%
+
+                margin: initial initial 1rem
+
+                &:last-child
+                    float: none
+
+                    margin: 0
+    .#{$citem}
+        margin: initial initial initial 13rem
+
+        @for $i from 11 through 13
+            &.#{$cdepth-}#{$i}
+                margin: initial initial initial #{$i}rem
+
+        .#{$cbody}
+            blockquote
+                margin: 1rem
+
+    .#{$cform}
+        .#{$markItUpHeader}
+            .#{$markItUpButton}
+                &::before
+                    font-size: 15px
+
+.#{$chorustouch}
+    .#{$m-comments}
+        .#{$comments-header}
+            .#{$tips_link}
+                +position(1rem, initial, initial, initial)
+
+            .#{$touch_tools_toggle}
+                +position(2rem, initial, initial, initial)

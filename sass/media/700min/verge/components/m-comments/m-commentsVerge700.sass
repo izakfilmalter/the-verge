@@ -1,0 +1,31 @@
+.#{$m-comments}
+    .#{$comments-header}
+        h2
+            font-size: 1.5rem
+    .#{$citem}
+        .#{$posted_on}
+            *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both; font:0/0 serif")
+            *zoom: 1
+
+            &::after
+                clear: both
+
+            &::before,
+            &::after
+                content: "."
+
+                overflow: hidden
+
+                @extend %display-block700
+
+                height: 0
+
+        .#{$posted_on}
+            .#{$cactions}
+                float: right
+
+                margin: 0 initial initial
+
+            .#{$time_label},
+            .#{$time}
+                float: left
