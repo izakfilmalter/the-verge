@@ -17,6 +17,14 @@ module.exports = function(grunt) {
         files: {
           'www/css/style-pro.css': 'sass/style-production.sass'
         }
+      },
+      test: {
+        options: {
+          style: 'expanded'
+        },
+        files: {
+          'the-verge-home/The Verge_files/style-dev.css': 'sass/style-development.sass'
+        }
       }
     },
 
@@ -56,7 +64,39 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      sass: {
+      development: {
+        sass: {
+          files: [
+            'sass/*.sass',
+            'sass/**/*.sass',
+            'sass/**/**/*.sass',
+            'sass/**/**/**/*.sass',
+            'sass/**/**/**/**/*.sass',
+            'sass/*.scss',
+            'sass/**/*.scss',
+            'sass/**/**/*.scss',
+            'sass/**/**/**/*.scss',
+            'sass/**/**/**/**/*.scss',
+          ],
+          tasks: ['sass']
+        },
+        cssmin: {
+          files: ['www/css/style-dev.css', 'www/css/style-pro.css'],
+          tasks: ['cssmin']
+        },
+        compress: {
+          files: ['www/css/style-dev.min.css', 'www/css/style-pro.min.css'],
+          tasks: ['compress']
+        },
+        html: {
+          files: ['www/*.html']
+        },
+        options: {
+          livereload: true,
+        }
+      },
+
+      test2:{
         files: [
           'sass/*.sass',
           'sass/**/*.sass',
@@ -69,23 +109,9 @@ module.exports = function(grunt) {
           'sass/**/**/**/*.scss',
           'sass/**/**/**/**/*.scss',
         ],
-        tasks: ['sass']
-      },
-      cssmin: {
-        files: ['www/css/style-dev.css', 'www/css/style-pro.css'],
-        tasks: ['cssmin']
-      },
-      compress: {
-        files: ['www/css/style-dev.min.css', 'www/css/style-pro.min.css'],
-        tasks: ['compress']
-      },
-      html: {
-        files: ['www/*.html']
-      },
-      options: {
-        livereload: true,
+        tasks: ['sass:test']
       }
-    }
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -94,6 +120,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compress');
 
-  grunt.registerTask('default', ['connect','watch']);
+  grunt.registerTask('default', ['connect','watch:development']);
+  grunt.registerTask('verge', ['watch:test2']);
 
 };

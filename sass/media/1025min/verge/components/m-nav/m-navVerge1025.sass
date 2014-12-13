@@ -117,7 +117,7 @@
 
             text-overflow: ellipsis
 
-            margin: .2rem initial initial
+            margin-top: .2rem
 
         li
             float: right
@@ -153,7 +153,8 @@
 
             opacity: .5
 
-            margin: -30px initial initial -30px
+            margin-top: -30px
+            margin-left: -30px
 
             border: 4px solid
             border-radius: 60px
@@ -168,7 +169,8 @@
         &::after
             opacity: .8
 
-            margin: -15px initial initial -6px
+            margin-top: -15px
+            margin-left: -6px
 
             border-width: 15px 0 15px 20px
             border-style: solid
@@ -194,7 +196,8 @@
     .#{$timn-icon}
         @extend %position-absolute1025
 
-        margin: -45px initial initial -45px
+        margin-top: -45px
+        margin-left: -45px
 
         height: 90px
         width: 90px
@@ -221,7 +224,7 @@
 
         height: 22px
 
-        padding: 0 5px 0 5px
+        padding: 0 5px
 
         &:hover,
         &:active
@@ -230,7 +233,7 @@
             text-decoration: none
 
         &.#{$has-icon}
-            padding: initial initial initial 24px
+            padding-left: 24px
 
     li
         @extend %display-block1025
@@ -241,7 +244,7 @@
         @extend %position-absolute1025
         +position(50%, initial, initial, 4px)
 
-        margin: -8px initial initial
+        margin-top: -8px
 
         height: 16px
         width: 16px
@@ -252,7 +255,8 @@
     @extend %position-absolute1025
     +position(50%, initial, initial, 50%)
 
-    margin: -25px initial initial -25px
+    margin-top: -25px
+    margin-left: -25px
 
     height: 50px
     width: 50px
@@ -267,7 +271,7 @@
 
     li
         &:first-child
-            margin: initial initial initial 0
+            margin-left: 0
 
         &.#{$has-dropdown} > a
             @extend %position-relative1025
@@ -340,7 +344,8 @@
                 @extend %position-absolute1025
                 +position(50%, initial, initial, 50%)
 
-                margin: -13px initial initial -13px
+                margin-top: -13px
+                margin-left: -13px
 
                 height: 25px
                 width: 25px
@@ -373,7 +378,7 @@
             @extend %display-none1025
 
         a.#{$has-icon}
-            padding: initial initial initial 0
+            padding-left: 0
 
 .#{$m-nav__search}
     @extend %display-block1025
@@ -465,7 +470,6 @@
 .#{$no-chorustouch}
     .#{$m-nav__menu} li.#{$has-dropdown} > a:hover::after
         border-top-color: $pomegranate
-
 
 .#{$m-nav}.#{$-user},
 .#{$m-nav-dropdown},
