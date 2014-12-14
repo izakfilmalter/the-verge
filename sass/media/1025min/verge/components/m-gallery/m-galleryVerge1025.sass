@@ -1,0 +1,23 @@
+.#{$m-gallery}
+    &.#{$entry}
+        .#{$m-gallery__thumbnail}
+            width: 19%
+
+    &.#{$lightbox}
+        +position(initial, initial, initial, 50%)
+
+        margin-left: -($container-width / 2)
+
+        width: $container-width
+
+    .#{$m-gallery__thumbs}
+        .#{$m-gallery__thumbs-pane}
+            overflow: hidden
+
+            margin: 0 10%
+
+        .#{$m-gallery__control-prev},
+        .#{$m-gallery__control-next}
+            @extend %display-block1025
+
+            height: 120px

@@ -64,39 +64,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      development: {
-        sass: {
-          files: [
-            'sass/*.sass',
-            'sass/**/*.sass',
-            'sass/**/**/*.sass',
-            'sass/**/**/**/*.sass',
-            'sass/**/**/**/**/*.sass',
-            'sass/*.scss',
-            'sass/**/*.scss',
-            'sass/**/**/*.scss',
-            'sass/**/**/**/*.scss',
-            'sass/**/**/**/**/*.scss',
-          ],
-          tasks: ['sass']
-        },
-        cssmin: {
-          files: ['www/css/style-dev.css', 'www/css/style-pro.css'],
-          tasks: ['cssmin']
-        },
-        compress: {
-          files: ['www/css/style-dev.min.css', 'www/css/style-pro.min.css'],
-          tasks: ['compress']
-        },
-        html: {
-          files: ['www/*.html']
-        },
-        options: {
-          livereload: true,
-        }
-      },
-
-      test2:{
+      sass: {
         files: [
           'sass/*.sass',
           'sass/**/*.sass',
@@ -109,7 +77,21 @@ module.exports = function(grunt) {
           'sass/**/**/**/*.scss',
           'sass/**/**/**/**/*.scss',
         ],
-        tasks: ['sass:test']
+        tasks: ['sass']
+      },
+      cssmin: {
+        files: ['www/css/style-dev.css', 'www/css/style-pro.css'],
+        tasks: ['cssmin']
+      },
+      compress: {
+        files: ['www/css/style-dev.min.css', 'www/css/style-pro.min.css'],
+        tasks: ['compress']
+      },
+      html: {
+        files: ['www/*.html']
+      },
+      options: {
+        livereload: true,
       }
     },
   });
@@ -120,7 +102,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compress');
 
-  grunt.registerTask('default', ['connect','watch:development']);
-  grunt.registerTask('verge', ['watch:test2']);
+  grunt.registerTask('default', ['connect','watch']);
 
 };
