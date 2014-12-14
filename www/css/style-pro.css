@@ -812,6 +812,13 @@
   .G.sU .Ga .Ge {
     width: 20%;
   }
+
+  .P.ht {
+    margin: 1rem 2rem 2rem 2rem;
+  }
+  .P h5 {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 700px) {
   .B, .Be, .Be::before, .RId::before,
@@ -1835,6 +1842,13 @@
 
   .Lb h4 {
     font-size: 1.7em;
+  }
+
+  .P.ht {
+    margin: 1rem 3rem 2rem 3rem;
+  }
+  .P h5 {
+    font-size: 2.25rem;
   }
 }
 @media (min-width: 900px) {
@@ -3292,6 +3306,13 @@
   }
   .Lb h4 {
     font-size: 1.8em;
+  }
+
+  .P.ht {
+    margin: 1rem 6rem 2rem 6rem;
+  }
+  .P h5 {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
