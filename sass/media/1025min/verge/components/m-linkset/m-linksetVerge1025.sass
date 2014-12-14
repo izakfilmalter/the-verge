@@ -1,0 +1,30 @@
+.#{$m-linkset__entries}
+    height: 300px
+
+.#{$m-linkset__entry}
+
+    $list: ''
+    @for $i from 1 through 3
+        &:nth-of-type(#{$i})
+            left: (($i - 1) * 341px)
+
+        $list: "&:nth-of-type(#{$i}), #{$list}"
+
+    #{$list}
+        float: none
+
+        @extend %position-absolute1025
+        +position(0, initial, initial, initial)
+
+        height: 300px
+        width: 341px
+
+
+    &.#{$harmony-sponsorship}
+        .#{$harmony-sponsorship-stb}
+            right: 1.5rem
+            bottom: 1.5rem
+
+    h4
+        font-size: 1.8em
+

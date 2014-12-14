@@ -1229,6 +1229,12 @@
   .G.sT .Ge {
     width: 24%;
   }
+
+  .Lb {
+    float: left;
+    height: 300px;
+    width: 33.33%;
+  }
 }
 @media (min-width: 800px) {
   .PT ul li.hk, .EHd, .RIc .dl .sr {
@@ -1826,6 +1832,10 @@
   .PIb .RLD {
     width: 50%;
   }
+
+  .Lb h4 {
+    font-size: 1.7em;
+  }
 }
 @media (min-width: 900px) {
   head {
@@ -1885,7 +1895,7 @@
     display: none;
   }
 
-  .EHa::after, .Hd, .B .C, .N.ha, .Nb, .Nc, .Nf.sa::before, .Nf.sa::after, .Nf .da, .Ng, .Ng .sb, .Nh, .Na li.dc > a::after, .Na li.hc, .Na li.hd, .Na li.hd .dd, .Ni, .NAb, .NAg, .NAg::before, .Tf, .Tg aside, .Tg .Th, .PIa .PTa {
+  .EHa::after, .Hd, .B .C, .N.ha, .Nb, .Nc, .Nf.sa::before, .Nf.sa::after, .Nf .da, .Ng, .Ng .sb, .Nh, .Na li.dc > a::after, .Na li.hc, .Na li.hd, .Na li.hd .dd, .Ni, .NAb, .NAg, .NAg::before, .Tf, .Tg aside, .Tg .Th, .PIa .PTa, .Lb:nth-of-type(3), .Lb:nth-of-type(2), .Lb:nth-of-type(1) {
     position: absolute;
   }
 
@@ -3255,6 +3265,33 @@
   .G .Ga .Gc,
   .G .Ga .Gd {
     height: 120px;
+  }
+
+  .La {
+    height: 300px;
+  }
+
+  .Lb:nth-of-type(1) {
+    left: 0px;
+  }
+  .Lb:nth-of-type(2) {
+    left: 341px;
+  }
+  .Lb:nth-of-type(3) {
+    left: 682px;
+  }
+  .Lb:nth-of-type(3), .Lb:nth-of-type(2), .Lb:nth-of-type(1) {
+    float: none;
+    top: 0;
+    height: 300px;
+    width: 341px;
+  }
+  .Lb.HRMd .HRMk {
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+  .Lb h4 {
+    font-size: 1.8em;
   }
 }
 @media (min-width: 1200px) {
