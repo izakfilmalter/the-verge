@@ -15,10 +15,6 @@
         .#{$p-tabs}
             @extend %position-relative600
 
-            margin: 0.9rem initial initial
-
-            z-index: 10
-
     .#{$m-products-index__sidebar},
     .#{$m-products-index__content}
         vertical-align: top
@@ -28,8 +24,6 @@
 .#{$m-products-index__sidebar}
     .#{$p-tabs}
         @extend %position-relative600
-
-        margin: 0.9rem initial initial
 
         li
             font-size: 1.3rem
@@ -42,3 +36,7 @@
 .#{$m-products-index__grid}
     li
         width: 50%
+
+.#{$m-products-index} .#{$m-products-index__sidebar} .#{$p-tabs},
+.#{$m-products-index__sidebar} .#{$p-tabs}
+    margin-top: 0.9rem

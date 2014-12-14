@@ -22734,7 +22734,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-footer__vox-corner {
-    padding: 1.5rem initial initial;
+    padding-top: 1.5rem;
   }
 
   .m-footer__sections-col,
@@ -22761,7 +22761,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-user-page__sidebar-head .mobile-bio {
-    padding: 0.75rem initial initial;
+    padding-top: 0.75rem;
   }
 
   .m-user-page__avatar {
@@ -22769,16 +22769,16 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-comments .citem {
-    margin: initial initial initial 10rem;
+    margin-left: 10rem;
   }
   .m-comments .citem.cdepth-8 {
-    margin: initial initial initial 8rem;
+    margin-left: 8rem;
   }
   .m-comments .citem.cdepth-9 {
-    margin: initial initial initial 9rem;
+    margin-left: 9rem;
   }
   .m-comments .citem.cdepth-10 {
-    margin: initial initial initial 10rem;
+    margin-left: 10rem;
   }
   .m-comments .vox-msg-join,
   .m-comments .comments-closed,
@@ -22848,7 +22848,8 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-reviews-index__sidebar .p-tabs,
-  .m-products-index__sidebar .p-tabs {
+  .m-products-index__sidebar .p-tabs,
+  .m-products-index .m-products-index__sidebar .p-tabs {
     z-index: 10;
   }
 
@@ -22901,7 +22902,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .p-basic-article-list__node .body h3 {
     font-size: 1.25rem;
     margin: 0;
-    padding: 1.5rem initial initial;
+    padding-top: 1.5rem;
   }
   .p-basic-article-list__node .body h5 {
     left: 1rem;
@@ -22922,7 +22923,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .p-button-social__label {
-    margin: initial initial initial 0.5rem;
+    margin-left: 0.5rem;
   }
 
   .p-button-social .p-button__count,
@@ -22933,7 +22934,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .m-hub-admin-menu:hover,
   .m-hub-admin-menu.is-open {
     top: 0;
-    border-radius: initial 0 initial initial;
+    border-top-right-radius: 0;
     width: 100%;
   }
 
@@ -22943,10 +22944,10 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
 
   .m-footer__search-col {
     width: 35%;
-    padding: 1.7rem initial initial;
+    padding-top: 1.7rem;
   }
   .m-footer__search-col .scalable-logo {
-    margin: initial initial 1rem;
+    margin-bottom: 1rem;
   }
   .m-footer__search-col .search {
     padding: 0;
@@ -22983,7 +22984,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .m-footer__basics-col,
   .m-footer__elsewhere-col {
     min-height: 450px;
-    padding: 1.5rem 1rem 1rem 1rem;
+    padding: 1.5rem 1rem 1rem;
   }
   .m-footer__search-col:first-child,
   .m-footer__sections-col:first-child,
@@ -23029,7 +23030,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
   .m-forum-header .label {
     font-size: 1.25rem;
-    padding: 0.25rem initial initial initial;
+    padding-top: 0.25rem;
   }
   .m-forum-header .label::after {
     border-width: 25px 0 25px 10px;
@@ -23065,7 +23066,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-reviews-index__sidebar .p-tabs {
-    margin: 0.9rem initial initial;
+    margin-top: 0.9rem;
   }
   .m-reviews-index__sidebar .p-tabs li {
     font-size: 1.3rem;
@@ -23103,7 +23104,8 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-review__intro {
-    margin: initial 4rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
   }
 
   .m-review__wrap-up {
@@ -23113,7 +23115,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .m-review__wrap-up__summary .meta h3 {
     font-size: 2.5rem;
     float: left;
-    margin: initial initial 1.5rem;
+    margin-bottom: 1.5rem;
     width: 100%;
   }
   .m-review__wrap-up__summary .meta .p-review-score {
@@ -23122,7 +23124,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .m-review__wrap-up__summary .meta .wrap-list {
     margin-top: 0;
     width: 35%;
-    padding: initial initial initial 2.5rem;
+    padding-left: 2.5rem;
   }
 
   .m-review__wrap-up__blurb {
@@ -23161,7 +23163,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     margin: 0 1.5rem 2rem;
   }
   .m-timn__sticky-card a {
-    padding: 5px initial initial;
+    padding-top: 5px;
   }
   .m-timn__sticky-card .photo {
     width: 80%;
@@ -23199,17 +23201,20 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-feature__intro {
-    margin: initial 4rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
   }
 
   .m-snippet {
-    margin: initial 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
   .m-snippet q {
     font-size: 2.25rem;
   }
   .m-snippet.thin {
-    margin: initial 4rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
   }
   .m-snippet.sidebar-left .left, .m-snippet.sidebar-right .right {
     margin: 0;
@@ -23347,13 +23352,13 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .m-article__entry q.left,
   .m-stream__header q.left {
     float: left;
-    margin: initial initial initial 0;
+    margin-left: 0;
   }
   .m-article__entry q.right,
   .m-stream__header q.right {
     text-align: left;
     float: right;
-    margin: initial 0 initial initial;
+    margin-right: 0;
   }
   .m-article__entry q.left, .m-article__entry q.right,
   .m-stream__header q.left,
@@ -23370,9 +23375,9 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .m-stream__updates .m-stream__update-meta {
     text-align: center;
     top: -5px;
-    margin: initial initial 0;
+    margin-bottom: 0;
     width: 150px;
-    padding: 0 initial initial;
+    padding-top: 0;
   }
   .m-stream__updates .m-stream__update-meta h6 {
     font-size: 18px;
@@ -23429,23 +23434,23 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .m-comments .comments-header .tips .sr-set {
     float: left;
     width: 50%;
-    margin: initial initial 1rem;
+    margin-bottom: 1rem;
   }
   .m-comments .comments-header .tips .sr-set:last-child {
     float: none;
     margin: 0;
   }
   .m-comments .citem {
-    margin: initial initial initial 13rem;
+    margin-left: 13rem;
   }
   .m-comments .citem.cdepth-11 {
-    margin: initial initial initial 11rem;
+    margin-left: 11rem;
   }
   .m-comments .citem.cdepth-12 {
-    margin: initial initial initial 12rem;
+    margin-left: 12rem;
   }
   .m-comments .citem.cdepth-13 {
-    margin: initial initial initial 13rem;
+    margin-left: 13rem;
   }
   .m-comments .citem .cbody blockquote {
     margin: 1rem;
@@ -23469,18 +23474,11 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     width: 170px;
     border-right: 1px solid #ddd;
   }
-  .m-products-index .m-products-index__sidebar .p-tabs {
-    margin: 0.9rem initial initial;
-    z-index: 10;
-  }
   .m-products-index .m-products-index__sidebar,
   .m-products-index .m-products-index__content {
     vertical-align: top;
   }
 
-  .m-products-index__sidebar .p-tabs {
-    margin: 0.9rem initial initial;
-  }
   .m-products-index__sidebar .p-tabs li {
     font-size: 1.3rem;
     text-align: left;
@@ -23490,6 +23488,11 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
 
   .m-products-index__grid li {
     width: 50%;
+  }
+
+  .m-products-index .m-products-index__sidebar .p-tabs,
+  .m-products-index__sidebar .p-tabs {
+    margin-top: 0.9rem;
   }
 }
 @media (min-width: 700px) {
@@ -23561,11 +23564,11 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .p-entry-header__byline .twitter {
     font-size: 0.8rem;
     font-style: italic;
-    margin: initial initial initial 0.5rem;
+    margin-left: 0.5rem;
   }
 
   .p-tldr-logo {
-    margin: initial initial -0.5rem initial;
+    margin-bottom: -0.5rem;
     height: 58px;
     width: 120px;
   }
@@ -23574,7 +23577,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     background: #fff;
     border-top: 1px solid #ddd;
     margin: 0 80px 0 280px;
-    padding: initial 40px initial initial;
+    padding-right: 40px;
   }
   .m-big-stories a {
     color: #000;
@@ -23804,10 +23807,10 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     width: 49.5%;
   }
   .m-timn__wrap-up__product:nth-child(odd) {
-    padding: initial initial initial 0.75rem;
+    padding-left: 0.75rem;
   }
   .m-timn__wrap-up__product:nth-child(even) {
-    padding: initial 0.75rem initial initial;
+    padding-right: 0.75rem;
   }
 
   .m-timn__wrap-up__card .m-timn__prices {
@@ -23841,19 +23844,23 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     width: 55%;
   }
   .m-snippet.thin .float-left {
-    margin: initial 1rem initial -2rem;
+    margin-right: 1rem;
+    margin-left: -2rem;
   }
   .m-snippet.thin .float-right {
-    margin: initial -2rem initial 1rem;
+    margin-right: -2rem;
+    margin-left: 1rem;
   }
   .m-snippet .float-left {
     float: left;
-    margin: initial 1rem initial 0;
+    margin-right: 1rem;
+    margin-right: 0;
     width: 320px;
   }
   .m-snippet .float-right {
     float: right;
-    margin: initial 0 initial initial 1rem;
+    margin-right: 0;
+    margin-left: 1rem;
     width: 320px;
   }
 
@@ -23866,7 +23873,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-article__entry-container {
-    margin: 1.5rem initial initial;
+    margin-top: 1.5rem;
   }
 
   .m-stream__header {
@@ -23890,7 +23897,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
   .m-comments .citem .posted_on .cactions {
     float: right;
-    margin: 0 initial initial;
+    margin-top: 0;
   }
   .m-comments .citem .posted_on .time_label,
   .m-comments .citem .posted_on .time {
@@ -23949,10 +23956,10 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .p-tabs {
-    padding: initial initial initial 1rem;
+    padding-left: 1rem;
   }
   .p-tabs.-no-padding {
-    padding: initial initial initial 0;
+    padding-left: 0;
   }
   .p-tabs ul li.-secondary {
     background-color: #fa4b2a;
@@ -23962,7 +23969,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     padding: 0.2rem 0.6rem;
   }
   .p-tabs.-has-starburst ul, .p-tabs.-has-starburst.-keep-starburst ul {
-    padding: initial initial initial 80px !important;
+    padding-left: 80px !important;
   }
 
   .p-big-search.-has-label form input[type='search'], .p-big-search.-has-label form input[type='text'] {
@@ -24033,14 +24040,15 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-footer__search-col {
-    padding: 2.2rem 1.5rem initial initial;
+    padding-top: 2.2rem;
+    padding-right: 1.5rem;
   }
 
   .m-footer__elsewhere-col {
     width: 29%;
   }
   .m-footer__elsewhere-col li:first-child {
-    margin: 0 initial initial;
+    margin-top: 0;
   }
 
   .m-footer__social::before {
@@ -24093,7 +24101,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
   .m-forum-header h1 {
     font-size: 3rem;
-    padding: 0.3rem initial initial;
+    padding-top: 0.3rem;
   }
   .m-forum-header .label {
     font-size: 2rem;
@@ -24127,7 +24135,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
   .m-reviews-index__hero .review-container .review {
     min-height: 285px;
-    margin: initial 340px initial initial;
+    margin-right: 340px;
   }
   .m-reviews-index__hero .review-container .review h3 {
     margin: 0 0 1rem;
@@ -24142,7 +24150,8 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-review__intro {
-    margin: initial 8rem;
+    margin-right: 8rem;
+    margin-left: 8rem;
   }
   .m-review__intro > aside {
     float: right;
@@ -24164,7 +24173,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
   .m-review__wrap-up__summary .meta {
     width: 65%;
-    padding: initial initial initial 2rem;
+    padding-left: 2rem;
   }
 
   .m-review__wrap-up__blurb q {
@@ -24198,14 +24207,14 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-timn__wrap-up__product:nth-child(odd) {
-    padding: initial initial initial 1rem;
+    padding-left: 1rem;
   }
   .m-timn__wrap-up__product:nth-child(even) {
-    padding: initial 1rem initial initial;
+    padding-right: 1rem;
   }
 
   .m-timn__wrap-up__card .p-review-score a {
-    padding: 1.3rem initial initial;
+    padding-top: 1.3rem;
   }
 
   .m-timn .p-entry-header h1,
@@ -24235,7 +24244,8 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
 
   .m-snippet {
     line-height: 1.5;
-    margin: initial 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
   .m-snippet h2,
   .m-snippet h3,
@@ -24256,7 +24266,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
   .m-snippet.double .right {
     float: right;
-    margin: 15rem initial initial;
+    margin-top: 15rem;
   }
   .m-snippet.double .left {
     float: left;
@@ -24270,10 +24280,10 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     margin: 0;
   }
   .m-snippet.thin .float-left {
-    margin: initial initial initial -4rem;
+    margin-left: -4rem;
   }
   .m-snippet.thin .float-right {
-    margin: initial -4rem initial initial;
+    margin-right: -4rem;
   }
   .m-snippet.sidebar-left .left, .m-snippet.sidebar-right .right {
     width: 35%;
@@ -24282,13 +24292,14 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     width: 60%;
   }
   .m-snippet .float-left {
-    margin: initial initial initial -1.5rem;
+    margin-left: -1.5rem;
   }
   .m-snippet .float-right {
-    margin: initial -1.5rem initial initial;
+    margin-right: -1.5rem;
   }
   .m-snippet .thin {
-    margin: initial 8rem;
+    margin-right: 8rem;
+    margin-left: 8rem;
   }
 
   .snippet-n .g8-3 {
@@ -24335,7 +24346,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   .m-user-page__log .byline {
-    margin: initial initial 0.75rem;
+    margin-bottom: 0.75rem;
   }
   .m-user-page__log .rec-comments {
     text-align: right;
@@ -24344,7 +24355,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
 
   .m-user-page__search__sort-bar .sort {
     text-align: right;
-    padding: 0 initial initial;
+    padding-top: 0;
   }
 
   .m-user-page__bio h2,
@@ -24466,11 +24477,11 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     margin: 0 0 1rem;
   }
   .m-products-index__content .m-rock-latest-media {
-    padding: initial 1rem initial initial;
+    padding-right: 1rem;
   }
   .m-products-index__content .m-rock-latest-discussions {
     border-left: 1px dotted #ddd;
-    padding: initial initial initial 1rem;
+    padding-left: 1rem;
   }
   .m-products-index__content .m-rock-latest-media,
   .m-products-index__content .m-rock-latest-discussions {
@@ -25956,8 +25967,9 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
 
   .m-auth-modal__body[data-chorus-auth-modal="captcha"] .m-auth-modal__recaptcha #recaptcha_image,
   .m-auth-modal__body[data-chorus-auth-modal="login"] .m-auth-modal__recaptcha #recaptcha_image {
-    margin: initial -20px;
-    border: 0;
+    margin-right: -20px;
+    margin-left: -20px;
+    border: none;
   }
 }
 @media (max-width: 376px) {
@@ -25967,7 +25979,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
 }
 @media (max-width: 400px) {
   .m-chorus-modal__window {
-    margin: 0 initial initial;
+    margin-top: 0;
     max-height: 100%;
     width: 100%;
   }
@@ -25987,14 +25999,16 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   .m-feature > .p-dynamic-image .m-video__link::before {
     border-width: 3px;
     border-radius: 80px;
-    margin: -40px initial initial -40px;
+    margin-top: -40px;
+    margin-left: -40px;
     width: 80px;
     height: 80px;
   }
   .m-review > .p-dynamic-image .m-video__link::after,
   .m-feature > .p-dynamic-image .m-video__link::after {
     border-width: 20px 0 20px 26.66667px;
-    margin: -20px initial initial -8px;
+    margin-top: -20px;
+    margin-left: -8px;
   }
 }
 @media (max-width: 600px) {
@@ -26016,7 +26030,7 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
   .m-hub-admin-menu:hover li {
     width: 48%;
-    padding: initial 5px initial initial;
+    padding-right: 5px;
   }
   .m-hub-admin-menu:hover .m-hub-admin-menu__emc-item, .m-hub-admin-menu.is-open .m-hub-admin-menu__emc-item {
     width: 100%;
@@ -26048,14 +26062,16 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
   }
 
   head[data-network='polygon'] + body .placeableadunit {
-    margin: 0 initial;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   head[data-network='eater'] + body .m-entry-box .harmony-content-link .harmony-thumbnail {
     height: 200px;
   }
   head[data-network='eater'] + body .m-entry-box__bleed .harmony-content-link {
-    margin: initial 0;
+    margin-right: 0;
+    margin-left: 0;
   }
   head[data-network='eater'] + body .m-entry-box__bleed .harmony-content-link .harmony-thumbnail {
     height: 400px;
@@ -26137,7 +26153,8 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     opacity: 0.75;
     border-width: 5px;
     border-radius: 100px;
-    margin: -50px initial initial -50px;
+    margin-top: -50px;
+    margin-left: -50px;
     height: 100px;
     width: 100px;
   }
@@ -26147,7 +26164,8 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     border-width: 25px 0 25px 33.33333px;
     border-color: transparent;
     border-left-color: #fff;
-    margin: -25px initial initial -10px;
+    margin-top: -25px;
+    margin-left: -10px;
     width: 0;
     height: 0;
     -moz-transform: scale(0.9999);
@@ -26164,6 +26182,11 @@ a:hover .m-video-hero__playlist-entry.is-not-playing .play-icon:before, a:hover 
     -moz-transition: ease all 0.5s;
     -o-transition: ease all 0.5s;
     transition: ease all 0.5s;
+  }
+
+  .m-feature > .p-dynamic-image .m-video__link:hover::after,
+  .m-feature > .p-dynamic-image .m-video__link {
+    opacity: 1;
   }
 
   .m-article__comments-section {

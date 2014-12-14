@@ -27,10 +27,11 @@
 .#{$m-auth-modal__body}[data-chorus-auth-modal="rec-migrate-login"] .#{$m-auth-modal__form} fieldset .status,
 .#{$m-auth-modal__body}[data-chorus-auth-modal="rec-migrate-author"] .#{$m-auth-modal__form} fieldset .status,
 .#{$m-auth-modal__body}[data-chorus-auth-modal="third-party-register"] .#{$m-auth-modal__form} fieldset .status
-    right: 5px
+    +position(initial, 5px, initial, initial)
 
 .#{$m-auth-modal__body}[data-chorus-auth-modal="captcha"] .#{$m-auth-modal__recaptcha} ##{$recaptcha_image},
 .#{$m-auth-modal__body}[data-chorus-auth-modal="login"] .#{$m-auth-modal__recaptcha} ##{$recaptcha_image}
-    margin: initial -20px
+    margin-right: -20px
+    margin-left: -20px
 
-    border: 0
+    border: none
