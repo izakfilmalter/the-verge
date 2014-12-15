@@ -1,0 +1,49 @@
+.#{$m-entry-section}
+    &.#{$section2}
+        .#{$right}
+            *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif")
+            *zoom: 1
+
+            float: none
+            clear: both
+
+            border-top: 1px solid $alto
+
+            width: 100%
+
+            &::after
+                clear: both
+
+            &::before,
+            &::after
+                content: "."
+
+                overflow: hidden
+
+                @extend %display-block600
+
+                height: 0
+
+.#{$m-entry-section__column}
+    @extend %display-block600
+
+.#{$m-entry-section}.#{$section1} .#{$left}::before,
+.#{$m-entry-section}.#{$section2} .#{$left}::before,
+.#{$m-entry-section}.#{$section6} .#{$left}::before,
+.#{$m-entry-section}.#{$section7} .#{$left}::before
+    content: ''
+
+    @extend %position-absolute600min
+    +position(0, initial, 0, 50%)
+    right: initial
+
+    border-left: 1px solid $alto
+
+.#{$m-entry-section}.#{$section1} .#{$m-entry-section__column},
+.#{$m-entry-section}.#{$section2} .#{$m-entry-section__column},
+.#{$m-entry-section}.#{$section2} .#{$right} .#{$m-entry-slot},
+.#{$m-entry-section}.#{$section6} .#{$m-entry-section__column},
+.#{$m-entry-section}.#{$section7} .#{$m-entry-section__column},
+    float: left
+
+    width: 50%

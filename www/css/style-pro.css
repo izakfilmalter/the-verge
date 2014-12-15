@@ -108,7 +108,7 @@
   .BS .sf::after, .BAL.dg .BALa .sk .sl, .Fa .df, .Fg, .Fg .Fh, .Fg .Fh a, .Fa .Fj,
   .Fb .Fj,
   .Fc .Fj,
-  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh, .PCL > li, .PCL li.hn > ul, .PCL li.hr > a::after, .STb .STc h6, .STb .STc strong, .CO .COa .sM .dA::before, .CO .COa .sM .dA::after, .PI .PIa > .dk {
+  .Fd .Fj, .FId .sf::after, .RI .RIa > .dk, .Rd::before, .Rd::after, .S.dq::before, .S.dq::after, .S.dr::before, .S.dr::after, .US .USa > .dk, .USh, .PCL > li, .PCL li.hn > ul, .PCL li.hr > a::after, .STb .STc h6, .STb .STc strong, .CO .COa .sM .dA::before, .CO .COa .sM .dA::after, .PI .PIa > .dk, .ES.sY .sA::before, .ES.sY .sA::after, .ESa {
     display: block;
   }
 
@@ -146,7 +146,10 @@
 
   .He,
   .Fg, .CO .COa .dy,
-  .CO .COa .dz {
+  .CO .COa .dz, .ES.sV .sz::before,
+  .ES.sY .sz::before,
+  .ES.s4 .sz::before,
+  .ES.s5 .sz::before {
     position: absolute;
   }
 
@@ -165,6 +168,13 @@
   .PIa .PT,
   .PI .PIa .PT {
     z-index: 10;
+  }
+
+  .ES.sV .sz::before,
+  .ES.sY .sz::before,
+  .ES.s4 .sz::before,
+  .ES.s5 .sz::before {
+    z-index: 0;
   }
 
   html,
@@ -818,6 +828,44 @@
   }
   .P h5 {
     font-size: 2rem;
+  }
+
+  .ES.sY .sA {
+    *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    *zoom: 1;
+    float: none;
+    clear: both;
+    border-top: 1px solid #ddd;
+    width: 100%;
+  }
+  .ES.sY .sA::after {
+    clear: both;
+  }
+  .ES.sY .sA::before, .ES.sY .sA::after {
+    content: ".";
+    overflow: hidden;
+    height: 0;
+  }
+
+  .ES.sV .sz::before,
+  .ES.sY .sz::before,
+  .ES.s4 .sz::before,
+  .ES.s5 .sz::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: initial;
+    border-left: 1px solid #ddd;
+  }
+
+  .ES.sV .ESa,
+  .ES.sY .ESa,
+  .ES.sY .sA .ESb,
+  .ES.s4 .ESa,
+  .ES.s5 .ESa {
+    float: left;
+    width: 50%;
   }
 }
 @media (min-width: 700px) {
@@ -1909,7 +1957,12 @@
     display: none;
   }
 
-  .EHa::after, .Hd, .B .C, .N.ha, .Nb, .Nc, .Nf.sa::before, .Nf.sa::after, .Nf .da, .Ng, .Ng .sb, .Nh, .Na li.dc > a::after, .Na li.hc, .Na li.hd, .Na li.hd .dd, .Ni, .NAb, .NAg, .NAg::before, .Tf, .Tg aside, .Tg .Th, .PIa .PTa, .Lb:nth-of-type(3), .Lb:nth-of-type(2), .Lb:nth-of-type(1) {
+  .EHa::after, .Hd, .B .C, .N.ha, .Nb, .Nc, .Nf.sa::before, .Nf.sa::after, .Nf .da, .Ng, .Ng .sb, .Nh, .Na li.dc > a::after, .Na li.hc, .Na li.hd, .Na li.hd .dd, .Ni, .NAb, .NAg, .NAg::before, .Tf, .Tg aside, .Tg .Th, .PIa .PTa, .Lb:nth-of-type(3), .Lb:nth-of-type(2), .Lb:nth-of-type(1), .ES.sV .sA::before,
+  .ES.sY .sX::before,
+  .ES.s4 .dE::before,
+  .ES.s5 .dE::before,
+  .ES.s4 .sA::before,
+  .ES.s5 .sA::before {
     position: absolute;
   }
 
@@ -1957,6 +2010,10 @@
   .RIa .PTa,
   .PIa .PTa {
     z-index: 1;
+  }
+
+  .ES.sV .sA::before {
+    z-index: 0;
   }
 
   html,
@@ -3314,6 +3371,76 @@
   .P h5 {
     font-size: 2.5rem;
   }
+
+  .ES.sY .sA {
+    float: left;
+    clear: none;
+  }
+  .ES.sY .sA .ESb {
+    float: none;
+    width: auto;
+  }
+  .ES.s4 .sA, .ES.s5 .sA {
+    width: 258px;
+    float: left;
+    border: 0;
+  }
+  .ES.s4 .sA::before, .ES.s5 .sA::before {
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    left: auto;
+    right: 258px;
+  }
+
+  .ES.sV .sA::before,
+  .ES.sY .sX::before,
+  .ES.s4 .dE::before,
+  .ES.s5 .dE::before,
+  .ES.s4 .sA::before,
+  .ES.s5 .sA::before {
+    content: "";
+    border-left: 1px solid #ddd;
+  }
+
+  .ES.sV .sA::before,
+  .ES.sY .sX::before {
+    top: 0;
+    right: 341px;
+    bottom: 0;
+    left: initial;
+  }
+
+  .ES.s4 .dE::before,
+  .ES.s5 .dE::before {
+    top: 0;
+    bottom: 0;
+    left: 510px;
+    right: initial;
+  }
+
+  .ES.s4 .sz::before,
+  .ES.s5 .sz::before {
+    left: 255px;
+  }
+
+  .ES.sV .sz::before,
+  .ES.sY .sz::before {
+    left: 341px;
+  }
+
+  .ES.s4 .ESa,
+  .ES.s5 .ESa {
+    width: 255px;
+  }
+
+  .ES.sV .ESa,
+  .ES.sV .sX,
+  .ES.sY .ESa,
+  .ES.sY .sX,
+  .ES.sY .sA {
+    width: 341px;
+  }
 }
 @media (min-width: 1200px) {
   head {
@@ -3329,6 +3456,19 @@
   }
   head::after {
     content: "bp-xx-large - min-width: 1441px";
+  }
+}
+@media (min-width: 600px) and (max-width: 1025px) {
+  .ES.sZ .ESc, .ES.s1 .ESc, .ES.s2 .ESc, .ES.s3 .ESc {
+    overflow: hidden;
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid #ddd;
+    width: 1px;
   }
 }
 @media (max-width: 375px) {

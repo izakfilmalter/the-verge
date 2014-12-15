@@ -1,0 +1,68 @@
+.#{$m-entry-section}
+    &.#{$section2}
+        .#{$right}
+            float: left
+            clear: none
+
+            .#{$m-entry-slot}
+                float: none
+
+                width: auto
+
+    &.#{$section6},
+    &.#{$section7}
+        .#{$right}
+            width: 258px
+            float: left
+            border: 0
+
+    &.#{$section6},
+    &.#{$section7}
+        .#{$right}
+            &::before
+                top: 0
+                bottom: 0
+                z-index: 0
+                left: auto
+                right: 258px
+
+.#{$m-entry-section}.#{$section1} .#{$right}::before,
+.#{$m-entry-section}.#{$section2} .#{$center}::before,
+.#{$m-entry-section}.#{$section6} .#{$left-center}::before,
+.#{$m-entry-section}.#{$section7} .#{$left-center}::before,
+.#{$m-entry-section}.#{$section6} .#{$right}::before,
+.#{$m-entry-section}.#{$section7} .#{$right}::before
+    content: ''
+
+    @extend %position-absolute1025
+
+    border-left: 1px solid $alto
+
+.#{$m-entry-section}.#{$section1} .#{$right}::before,
+.#{$m-entry-section}.#{$section2} .#{$center}::before
+    +position(0, 341px, 0, initial)
+    left: initial
+
+.#{$m-entry-section}.#{$section6} .#{$left-center}::before,
+.#{$m-entry-section}.#{$section7} .#{$left-center}::before
+    +position(0, initial, 0, 510px)
+    right: initial
+
+.#{$m-entry-section}.#{$section6} .#{$left}::before,
+.#{$m-entry-section}.#{$section7} .#{$left}::before
+    +position(initial, initial, initial, 255px)
+
+.#{$m-entry-section}.#{$section1} .#{$left}::before,
+.#{$m-entry-section}.#{$section2} .#{$left}::before
+    +position(initial, initial, initial, 341px)
+
+.#{$m-entry-section}.#{$section6} .#{$m-entry-section__column},
+.#{$m-entry-section}.#{$section7} .#{$m-entry-section__column}
+    width: 255px
+
+.#{$m-entry-section}.#{$section1} .#{$m-entry-section__column},
+.#{$m-entry-section}.#{$section1} .#{$center},
+.#{$m-entry-section}.#{$section2} .#{$m-entry-section__column},
+.#{$m-entry-section}.#{$section2} .#{$center},
+.#{$m-entry-section}.#{$section2} .#{$right}
+    width: 341px
