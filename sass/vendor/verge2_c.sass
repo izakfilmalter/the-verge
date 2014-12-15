@@ -788,32 +788,6 @@ a:hover .m-linkset__video-eyebrow
         border-top: 1px solid #ddd
         float: right
 
-@media (min-width: 1025px)
-    .m-entry-section
-        &.section6 .right-center, &.section7 .right-center
-            float: left
-            border: 0
-
-@media (min-width: 1025px)
-    .m-entry-section
-        &.section6 .right, &.section7 .right
-            width: 258px
-            float: left
-            border: 0
-        &.section6 .right:before, &.section7 .right:before
-            content: ''
-            position: absolute
-            top: 0
-            bottom: 0
-            z-index: 0
-            left: auto
-            right: 258px
-            border-left: 1px solid #ddd
-
-@media (min-width: 600px)
-    .m-entry-section.section7
-        border-top: 1px solid #ddd
-
 .m-entry-section__more
     font-family: ff-din-web-condensed,Helvetica,sans-serif
     font-size: 1.75rem
@@ -916,16 +890,6 @@ a:hover .m-linkset__video-eyebrow
     .m-entry-slot__short-date
         display: none
 
-@media (min-width: 600px)
-    .m-entry-slot
-        display: block
-        padding: 1.3rem
-        border-top: 1px solid #ddd
-        position: relative
-        overflow: hidden
-        &:first-child
-            border: 0
-
 .m-entry-slot__stream-updates
     list-style-type: none
     margin: 1rem 0 0
@@ -951,44 +915,6 @@ a:hover .m-linkset__video-eyebrow
         text-align: center
     &.-entry-rock
         padding: 0
-
-@media (min-width: 1025px)
-    .m-entry-slot.-horizontal-left
-        position: relative
-        .m-entry-slot__labels, h3, .m-entry-slot__meta, .m-entry-slot__blurb
-            width: 50%
-            margin-left: 50%
-        .p-cross-promo-logo
-            margin-left: 50%
-        .p-dynamic-image
-            position: absolute
-            left: 1rem
-            top: 1rem
-            width: 45%
-
-@media (min-width: 1025px)
-    .m-entry-slot.-horizontal-right
-        position: relative
-        .m-entry-slot__labels, h3, .m-entry-slot__meta, .m-entry-slot__blurb
-            width: 50%
-        .p-dynamic-image
-            position: absolute
-            right: 1rem
-            top: 1rem
-            width: 45%
-
-@media (min-width: 1025px)
-    .m-entry-slot.-no-photo .p-dynamic-image
-        display: none
-
-@media (min-width: 1025px)
-    .m-entry-slot.-small-photo .p-dynamic-image
-        height: 125px
-
-@media (min-width: 1025px)
-    .m-entry-slot.-no-stream
-        .m-entry-slot__stream-updates, .p-stream-update-header
-            display: none
 
 .m-entry-slot__mobile-list
     list-style-type: none
@@ -1049,10 +975,6 @@ a:hover .m-linkset__video-eyebrow
         .p-cross-promo-logo
             margin-top: -0.5rem
             margin-bottom: .5rem
-
-@media (min-width: 600px)
-    .m-entry-slot__mobile-list
-        display: none
 
 @media (min-width: 500px)
     .m-entry-slot__mobile-list li h3

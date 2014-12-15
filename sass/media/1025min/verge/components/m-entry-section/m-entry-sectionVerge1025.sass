@@ -13,18 +13,37 @@
     &.#{$section7}
         .#{$right}
             width: 258px
-            float: left
-            border: 0
 
-    &.#{$section6},
-    &.#{$section7}
-        .#{$right}
             &::before
-                top: 0
-                bottom: 0
-                z-index: 0
-                left: auto
-                right: 258px
+                +position(0, 258px, 0, initial)
+                left: initial
+
+    &.#{$-horizontal-left}
+        @extend %position-relative1025
+
+        .#{$p-dynamic-image}
+            @extend %position-absolute1025
+            +position(1rem, initial, initial, 1rem)
+
+    &.#{$-horizontal-right}
+        @extend %position-relative1025
+
+        .#{$p-dynamic-image}
+            @extend %position-absolute1025
+            +position(1rem, 1rem, initial, initial)
+
+    &.#{$-no-photo}
+        .#{$p-dynamic-image}
+            @extend %display-none1025
+
+    &.#{$-small-photo}
+        .#{$p-dynamic-image}
+            height: 125px
+
+    &.#{$-no-stream}
+        .#{$m-entry-slot__stream-updates},
+        .#{$p-stream-update-header}
+            @extend %display-none1025
 
 .#{$m-entry-section}.#{$section1} .#{$right}::before,
 .#{$m-entry-section}.#{$section2} .#{$center}::before,
@@ -37,6 +56,14 @@
     @extend %position-absolute1025
 
     border-left: 1px solid $alto
+
+.#{$m-entry-section}.#{$section6} .#{$right},
+.#{$m-entry-section}.#{$section7} .#{$right},
+.#{$m-entry-section}.#{$section6} .#{$right-center},
+.#{$m-entry-section}.#{$section7} .#{$right-center}
+    float: left
+
+    border: 0
 
 .#{$m-entry-section}.#{$section1} .#{$right}::before,
 .#{$m-entry-section}.#{$section2} .#{$center}::before
@@ -56,6 +83,13 @@
 .#{$m-entry-section}.#{$section2} .#{$left}::before
     +position(initial, initial, initial, 341px)
 
+.#{$m-entry-section}.#{$-horizontal-left} .#{$m-entry-slot__labels},
+.#{$m-entry-section}.#{$-horizontal-left} h3,
+.#{$m-entry-section}.#{$-horizontal-left} .#{$m-entry-slot__meta},
+.#{$m-entry-section}.#{$-horizontal-left} .#{$m-entry-slot__blurb},
+.#{$m-entry-section}.#{$-horizontal-left} .#{$p-cross-promo-logo}
+    margin-left: 50%
+
 .#{$m-entry-section}.#{$section6} .#{$m-entry-section__column},
 .#{$m-entry-section}.#{$section7} .#{$m-entry-section__column}
     width: 255px
@@ -66,3 +100,17 @@
 .#{$m-entry-section}.#{$section2} .#{$center},
 .#{$m-entry-section}.#{$section2} .#{$right}
     width: 341px
+
+.#{$m-entry-section}.#{$-horizontal-left} .#{$p-dynamic-image},
+.#{$m-entry-section}.#{$-horizontal-right} .#{$p-dynamic-image}
+    width: 45%
+
+.#{$m-entry-section}.#{$-horizontal-left} .#{$m-entry-slot__labels},
+.#{$m-entry-section}.#{$-horizontal-left} h3,
+.#{$m-entry-section}.#{$-horizontal-left} .#{$m-entry-slot__meta},
+.#{$m-entry-section}.#{$-horizontal-left} .#{$m-entry-slot__blurb},
+.#{$m-entry-section}.#{$-horizontal-right} .#{$m-entry-slot__labels},
+.#{$m-entry-section}.#{$-horizontal-right} h3,
+.#{$m-entry-section}.#{$-horizontal-right} .#{$m-entry-slot__meta},
+.#{$m-entry-section}.#{$-horizontal-right} .#{$m-entry-slot__blurb}
+    width: 50%

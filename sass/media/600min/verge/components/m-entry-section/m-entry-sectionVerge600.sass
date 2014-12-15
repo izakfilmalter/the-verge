@@ -1,4 +1,15 @@
 .#{$m-entry-section}
+    overflow: hidden
+
+    @extend %display-block600
+
+    @extend %position-relative600
+
+    padding: 1.3rem
+
+    &:first-child
+        border: none
+
     &.#{$section2}
         .#{$right}
             *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif")
@@ -6,8 +17,6 @@
 
             float: none
             clear: both
-
-            border-top: 1px solid $alto
 
             width: 100%
 
@@ -26,6 +35,9 @@
 
 .#{$m-entry-section__column}
     @extend %display-block600
+
+.#{$m-entry-slot__mobile-list}
+    @extend %display-none600min
 
 .#{$m-entry-section}.#{$section1} .#{$left}::before,
 .#{$m-entry-section}.#{$section2} .#{$left}::before,
@@ -47,3 +59,8 @@
     float: left
 
     width: 50%
+
+.#{$m-entry-section},
+.#{$m-entry-section}.#{$section2} .#{$right},
+.#{$m-entry-section}.#{$section7}
+    border-top: 1px solid $alto

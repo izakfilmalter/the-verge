@@ -108,7 +108,7 @@
   .p-big-search .label::after, .p-basic-article-list.hide-mobile-blurbs .p-basic-article-list__node .body .blurb, .m-footer__search-col .scalable-logo, .m-footer__status-corner, .m-footer__status-corner .m-footer__bottom__status, .m-footer__status-corner .m-footer__bottom__status a, .m-footer__search-col .m-footer__section-header,
   .m-footer__sections-col .m-footer__section-header,
   .m-footer__basics-col .m-footer__section-header,
-  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after, .m-snippet.sidebar-left::before, .m-snippet.sidebar-left::after, .m-snippet.sidebar-right::before, .m-snippet.sidebar-right::after, .m-user-page .m-user-page__sidebar > .p-rock, .m-user-page__head, .m-product-category-list > li, .m-product-category-list li.-is-active > ul, .m-product-category-list li.-has-dropdown > a::after, .m-stream__updates .m-stream__update-meta h6, .m-stream__updates .m-stream__update-meta strong, .m-comments .comments-header .tips .sr-group::before, .m-comments .comments-header .tips .sr-group::after, .m-products-index .m-products-index__sidebar > .p-rock, .m-entry-section.section2 .right::before, .m-entry-section.section2 .right::after, .m-entry-section__column {
+  .m-footer__elsewhere-col .m-footer__section-header, .m-forum-header .label::after, .m-reviews-index .m-reviews-index__sidebar > .p-rock, .m-review__wrap-up__blurb::before, .m-review__wrap-up__blurb::after, .m-snippet.sidebar-left::before, .m-snippet.sidebar-left::after, .m-snippet.sidebar-right::before, .m-snippet.sidebar-right::after, .m-user-page .m-user-page__sidebar > .p-rock, .m-user-page__head, .m-product-category-list > li, .m-product-category-list li.-is-active > ul, .m-product-category-list li.-has-dropdown > a::after, .m-stream__updates .m-stream__update-meta h6, .m-stream__updates .m-stream__update-meta strong, .m-comments .comments-header .tips .sr-group::before, .m-comments .comments-header .tips .sr-group::after, .m-products-index .m-products-index__sidebar > .p-rock, .m-entry-section, .m-entry-section.section2 .right::before, .m-entry-section.section2 .right::after, .m-entry-section__column {
     display: block;
   }
 
@@ -118,7 +118,7 @@
 
   .p-button-social.icon-only .p-button-social__label,
   .p-button-social.icon-only .p-button__count, .m-footer__back-to-top, .m-forum-index__table th:nth-child(1) .mobile-meta,
-  .m-forum-index__table td:nth-child(1) .mobile-meta, .m-user-page__sidebar-head .mobile-bio, .m-product-category-list select {
+  .m-forum-index__table td:nth-child(1) .mobile-meta, .m-user-page__sidebar-head .mobile-bio, .m-product-category-list select, .m-entry-slot__mobile-list {
     display: none;
   }
 
@@ -153,7 +153,7 @@
     position: absolute;
   }
 
-  .p-basic-article-list__node .body, .m-footer, .m-reviews-index__sidebar .p-tabs, .m-stream__updates .m-stream__update-meta, .m-stream__updates .m-stream__update-meta .p-comment-count, .m-comments .comments-header, .m-products-index .m-products-index__sidebar .p-tabs, .m-products-index__sidebar .p-tabs {
+  .p-basic-article-list__node .body, .m-footer, .m-reviews-index__sidebar .p-tabs, .m-stream__updates .m-stream__update-meta, .m-stream__updates .m-stream__update-meta .p-comment-count, .m-comments .comments-header, .m-products-index .m-products-index__sidebar .p-tabs, .m-products-index__sidebar .p-tabs, .m-entry-section {
     position: relative;
   }
 
@@ -830,12 +830,18 @@
     font-size: 2rem;
   }
 
+  .m-entry-section {
+    overflow: hidden;
+    padding: 1.3rem;
+  }
+  .m-entry-section:first-child {
+    border: none;
+  }
   .m-entry-section.section2 .right {
     *zoom: expression(this.runtimeStyle.zoom="1",this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
     *zoom: 1;
     float: none;
     clear: both;
-    border-top: 1px solid #ddd;
     width: 100%;
   }
   .m-entry-section.section2 .right::after {
@@ -866,6 +872,12 @@
   .m-entry-section.section7 .m-entry-section__column {
     float: left;
     width: 50%;
+  }
+
+  .m-entry-section,
+  .m-entry-section.section2 .right,
+  .m-entry-section.section7 {
+    border-top: 1px solid #ddd;
   }
 }
 @media (min-width: 700px) {
@@ -1953,11 +1965,12 @@
   .is-nav-open .m-nav__content-blocker,
   .is-user-nav-open .m-nav__content-blocker,
   .is-new-articles-open .m-nav__content-blocker,
-  .is-sections-nav-open .m-nav__content-blocker {
+  .is-sections-nav-open .m-nav__content-blocker, .m-entry-section.-no-photo .p-dynamic-image, .m-entry-section.-no-stream .m-entry-slot__stream-updates,
+  .m-entry-section.-no-stream .p-stream-update-header {
     display: none;
   }
 
-  .p-entry-header__comments::after, .m-header__social, .m-big-stories .chorus-emc__admin, .m-nav.-user, .m-nav-dropdown, .m-nav-dropdown__pane, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__image .timn-icon, .m-nav-dropdown__subsections, .m-nav-dropdown__subsections .icon, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-search, .m-nav__menu li.-back-to-top, .m-nav__menu li.-back-to-top .triangle-icon, .m-nav__search, .m-new-articles__date, .m-new-articles__controls, .m-new-articles__controls::before, .m-timn__sticky-card, .m-timn__intro aside, .m-timn__intro .m-timn__social-buttons, .m-products-index__sidebar .p-starburst, .m-linkset__entry:nth-of-type(3), .m-linkset__entry:nth-of-type(2), .m-linkset__entry:nth-of-type(1), .m-entry-section.section1 .right::before,
+  .p-entry-header__comments::after, .m-header__social, .m-big-stories .chorus-emc__admin, .m-nav.-user, .m-nav-dropdown, .m-nav-dropdown__pane, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__image .timn-icon, .m-nav-dropdown__subsections, .m-nav-dropdown__subsections .icon, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-search, .m-nav__menu li.-back-to-top, .m-nav__menu li.-back-to-top .triangle-icon, .m-nav__search, .m-new-articles__date, .m-new-articles__controls, .m-new-articles__controls::before, .m-timn__sticky-card, .m-timn__intro aside, .m-timn__intro .m-timn__social-buttons, .m-products-index__sidebar .p-starburst, .m-linkset__entry:nth-of-type(3), .m-linkset__entry:nth-of-type(2), .m-linkset__entry:nth-of-type(1), .m-entry-section.-horizontal-left .p-dynamic-image, .m-entry-section.-horizontal-right .p-dynamic-image, .m-entry-section.section1 .right::before,
   .m-entry-section.section2 .center::before,
   .m-entry-section.section6 .left-center::before,
   .m-entry-section.section7 .left-center::before,
@@ -1966,7 +1979,7 @@
     position: absolute;
   }
 
-  .m-header__hub-logo, .m-header__social a, .m-header__social li, .m-nav.-site, .m-nav.-user, .m-nav-dropdown__section, .m-nav-dropdown__stories a, .m-nav-dropdown__image, .m-nav-dropdown__image.video, .m-nav-dropdown__subsections a, .m-nav__menu li.has-dropdown > a, .m-nav__menu li, .m-new-articles, .m-new-articles__toggle strong::after, .m-new-articles__pane, .m-new-articles__list, .m-new-articles__day, .m-timn__intro {
+  .m-header__hub-logo, .m-header__social a, .m-header__social li, .m-nav.-site, .m-nav.-user, .m-nav-dropdown__section, .m-nav-dropdown__stories a, .m-nav-dropdown__image, .m-nav-dropdown__image.video, .m-nav-dropdown__subsections a, .m-nav__menu li.has-dropdown > a, .m-nav__menu li, .m-new-articles, .m-new-articles__toggle strong::after, .m-new-articles__pane, .m-new-articles__list, .m-new-articles__day, .m-timn__intro, .m-entry-section.-horizontal-left, .m-entry-section.-horizontal-right {
     position: relative;
   }
 
@@ -2012,7 +2025,9 @@
     z-index: 1;
   }
 
-  .m-entry-section.section1 .right::before {
+  .m-entry-section.section1 .right::before,
+  .m-entry-section.section6 .right::before,
+  .m-entry-section.section7 .right::before {
     z-index: 0;
   }
 
@@ -3382,15 +3397,23 @@
   }
   .m-entry-section.section6 .right, .m-entry-section.section7 .right {
     width: 258px;
-    float: left;
-    border: 0;
   }
   .m-entry-section.section6 .right::before, .m-entry-section.section7 .right::before {
     top: 0;
-    bottom: 0;
-    z-index: 0;
-    left: auto;
     right: 258px;
+    bottom: 0;
+    left: initial;
+  }
+  .m-entry-section.-horizontal-left .p-dynamic-image {
+    top: 1rem;
+    left: 1rem;
+  }
+  .m-entry-section.-horizontal-right .p-dynamic-image {
+    top: 1rem;
+    right: 1rem;
+  }
+  .m-entry-section.-small-photo .p-dynamic-image {
+    height: 125px;
   }
 
   .m-entry-section.section1 .right::before,
@@ -3401,6 +3424,14 @@
   .m-entry-section.section7 .right::before {
     content: "";
     border-left: 1px solid #ddd;
+  }
+
+  .m-entry-section.section6 .right,
+  .m-entry-section.section7 .right,
+  .m-entry-section.section6 .right-center,
+  .m-entry-section.section7 .right-center {
+    float: left;
+    border: 0;
   }
 
   .m-entry-section.section1 .right::before,
@@ -3429,6 +3460,14 @@
     left: 341px;
   }
 
+  .m-entry-section.-horizontal-left .m-entry-slot__labels,
+  .m-entry-section.-horizontal-left h3,
+  .m-entry-section.-horizontal-left .m-entry-slot__meta,
+  .m-entry-section.-horizontal-left .m-entry-slot__blurb,
+  .m-entry-section.-horizontal-left .p-cross-promo-logo {
+    margin-left: 50%;
+  }
+
   .m-entry-section.section6 .m-entry-section__column,
   .m-entry-section.section7 .m-entry-section__column {
     width: 255px;
@@ -3440,6 +3479,22 @@
   .m-entry-section.section2 .center,
   .m-entry-section.section2 .right {
     width: 341px;
+  }
+
+  .m-entry-section.-horizontal-left .p-dynamic-image,
+  .m-entry-section.-horizontal-right .p-dynamic-image {
+    width: 45%;
+  }
+
+  .m-entry-section.-horizontal-left .m-entry-slot__labels,
+  .m-entry-section.-horizontal-left h3,
+  .m-entry-section.-horizontal-left .m-entry-slot__meta,
+  .m-entry-section.-horizontal-left .m-entry-slot__blurb,
+  .m-entry-section.-horizontal-right .m-entry-slot__labels,
+  .m-entry-section.-horizontal-right h3,
+  .m-entry-section.-horizontal-right .m-entry-slot__meta,
+  .m-entry-section.-horizontal-right .m-entry-slot__blurb {
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
