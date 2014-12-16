@@ -1,0 +1,19 @@
+.#{$m-entry__body}
+    @extend %display-table800
+    table-layout: fixed
+
+    width: 100%
+
+    .#{$m-entry__sidebar}
+        border-left: 1px solid $alto
+
+        width: 320px
+
+        & > .p-rock
+            @extend %display-block800
+
+    .#{$m-entry__sidebar},
+    .#{$m-entry__content}
+        vertical-align: top
+
+        @extend %display-table-cell800

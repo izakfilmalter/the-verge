@@ -1,0 +1,34 @@
+.#{$m-entry-slot}
+    &.#{$-wide}
+        .#{$m-entry-slot__image}
+            @extend %position-relative600
+
+            width: 30%
+
+            padding-top: 20%
+
+            > *
+                @extend %display-block600
+
+                @extend %position-absolute600min
+                +position(0, initial, initial, initial)
+
+                margin: 0
+
+                height: 100%
+                width: 100%
+
+                padding: 0
+
+        .#{$m-entry-slot__content}
+            h3
+                font-size: 1.5rem
+
+        .#{$m-entry-slot_meta}
+            font-size: .75rem
+
+        .#{$m-entry-slot__blurb}
+            @extend %display-block600
+
+.#{$m-entry-slot__mobile-list}
+    @extend %display-none600min
