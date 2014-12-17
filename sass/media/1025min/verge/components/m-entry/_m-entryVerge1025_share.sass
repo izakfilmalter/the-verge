@@ -1,3 +1,20 @@
+.#{$m-entry-section}.#{$section1} .#{$center} .#{$m-entry-slot}:first-child::after,
+.#{$m-entry-section}.#{$section1} .#{$center} .#{$m-entry-slot}:first-child > :first-child::after,
+.#{$m-entry-section}.#{$section2} .#{$center} .#{$m-entry-slot}:first-child::after,
+.#{$m-entry-section}.#{$section2} .#{$center} .#{$m-entry-slot}:first-child > :first-child::after,
+.#{$m-entry-section}.#{$section2} .#{$center} .#{$m-entry-slot}:last-child > :first-child::before
+    content: ''
+
+    @extend %display-block1025
+
+    @extend %position-absolute1025
+
+    border-style: solid
+    border-color: $grey
+
+    height: 5px
+    width: 5px
+
 .#{$m-entry-section}.#{$section1} .#{$right}::before,
 .#{$m-entry-section}.#{$section2} .#{$center}::before,
 .#{$m-entry-section}.#{$section6} .#{$left-center}::before,
@@ -9,6 +26,10 @@
     @extend %position-absolute1025
 
     border-left: 1px solid $alto
+
+.#{$m-entry-section}.#{$section1} .#{$center} .#{$m-entry-slot}:last-child
+.#{$m-entry-section}.#{$section1} .#{$right} .#{$m-entry-slot}:first-child
+    @extend %display-block1025
 
 .#{$m-entry-section}.#{$section6} .#{$right},
 .#{$m-entry-section}.#{$section7} .#{$right},

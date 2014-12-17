@@ -2319,7 +2319,11 @@
   }
 }
 @media (min-width: 1025px) {
-  .p-big-search .label::after, .p-entry-header__comments::after, .m-ad__zone-1a, .m-header__hub-logo, .m-header__social, .m-header__social a, .m-big-stories__main .p-dynamic-image, .m-nav-dropdown, .m-nav-dropdown__stories a, .m-nav-dropdown__stories.forums span, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__subsections li, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-back-to-top, .m-nav__search, .m-new-articles__controls, .m-timn__intro aside, .m-search-page__header .controls li, .m-article__follow-bar, .m-hub-admin-menu, .m-products-index__sidebar .p-starburst, .m-gallery .m-gallery__thumbs .m-gallery__control-prev,
+  .p-big-search .label::after, .p-entry-header__comments::after, .m-ad__zone-1a, .m-header__hub-logo, .m-header__social, .m-header__social a, .m-big-stories__main .p-dynamic-image, .m-nav-dropdown, .m-nav-dropdown__stories a, .m-nav-dropdown__stories.forums span, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__subsections li, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-back-to-top, .m-nav__search, .m-new-articles__controls, .m-timn__intro aside, .m-search-page__header .controls li, .m-article__follow-bar, .m-entry-section.section1 .center .m-entry-slot:first-child::after,
+  .m-entry-section.section1 .center .m-entry-slot:first-child > :first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:first-child > :first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:last-child > :first-child::before, .m-entry-section.section1 .right .m-entry-slot:first-child, .m-hub-admin-menu, .m-products-index__sidebar .p-starburst, .m-gallery .m-gallery__thumbs .m-gallery__control-prev,
   .m-gallery .m-gallery__thumbs .m-gallery__control-next {
     display: block;
   }
@@ -2342,7 +2346,11 @@
     display: none;
   }
 
-  .p-entry-header__comments::after, .m-header__social, .m-big-stories .chorus-emc__admin, .m-nav.-user, .m-nav-dropdown, .m-nav-dropdown__pane, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__image .timn-icon, .m-nav-dropdown__subsections, .m-nav-dropdown__subsections .icon, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-search, .m-nav__menu li.-back-to-top, .m-nav__menu li.-back-to-top .triangle-icon, .m-nav__search, .m-new-articles__date, .m-new-articles__controls, .m-new-articles__controls::before, .m-timn__sticky-card, .m-timn__intro aside, .m-timn__intro .m-timn__social-buttons, .m-entry-section.-horizontal-left .p-dynamic-image, .m-entry-section.-horizontal-right .p-dynamic-image, .m-entry-section.section1 .right::before,
+  .p-entry-header__comments::after, .m-header__social, .m-big-stories .chorus-emc__admin, .m-nav.-user, .m-nav-dropdown, .m-nav-dropdown__pane, .m-nav-dropdown__image.video::before, .m-nav-dropdown__image.video::after, .m-nav-dropdown__image .timn-icon, .m-nav-dropdown__subsections, .m-nav-dropdown__subsections .icon, .m-nav-dropdown__loading, .m-nav__menu li.has-dropdown > a::after, .m-nav__menu li.-search, .m-nav__menu li.-back-to-top, .m-nav__menu li.-back-to-top .triangle-icon, .m-nav__search, .m-new-articles__date, .m-new-articles__controls, .m-new-articles__controls::before, .m-timn__sticky-card, .m-timn__intro aside, .m-timn__intro .m-timn__social-buttons, .m-entry-section.-horizontal-left .p-dynamic-image, .m-entry-section.-horizontal-right .p-dynamic-image, .m-entry-section.section1 .center .m-entry-slot:first-child::after,
+  .m-entry-section.section1 .center .m-entry-slot:first-child > :first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:first-child > :first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:last-child > :first-child::before, .m-entry-section.section1 .right::before,
   .m-entry-section.section2 .center::before,
   .m-entry-section.section6 .left-center::before,
   .m-entry-section.section7 .left-center::before,
@@ -2377,6 +2385,11 @@
 
   .m-timn__sticky-card {
     z-index: 10000;
+  }
+
+  .m-entry-section.section1 .center .m-entry-slot:first-child::after,
+  .m-entry-section.section1 .center .m-entry-slot:first-child > :first-child::after {
+    z-index: 10;
   }
 
   .m-big-stories {
@@ -3624,6 +3637,21 @@
     font-size: 0.8rem;
   }
 
+  .m-entry-section.section1 .center .m-entry-slot:first-child::after {
+    top: 0;
+    right: 0;
+    border-width: 1px 1px 0 0;
+  }
+  .m-entry-section.section1 .center .m-entry-slot:first-child > :first-child:after {
+    right: 0;
+    bottom: -1px;
+    border-width: 0 1px 1px 0;
+  }
+  .m-entry-section.section1 .right .m-entry-slot:last-child::before {
+    top: -1px;
+    left: -1px;
+    border-width: 1px 0 0 1px;
+  }
   .m-entry-section.section2 .right {
     float: left;
     clear: none;
@@ -3631,6 +3659,24 @@
   .m-entry-section.section2 .right .m-entry-slot {
     float: none;
     width: auto;
+  }
+  .m-entry-section.section2 .left .m-entry-slot:last-child {
+    padding-bottom: 3.5rem;
+  }
+  .m-entry-section.section2 .center .m-entry-slot:first-child::after {
+    top: 0;
+    right: 0;
+    border-width: 1px 1px 0 0;
+  }
+  .m-entry-section.section2 .center .m-entry-slot:first-child > :first-child::after {
+    right: 0;
+    bottom: -1px;
+    border-width: 0 1px 1px 0;
+  }
+  .m-entry-section.section2 .center .m-entry-slot:last-child > :first-child::before {
+    bottom: -1px;
+    left: 0;
+    border-width: 0 0 1px 1px;
   }
   .m-entry-section.section6 .right, .m-entry-section.section7 .right {
     width: 258px;
@@ -3651,6 +3697,18 @@
   }
   .m-entry-section.-small-photo .p-dynamic-image {
     height: 125px;
+  }
+
+  .m-entry-section.section1 .center .m-entry-slot:first-child::after,
+  .m-entry-section.section1 .center .m-entry-slot:first-child > :first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:first-child > :first-child::after,
+  .m-entry-section.section2 .center .m-entry-slot:last-child > :first-child::before {
+    content: "";
+    border-style: solid;
+    border-color: #919191;
+    height: 5px;
+    width: 5px;
   }
 
   .m-entry-section.section1 .right::before,

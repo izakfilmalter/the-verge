@@ -1,4 +1,25 @@
 .#{$m-entry-section}
+    &.#{$section1}
+        .#{$center}
+            .#{$m-entry-slot}
+                &:first-child
+                    &::after
+                        +position(0, 0, initial, initial)
+
+                        border-width: 1px 1px 0 0
+
+                    & > :first-child:after
+                        +position(initial, 0, -1px, initial)
+
+                        border-width: 0 1px 1px 0
+
+        .#{$right}
+            .#{$m-entry-slot}
+                &:last-child
+                    &::before
+                        +position(-1px, initial, initial, -1px)
+                        border-width: 1px 0 0 1px
+
     &.#{$section2}
         .#{$right}
             float: left
@@ -8,6 +29,28 @@
                 float: none
 
                 width: auto
+
+        .#{$left}
+            .#{$m-entry-slot}
+                &:last-child
+                    padding-bottom: 3.5rem
+
+        .#{$center}
+            .#{$m-entry-slot}
+                &:first-child
+                    &::after
+                        +position(0, 0, initial, initial)
+                        border-width: 1px 1px 0 0
+                    & > :first-child
+                        &::after
+                            +position(initial, 0, -1px, initial)
+                            border-width: 0 1px 1px 0
+
+                &:last-child
+                    & > :first-child
+                        &::before
+                            +position(initial, initial, -1px, 0)
+                            border-width: 0 0 1px 1px
 
     &.#{$section6},
     &.#{$section7}
